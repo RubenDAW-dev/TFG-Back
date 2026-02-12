@@ -23,4 +23,4 @@ public class TeamMatchStatsEntity {
     private Integer saves;
     private Integer cards;
 
-}
+} 

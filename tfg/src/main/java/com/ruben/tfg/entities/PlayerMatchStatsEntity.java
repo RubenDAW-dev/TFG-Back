@@ -31,6 +31,7 @@ public class PlayerMatchStatsEntity {
     private Integer shots;        
     private Integer shotsOnTarget;
 
+    private Integer yellowCards;
     private Integer redCards;
 
     private Integer foulsCommitted;
