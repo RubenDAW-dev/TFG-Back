@@ -7,11 +7,15 @@ import lombok.Data;
 @Entity
 @Table(name = "player_season_stats")
 public class PlayerSeasonStatsEntity {
-	@Id
-    private String player_id;    
-    private String season;      
 
- 
+    @Id
+    private String playerId; 
+
+    @OneToOne
+    @MapsId
+    @JoinColumn(name = "player_id")
+    private PlayerEntity player;
+
     private Integer partidos;            
     private Integer minutos;             
     private Integer goles;               
@@ -24,7 +28,6 @@ public class PlayerSeasonStatsEntity {
     private Integer pases_completados; 
     private Integer duelos_ganados;
     private Integer duelos_totales;
-
 
     private Double precision_pases;      
     private Double duelos_winrate;      

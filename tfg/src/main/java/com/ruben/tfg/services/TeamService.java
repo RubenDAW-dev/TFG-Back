@@ -20,15 +20,18 @@ public class TeamService {
         return repo.findAll();
     }
 
-    public Optional<TeamEntity> getById(String id) {
-        return repo.findById(id);
-    }
-
-    public TeamEntity save(TeamEntity team) {
-        return repo.save(team);
+    public TeamEntity getById(String id) {
+        TeamEntity team = repo.findById(id).orElseThrow(() -> new RuntimeException("Team not found"));
+        return team;
     }
 
     public void delete(String id) {
-        repo.deleteById(id);
+        TeamEntity team = repo.findById(id).orElseThrow(() -> new RuntimeException("Team not found"));
+        repo.delete(team);
     }
+
+	public TeamEntity update(TeamEntity team) {
+		TeamEntity existingTeam = repo.findById(team.getId()).orElseThrow(() -> new RuntimeException("Team not found"));
+		return repo.save(team);
+	}
 }

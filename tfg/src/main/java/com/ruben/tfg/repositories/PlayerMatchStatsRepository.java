@@ -1,6 +1,7 @@
 package com.ruben.tfg.repositories;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -11,5 +12,9 @@ public interface PlayerMatchStatsRepository extends JpaRepository<PlayerMatchSta
     List<PlayerMatchStatsEntity> findByMatchId(Long matchId);
 
     List<PlayerMatchStatsEntity> findByPlayerId(String playerId);
+
+	Optional<PlayerMatchStatsEntity> findByMatch_IdAndPlayer_Id(Long matchId, String playerId);
+
+	List<PlayerMatchStatsEntity> findByMatch_Id(Long matchId);
 
 }

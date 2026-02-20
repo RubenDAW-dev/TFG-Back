@@ -1,20 +1,25 @@
 package com.ruben.tfg.entities;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.MapsId;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Data
 @Entity
 @Table(name = "team_season_stats")
+@Data
 public class TeamSeasonStatsEntity {
-	@Id
-    private String team_id;    
-    private String season;      
 
+    @Id
+    private String teamId;
+
+    @OneToOne
+    @MapsId
+    @JoinColumn(name = "team_id")
+    private TeamEntity team;
 
     private Integer partidos;          
     private Integer goles_favor;       
@@ -24,7 +29,6 @@ public class TeamSeasonStatsEntity {
     private Integer derrotas;
     private Integer puntos;            
 
-    
     private Double posesion_media;     
     private Double tiros_media;       
     private Double tiros_puerta_media;

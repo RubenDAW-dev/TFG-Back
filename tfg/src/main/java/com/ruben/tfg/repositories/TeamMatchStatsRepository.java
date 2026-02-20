@@ -1,17 +1,21 @@
 package com.ruben.tfg.repositories;
 
-import com.ruben.tfg.entities.TeamMatchStatsEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
+import java.util.Optional;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ruben.tfg.entities.TeamMatchStatsEntity;
+
+@Repository
 public interface TeamMatchStatsRepository extends JpaRepository<TeamMatchStatsEntity, Long> {
 
-    List<TeamMatchStatsEntity> findByMatchId(String match_id);
+    List<TeamMatchStatsEntity> findByMatch_Id(Long matchId);
 
-    List<TeamMatchStatsEntity> findByTeamId(String team_id);
+    List<TeamMatchStatsEntity> findByMatch_IdAndSide(Long matchId, String side);
 
-    List<TeamMatchStatsEntity> findBySide(String side);
+    List<TeamMatchStatsEntity> findByTeam_Id(String teamId);
 
-    List<TeamMatchStatsEntity> findByMatchIdAndSide(String match_id, String side);
+	Optional<TeamMatchStatsEntity> findByMatch_IdAndTeam_Id(Long matchId, String teamId);
 }

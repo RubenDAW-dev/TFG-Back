@@ -4,8 +4,10 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import com.ruben.tfg.DTOs.MatchDTO;
 import com.ruben.tfg.entities.MatchEntity;
 import com.ruben.tfg.repositories.MatchRepository;
 
@@ -16,13 +18,15 @@ import lombok.AllArgsConstructor;
 public class MatchService {
 
     private final MatchRepository repo;
+    private ModelMapper modelMapper = new ModelMapper();
 
     public List<MatchEntity> getAll() {
         return repo.findAll();
     }
 
-    public Optional<MatchEntity> getById(Long id) {
-        return repo.findById(id);
+    public MatchEntity getById(Long id) {
+        MatchEntity match = repo.findById(id).orElseThrow(() -> new RuntimeException("Match not found"));
+        return match;
     }
 
     public List<MatchEntity> getByHomeTeam(String teamId) {
@@ -41,11 +45,10 @@ public class MatchService {
         return repo.findByDate(date);
     }
 
-    public MatchEntity save(MatchEntity match) {
-        return repo.save(match);
-    }
 
-    public void delete(Long id) {
-        repo.deleteById(id);
-    }
+	public void update(MatchDTO match) {
+		MatchEntity entity = repo.findById(match.getId()).orElseThrow(() -> new RuntimeException("Match not found"));
+		modelMapper.map(match, entity);
+		repo.save(entity);
+	}
 }

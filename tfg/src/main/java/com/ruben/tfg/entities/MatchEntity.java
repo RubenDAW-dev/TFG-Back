@@ -11,11 +11,17 @@ import lombok.Data;
 public class MatchEntity {
 
     @Id
-    private Long id; 
-    private String homeTeamId;
-    private String awayTeamId;
+    private Long id;  
 
-    private Integer wk; 
+    @ManyToOne
+    @JoinColumn(name = "home_team_id", nullable = false)
+    private TeamEntity homeTeam;
+
+    @ManyToOne
+    @JoinColumn(name = "away_team_id", nullable = false)
+    private TeamEntity awayTeam;
+
+    private Integer wk;
     private String day;
 
     private LocalDate date;

@@ -23,14 +23,6 @@ public class PlayerSeasonStatsService {
         return repo.findByPlayerId(playerId);
     }
 
-    public List<PlayerSeasonStatsEntity> getBySeason(String season) {
-        return repo.findBySeason(season);
-    }
-
-    public List<PlayerSeasonStatsEntity> getByPlayerAndSeason(String playerId, String season) {
-        return repo.findByPlayerIdAndSeason(playerId, season);
-    }
-
     public PlayerSeasonStatsEntity save(PlayerSeasonStatsEntity stats) {
         return repo.save(stats);
     }

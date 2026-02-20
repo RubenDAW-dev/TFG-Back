@@ -12,8 +12,15 @@ public class PlayerMatchStatsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idInterno;   
 
-    private Long matchId;     
-    private String playerId; 
+
+    @ManyToOne
+    @JoinColumn(name = "match_id", nullable = false)
+    private MatchEntity match;
+
+    @ManyToOne
+    @JoinColumn(name = "player_id", nullable = false)
+    private PlayerEntity player;
+
 
     private Integer number; 
 

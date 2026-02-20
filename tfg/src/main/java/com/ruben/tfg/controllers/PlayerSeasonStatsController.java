@@ -1,69 +1,72 @@
 package com.ruben.tfg.controllers;
 
+import java.util.List;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import com.ruben.tfg.entities.PlayerSeasonStatsEntity;
 import com.ruben.tfg.services.PlayerSeasonStatsService;
+import lombok.AllArgsConstructor;
 
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-
+@AllArgsConstructor
 @RestController
 @RequestMapping("/api/player-season-stats")
 public class PlayerSeasonStatsController {
 
     private final PlayerSeasonStatsService service;
 
-    public PlayerSeasonStatsController(PlayerSeasonStatsService service) {
-        this.service = service;
+    @GetMapping("/getAll")
+    public ResponseEntity<?> getAll() {
+        try {
+            List<PlayerSeasonStatsEntity> lista = service.getAll();
+            if (lista.isEmpty()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            return ResponseEntity.ok(lista);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
     }
 
-    // ---------------------
-    // CRUD básico
-    // ---------------------
-
-    @GetMapping
-    public List<PlayerSeasonStatsEntity> getAll() {
-        return service.getAll();
+    @GetMapping("/get/{id}")
+    public ResponseEntity<?> getById(@PathVariable String id) {
+        try {
+            List<PlayerSeasonStatsEntity> lista = service.getById(id);
+            if (lista.isEmpty()) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas para jugador: " + id);
+            return ResponseEntity.ok(lista);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
     }
 
-    @GetMapping("/{id}")
-    public List<PlayerSeasonStatsEntity> getById(@PathVariable String id) {
-        return service.getById(id);
-    }
-
-    @PostMapping
-    public PlayerSeasonStatsEntity create(@RequestBody PlayerSeasonStatsEntity stats) {
-        return service.save(stats);
+    @PostMapping("/create")
+    public ResponseEntity<?> create(@RequestBody PlayerSeasonStatsEntity stats) {
+        try {
+            PlayerSeasonStatsEntity creado = service.save(stats);
+            return ResponseEntity.status(HttpStatus.CREATED).body(creado);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al crear stats: " + e.getMessage());
+        }
     }
 
     @PutMapping("/{id}")
-    public PlayerSeasonStatsEntity update(
+    public ResponseEntity<?> update(
             @PathVariable String id,
-            @RequestBody PlayerSeasonStatsEntity stats
-    ) {
-        stats.setPlayer_id(id);
-        return service.save(stats);
+            @RequestBody PlayerSeasonStatsEntity stats) {
+        try {
+            stats.setPlayerId(id);
+            PlayerSeasonStatsEntity actualizado = service.save(stats);
+            return ResponseEntity.ok(actualizado);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas: " + e.getMessage());
+        }
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable String id) {
-        service.delete(id);
-    }
-
-    // ---------------------
-    // Filtros
-    // ---------------------
-
-    @GetMapping("/season/{season}")
-    public List<PlayerSeasonStatsEntity> getBySeason(@PathVariable String season) {
-        return service.getBySeason(season);
-    }
-
-    @GetMapping("/player/{playerId}/season/{season}")
-    public List<PlayerSeasonStatsEntity> getByPlayerAndSeason(
-            @PathVariable String playerId,
-            @PathVariable String season
-    ) {
-        return service.getByPlayerAndSeason(playerId, season);
+    public ResponseEntity<?> delete(@PathVariable String id) {
+        try {
+            service.delete(id);
+            return ResponseEntity.ok("Stats eliminadas correctamente");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas: " + e.getMessage());
+        }
     }
 }

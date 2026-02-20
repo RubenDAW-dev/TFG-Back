@@ -8,8 +8,4 @@ import java.util.List;
 public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonStatsEntity, String> {
 
     List<PlayerSeasonStatsEntity> findByPlayerId(String player_id);
-
-    List<PlayerSeasonStatsEntity> findBySeason(String season);
-
-    List<PlayerSeasonStatsEntity> findByPlayerIdAndSeason(String player_id, String season);
 }

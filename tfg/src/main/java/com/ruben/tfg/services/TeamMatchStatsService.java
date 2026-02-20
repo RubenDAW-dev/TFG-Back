@@ -25,19 +25,15 @@ public class TeamMatchStatsService {
     }
 
     public List<TeamMatchStatsEntity> getByMatch(String matchId) {
-        return repo.findByMatchId(matchId);
+        return repo.findByMatch_Id(Long.parseLong(matchId));
     }
 
     public List<TeamMatchStatsEntity> getByTeam(String teamId) {
-        return repo.findByTeamId(teamId);
-    }
-
-    public List<TeamMatchStatsEntity> getBySide(String side) {
-        return repo.findBySide(side);
+        return repo.findByTeam_Id(teamId);
     }
 
     public List<TeamMatchStatsEntity> getByMatchAndSide(String matchId, String side) {
-        return repo.findByMatchIdAndSide(matchId, side);
+        return repo.findByMatch_IdAndSide(Long.parseLong(matchId), side);
     }
 
     public TeamMatchStatsEntity save(TeamMatchStatsEntity stats) {

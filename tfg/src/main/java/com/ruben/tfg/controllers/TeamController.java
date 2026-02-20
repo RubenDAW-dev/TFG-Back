@@ -1,47 +1,59 @@
 package com.ruben.tfg.controllers;
 
+import java.util.List;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import com.ruben.tfg.entities.TeamEntity;
 import com.ruben.tfg.services.TeamService;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import lombok.AllArgsConstructor;
 
 @RestController
+@AllArgsConstructor
 @RequestMapping("/api/teams")
 public class TeamController {
 
     private final TeamService service;
 
-    public TeamController(TeamService service) {
-        this.service = service;
+    @GetMapping("/getAll")
+    public ResponseEntity<?> getAll() {
+        try {
+            List<TeamEntity> lista = service.getAll();
+            if (lista.isEmpty()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            return ResponseEntity.ok(lista);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
     }
 
-    @GetMapping
-    public List<TeamEntity> getAll() {
-        return service.getAll();
+    @GetMapping("/get/{id}")
+    public ResponseEntity<?> getById(@PathVariable String id) {
+        try {
+            TeamEntity team = service.getById(id);
+            if (team == null) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Equipo no encontrado: " + id);
+            return ResponseEntity.ok(team);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
     }
 
-    @GetMapping("/{id}")
-    public TeamEntity getById(@PathVariable String id) {
-        return service.getById(id).orElse(null);
+    @PutMapping("/update")
+    public ResponseEntity<?> update(@RequestBody TeamEntity team) {
+        try {
+            TeamEntity actualizado = service.update(team);
+            return ResponseEntity.ok(actualizado);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Equipo no encontrado: " + e.getMessage());
+        }
     }
 
-    @PostMapping
-    public TeamEntity create(@RequestBody TeamEntity team) {
-        return service.save(team);
-    }
-
-    @PutMapping("/{id}")
-    public TeamEntity update(
-            @PathVariable String id,
-            @RequestBody TeamEntity team) {
-
-        team.setId(id);
-        return service.save(team);
-    }
-
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable String id) {
-        service.delete(id);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable String id) {
+        try {
+            service.delete(id);
+            return ResponseEntity.ok("Equipo eliminado correctamente");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Equipo no encontrado: " + e.getMessage());
+        }
     }
 }

@@ -13,8 +13,15 @@ public class TeamMatchStatsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String match_id;
-    private String team_id;
+
+    @ManyToOne
+    @JoinColumn(name = "match_id", nullable = false)
+    private MatchEntity match;
+
+    @ManyToOne
+    @JoinColumn(name = "team_id", nullable = false)
+    private TeamEntity team;
+
     private String side;
 
     private Integer possession;
