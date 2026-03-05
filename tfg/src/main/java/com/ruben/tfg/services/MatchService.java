@@ -54,7 +54,7 @@ public class MatchService {
 	}
 
 	public List<PastMatchDTO> getLastMatches() {
-		List<MatchEntity> matches = repo.findLastMatches(LocalDate.now(), PageRequest.of(0, 5) // ← solo 5
+		List<MatchEntity> matches = repo.findLastMatches(LocalDate.now(), PageRequest.of(0, 8)
 		);
 
 		return matches.stream().map(m -> {
@@ -67,7 +67,7 @@ public class MatchService {
 	}
 	
 	public List<FutureMatchDTO> getNextMatches() {
-		List<MatchEntity> matches = repo.findNextMatches(LocalDate.now(), PageRequest.of(0, 5) // ← solo 5
+		List<MatchEntity> matches = repo.findNextMatches(LocalDate.now(), PageRequest.of(0, 8)
 		);
 
 		return matches.stream().map(m -> {

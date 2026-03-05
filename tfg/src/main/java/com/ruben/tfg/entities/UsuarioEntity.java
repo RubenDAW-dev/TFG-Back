@@ -30,6 +30,9 @@ public class UsuarioEntity {
 
 	@Column(name = "password_hash", nullable = false, length = 255)
 	private String passwordHash;
+	
+	@Column(nullable = false)
+	private Integer rol; // 1 para admin, 0 para usuario normal
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<TokenRecuperacionEntity> tokens = new ArrayList<>();
