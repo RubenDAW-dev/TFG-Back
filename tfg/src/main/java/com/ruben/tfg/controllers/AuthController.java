@@ -40,7 +40,7 @@ public class AuthController {
 
         String base = (appBaseUrl != null && !appBaseUrl.isBlank())
                 ? appBaseUrl
-                : "http://localhost:4200"; // por defecto, Angular en local
+                : "http://localhost:4200";
 
         recoveryService.createRecoveryToken(req, base);
         // 200 OK aunque el email no exista (no exponemos información)
