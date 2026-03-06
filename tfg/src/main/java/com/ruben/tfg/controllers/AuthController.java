@@ -35,14 +35,8 @@ public class AuthController {
 
     @PostMapping("/forgot-password")
     public ResponseEntity<?> forgotPassword(
-            @Valid @RequestBody ForgotPasswordRequestDTO req,
-            @RequestHeader(value = "X-App-BaseUrl", required = false) String appBaseUrl) {
-
-        String base = (appBaseUrl != null && !appBaseUrl.isBlank())
-                ? appBaseUrl
-                : "http://localhost:4200";
-
-        recoveryService.createRecoveryToken(req, base);
+            @Valid @RequestBody ForgotPasswordRequestDTO req) {
+        recoveryService.createRecoveryToken(req, "http://localhost:4200");
         // 200 OK aunque el email no exista (no exponemos información)
         return ResponseEntity.ok().build();
     }

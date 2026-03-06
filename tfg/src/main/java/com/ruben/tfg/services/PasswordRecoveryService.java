@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 import java.util.Base64;
 import java.util.Optional;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.ruben.tfg.DTOs.ForgotPasswordRequestDTO;
 import com.ruben.tfg.DTOs.ResetPasswordRequestDTO;
@@ -15,6 +15,7 @@ import com.ruben.tfg.entities.TokenRecuperacionEntity;
 import com.ruben.tfg.entities.UsuarioEntity;
 import com.ruben.tfg.repositories.TokenRecuperacionRepository;
 import com.ruben.tfg.repositories.UsuarioRepository;
+import com.ruben.tfg.utilities.EmailService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -25,6 +26,7 @@ public class PasswordRecoveryService {
     private final UsuarioRepository usuarioRepo;
     private final TokenRecuperacionRepository tokenRepo;
     private final PasswordEncoder passwordEncoder;
+    private final EmailService emailService;
 
     // Caducidad por defecto: 60 min
     private static final int TOKEN_EXP_MINUTES = 60;
@@ -59,7 +61,7 @@ public class PasswordRecoveryService {
         String link = appBaseUrl.replaceAll("/+$", "") + "/reset-password?token=" + token;
 
         // Enviar “email” (por ahora, stub)
-        sendEmailStub(user.getEmail(), link);
+        emailService.enviarRecoveryEmail(user.getEmail(), link);
 
         return token;
     }
@@ -93,11 +95,4 @@ public class PasswordRecoveryService {
         return Base64.getUrlEncoder().withoutPadding().encodeToString(bytes);
     }
 
-    private void sendEmailStub(String email, String link) {
-        System.out.println("=== RECOVERY EMAIL ===");
-        System.out.println("To: " + email);
-        System.out.println("Link: " + link);
-        System.out.println("======================");
-        // Integra aquí JavaMailSender/SendGrid/etc. cuando quieras
-    }
 }

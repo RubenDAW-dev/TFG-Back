@@ -77,4 +77,5 @@ public class UsuarioController {
         boolean ok = service.changePassword(id, dto);
         return ok ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
+    
 }
