@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ruben.tfg.DTOs.PlayerSeasonStatsDTO;
-import com.ruben.tfg.DTOs.RadarDTO;
+import com.ruben.tfg.DTOs.PlayerStatsTableDTO;
 import com.ruben.tfg.DTOs.RankingDTO;
 import com.ruben.tfg.entities.PlayerSeasonStatsEntity;
 import com.ruben.tfg.services.PlayerSeasonStatsService;
@@ -29,95 +29,98 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/api/player-season-stats")
 public class PlayerSeasonStatsController {
 
-	private final PlayerSeasonStatsService service;
+    private final PlayerSeasonStatsService service;
 
-	@GetMapping("/getAll")
-	public ResponseEntity<?> getAll() {
-		try {
-			List<PlayerSeasonStatsEntity> lista = service.getAll();
-			if (lista.isEmpty())
-				return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
-			return ResponseEntity.ok(lista);
-		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
-		}
-	}
+    @GetMapping("/getAll")
+    public ResponseEntity<?> getAll(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(defaultValue = "goles") String sortField,
+            @RequestParam(defaultValue = "desc") String sortDir) {
+        try {
+            Page<PlayerStatsTableDTO> resultado = service.getAllWithNamesPaged(page, size, sortField, sortDir);
+            if (resultado.isEmpty())
+                return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            return ResponseEntity.ok(resultado);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
+    }
 
-	@GetMapping("/get/{id}")
-	public ResponseEntity<?> getById(@PathVariable String id) {
-		try {
-			List<PlayerSeasonStatsEntity> lista = service.getById(id);
-			if (lista.isEmpty())
-				return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas para jugador: " + id);
-			return ResponseEntity.ok(lista);
-		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
-		}
-	}
+    @GetMapping("/get/{id}")
+    public ResponseEntity<?> getById(@PathVariable String id) {
+        try {
+            List<PlayerSeasonStatsEntity> lista = service.getById(id);
+            if (lista.isEmpty())
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas para jugador: " + id);
+            return ResponseEntity.ok(lista);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
+    }
 
-	@PostMapping("/create")
-	public ResponseEntity<?> create(@RequestBody PlayerSeasonStatsEntity stats) {
-		try {
-			PlayerSeasonStatsEntity creado = service.save(stats);
-			return ResponseEntity.status(HttpStatus.CREATED).body(creado);
-		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al crear stats: " + e.getMessage());
-		}
-	}
+    @PostMapping("/create")
+    public ResponseEntity<?> create(@RequestBody PlayerSeasonStatsEntity stats) {
+        try {
+            PlayerSeasonStatsEntity creado = service.save(stats);
+            return ResponseEntity.status(HttpStatus.CREATED).body(creado);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al crear stats: " + e.getMessage());
+        }
+    }
 
-	@PutMapping("/{id}")
-	public ResponseEntity<?> update(@PathVariable String id, @RequestBody PlayerSeasonStatsEntity stats) {
-		try {
-			stats.setPlayerId(id);
-			PlayerSeasonStatsEntity actualizado = service.save(stats);
-			return ResponseEntity.ok(actualizado);
-		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas: " + e.getMessage());
-		}
-	}
+    @PutMapping("/{id}")
+    public ResponseEntity<?> update(@PathVariable String id, @RequestBody PlayerSeasonStatsEntity stats) {
+        try {
+            stats.setPlayerId(id);
+            PlayerSeasonStatsEntity actualizado = service.save(stats);
+            return ResponseEntity.ok(actualizado);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas: " + e.getMessage());
+        }
+    }
 
-	@DeleteMapping("/{id}")
-	public ResponseEntity<?> delete(@PathVariable String id) {
-		try {
-			service.delete(id);
-			return ResponseEntity.ok("Stats eliminadas correctamente");
-		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas: " + e.getMessage());
-		}
-	}
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> delete(@PathVariable String id) {
+        try {
+            service.delete(id);
+            return ResponseEntity.ok("Stats eliminadas correctamente");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Stats no encontradas: " + e.getMessage());
+        }
+    }
 
-	@GetMapping("/team/top-scorers")
-	public ResponseEntity<List<RankingDTO>> topScorers(@RequestParam(required = false) String teamId,
-			@RequestParam(defaultValue = "5") int limit) {
-		var data = service.topScorers(teamId, PageRequest.of(0, Math.max(1, limit)));
-		return ResponseEntity.ok(data);
-	}
+    @GetMapping("/team/top-scorers")
+    public ResponseEntity<List<RankingDTO>> topScorers(@RequestParam(required = false) String teamId,
+            @RequestParam(defaultValue = "5") int limit) {
+        var data = service.topScorers(teamId, PageRequest.of(0, Math.max(1, limit)));
+        return ResponseEntity.ok(data);
+    }
 
-	@GetMapping("/team/top-assists")
-	public ResponseEntity<List<RankingDTO>> topAssists(@RequestParam(required = false) String teamId,
-			@RequestParam(defaultValue = "5") int limit) {
-		var data = service.topAssists(teamId, PageRequest.of(0, Math.max(1, limit)));
-		return ResponseEntity.ok(data);
-	}
+    @GetMapping("/team/top-assists")
+    public ResponseEntity<List<RankingDTO>> topAssists(@RequestParam(required = false) String teamId,
+            @RequestParam(defaultValue = "5") int limit) {
+        var data = service.topAssists(teamId, PageRequest.of(0, Math.max(1, limit)));
+        return ResponseEntity.ok(data);
+    }
 
-	// Tabla agregada por equipo (paginada)
-	@GetMapping("/team/{teamId}/players")
-	public ResponseEntity<Page<PlayerSeasonStatsDTO>> aggregateByTeam(@PathVariable String teamId,
-			@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "20") int size) {
-		var result = service.aggregateByTeam(teamId, PageRequest.of(Math.max(page, 0), Math.max(size, 1)));
-		return ResponseEntity.ok(result);
-	}
+    @GetMapping("/team/{teamId}/players")
+    public ResponseEntity<Page<PlayerSeasonStatsDTO>> aggregateByTeam(@PathVariable String teamId,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "25") int size) {
+        var result = service.aggregateByTeam(teamId, PageRequest.of(Math.max(page, 0), Math.max(size, 1)));
+        return ResponseEntity.ok(result);
+    }
 
-	@GetMapping("/top-scorers")
-	public ResponseEntity<List<RankingDTO>> topScorersOverall(@RequestParam(defaultValue = "5") int limit) {
-		var data = service.AlltopScorers(PageRequest.of(0, Math.max(1, limit)));
-		return ResponseEntity.ok(data);
-	}
+    @GetMapping("/top-scorers")
+    public ResponseEntity<List<RankingDTO>> topScorersOverall(@RequestParam(defaultValue = "5") int limit) {
+        var data = service.AlltopScorers(PageRequest.of(0, Math.max(1, limit)));
+        return ResponseEntity.ok(data);
+    }
 
-	@GetMapping("/top-assists")
-	public ResponseEntity<List<RankingDTO>> topAssistsOverall(@RequestParam(defaultValue = "5") int limit) {
-		var data = service.AlltopAssists(PageRequest.of(0, Math.max(1, limit)));
-		return ResponseEntity.ok(data);
-	}
-
+    @GetMapping("/top-assists")
+    public ResponseEntity<List<RankingDTO>> topAssistsOverall(@RequestParam(defaultValue = "5") int limit) {
+        var data = service.AlltopAssists(PageRequest.of(0, Math.max(1, limit)));
+        return ResponseEntity.ok(data);
+    }
 }

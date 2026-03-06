@@ -19,16 +19,26 @@ public class SecurityConfig {
 
         return http
             .csrf(csrf -> csrf.disable())
+
+            .cors(cors -> cors.configurationSource(request -> {
+                var config = new org.springframework.web.cors.CorsConfiguration();
+                config.addAllowedOrigin("http://localhost:4200");
+                config.addAllowedHeader("*");
+                config.addAllowedMethod("*");
+                config.setAllowCredentials(false);
+                return config;
+            }))
+
             .authorizeHttpRequests(auth -> auth
 
-                // Swagger público
+                // === Swagger público ===
                 .requestMatchers(
                     "/v3/api-docs/**",
                     "/swagger-ui/**",
                     "/swagger-ui.html"
                 ).permitAll()
 
-                // Auth público
+                // === Auth público ===
                 .requestMatchers(
                     "/api/auth/login",
                     "/api/auth/forgot-password",
@@ -36,13 +46,10 @@ public class SecurityConfig {
                     "/api/auth/verify-reset-token"
                 ).permitAll()
 
-                // Registro de usuario → público
+                // === Registro público ===
                 .requestMatchers("/api/usuarios/create").permitAll()
 
-                // Usuarios → privado
-                .requestMatchers("/api/usuarios/**").authenticated()
-
-                // Dashboard → público
+                // === Dashboard público ===
                 .requestMatchers(
                     "/api/team-season-stats/table",
                     "/api/player-season-stats/top-scorers",
@@ -51,10 +58,12 @@ public class SecurityConfig {
                     "/api/matches/next"
                 ).permitAll()
 
-                // Todo lo demás → autenticado
+                // === Todo lo demás → autenticado ===
                 .anyRequest().authenticated()
             )
+
             .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+
             .build();
     }
 }

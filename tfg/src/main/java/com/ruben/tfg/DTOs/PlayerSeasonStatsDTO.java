@@ -3,6 +3,7 @@ package com.ruben.tfg.DTOs;
 public record PlayerSeasonStatsDTO(
     String playerId,
     String playerName,
+    String teamName,
     Integer partidos,
     Integer minutos,
     Integer goles,
