@@ -2,8 +2,8 @@ package com.ruben.tfg.repositories;
 
 import java.util.List;
 
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -17,7 +17,7 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
 
     List<PlayerSeasonStatsEntity> findByPlayerId(String player_id);
 
-    // === RANKINGS ===
+    // === RANKINGS (mantienen Pageable) ===
     @Query("""
                 select new com.ruben.tfg.DTOs.RankingDTO(
                     pss.playerId, p.nombre, p.team.id,
@@ -64,29 +64,7 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
             """)
     List<RankingDTO> AlltopAssists(Pageable pageable);
 
-    // === TABLA POR EQUIPO (PlayerSeasonStatsDTO completo) ===
-    @Query(value = """
-                select new com.ruben.tfg.DTOs.PlayerSeasonStatsDTO(
-                    pss.playerId, p.nombre, p.team.nombre,
-                    pss.partidos, pss.minutos, pss.goles, pss.asistencias,
-                    pss.penaltisMarcados, pss.penaltisIntentados, pss.disparos, pss.disparosPuerta,
-                    pss.amarillas, pss.rojas, pss.faltasCometidas, pss.faltasRecibidas,
-                    pss.fueraDeJuego, pss.centros, pss.entradasGanadas, pss.intercepciones, pss.autogoles,
-                    pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
-                    pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
-                    pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-                    pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
-                )
-                from PlayerSeasonStatsEntity pss
-                join pss.player p
-                where p.team.id = :teamId
-            """,
-            countQuery = """
-                select count(pss) from PlayerSeasonStatsEntity pss
-                join pss.player p where p.team.id = :teamId
-            """)
-    Page<PlayerSeasonStatsDTO> findAllByTeamIdAsDtoPaged(@Param("teamId") String teamId, Pageable pageable);
-
+    // === TABLA POR EQUIPO ===
     @Query("""
                 select new com.ruben.tfg.DTOs.PlayerSeasonStatsDTO(
                     pss.playerId, p.nombre, p.team.nombre,
@@ -105,19 +83,18 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
             """)
     List<PlayerSeasonStatsDTO> findAllByTeamIdAsDto(@Param("teamId") String teamId);
 
-    // === TABLA GLOBAL (PlayerStatsTableDTO ligero) ===
-    @Query(value = """
+    // === TABLA GLOBAL ===
+    @Query("""
                 select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
                     pss.playerId, p.nombre, p.team.nombre,
                     pss.partidos, pss.minutos, pss.goles, pss.asistencias
                 )
                 from PlayerSeasonStatsEntity pss
                 join pss.player p
-            """,
-            countQuery = "select count(pss) from PlayerSeasonStatsEntity pss")
-    Page<PlayerStatsTableDTO> findAllAsTableDto(Pageable pageable);
+            """)
+    List<PlayerStatsTableDTO> findAllAsTableDto(Sort sort);
 
-    @Query(value = """
+    @Query("""
                 select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
                     pss.playerId, p.nombre, p.team.nombre,
                     pss.partidos, pss.minutos, pss.goles, pss.asistencias
@@ -125,11 +102,10 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
                 from PlayerSeasonStatsEntity pss
                 join pss.player p
                 order by p.nombre asc
-            """,
-            countQuery = "select count(pss) from PlayerSeasonStatsEntity pss")
-    Page<PlayerStatsTableDTO> findAllAsTableDtoOrderByPlayerNameAsc(Pageable pageable);
+            """)
+    List<PlayerStatsTableDTO> findAllAsTableDtoOrderByPlayerNameAsc();
 
-    @Query(value = """
+    @Query("""
                 select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
                     pss.playerId, p.nombre, p.team.nombre,
                     pss.partidos, pss.minutos, pss.goles, pss.asistencias
@@ -137,11 +113,10 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
                 from PlayerSeasonStatsEntity pss
                 join pss.player p
                 order by p.nombre desc
-            """,
-            countQuery = "select count(pss) from PlayerSeasonStatsEntity pss")
-    Page<PlayerStatsTableDTO> findAllAsTableDtoOrderByPlayerNameDesc(Pageable pageable);
+            """)
+    List<PlayerStatsTableDTO> findAllAsTableDtoOrderByPlayerNameDesc();
 
-    @Query(value = """
+    @Query("""
                 select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
                     pss.playerId, p.nombre, p.team.nombre,
                     pss.partidos, pss.minutos, pss.goles, pss.asistencias
@@ -149,11 +124,10 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
                 from PlayerSeasonStatsEntity pss
                 join pss.player p
                 order by p.team.nombre asc
-            """,
-            countQuery = "select count(pss) from PlayerSeasonStatsEntity pss")
-    Page<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameAsc(Pageable pageable);
+            """)
+    List<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameAsc();
 
-    @Query(value = """
+    @Query("""
                 select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
                     pss.playerId, p.nombre, p.team.nombre,
                     pss.partidos, pss.minutos, pss.goles, pss.asistencias
@@ -161,7 +135,6 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
                 from PlayerSeasonStatsEntity pss
                 join pss.player p
                 order by p.team.nombre desc
-            """,
-            countQuery = "select count(pss) from PlayerSeasonStatsEntity pss")
-    Page<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameDesc(Pageable pageable);
+            """)
+    List<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameDesc();
 }

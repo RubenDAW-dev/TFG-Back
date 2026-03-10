@@ -2,7 +2,6 @@ package com.ruben.tfg.controllers;
 
 import java.util.List;
 
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,12 +32,10 @@ public class PlayerSeasonStatsController {
 
     @GetMapping("/getAll")
     public ResponseEntity<?> getAll(
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "20") int size,
             @RequestParam(defaultValue = "goles") String sortField,
             @RequestParam(defaultValue = "desc") String sortDir) {
         try {
-            Page<PlayerStatsTableDTO> resultado = service.getAllWithNamesPaged(page, size, sortField, sortDir);
+            List<PlayerStatsTableDTO> resultado = service.getAllWithNamesSorted(sortField, sortDir);
             if (resultado.isEmpty())
                 return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
             return ResponseEntity.ok(resultado);
@@ -105,10 +102,8 @@ public class PlayerSeasonStatsController {
     }
 
     @GetMapping("/team/{teamId}/players")
-    public ResponseEntity<Page<PlayerSeasonStatsDTO>> aggregateByTeam(@PathVariable String teamId,
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "25") int size) {
-        var result = service.aggregateByTeam(teamId, PageRequest.of(Math.max(page, 0), Math.max(size, 1)));
+    public ResponseEntity<List<PlayerSeasonStatsDTO>> aggregateByTeam(@PathVariable String teamId) {
+        var result = service.aggregateByTeam(teamId);
         return ResponseEntity.ok(result);
     }
 

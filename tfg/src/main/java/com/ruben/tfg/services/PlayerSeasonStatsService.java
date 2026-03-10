@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -24,7 +23,7 @@ import lombok.RequiredArgsConstructor;
 public class PlayerSeasonStatsService {
 
     private final PlayerSeasonStatsRepository repo;
-    private final PlayerRepository playerRepo;
+    private final PlayerRepository __playerRepo__;
 
     public List<PlayerSeasonStatsEntity> getAll() {
         return repo.findAll();
@@ -44,20 +43,13 @@ public class PlayerSeasonStatsService {
         repo.deleteById(playerId);
     }
 
+    // === RANKINGS (mantienen Pageable para el límite) ===
     public List<RankingDTO> topScorers(String teamId, Pageable pageable) {
         return repo.topScorers(teamId, pageable);
     }
 
     public List<RankingDTO> topAssists(String teamId, Pageable pageable) {
         return repo.topAssists(teamId, pageable);
-    }
-
-    public Page<PlayerSeasonStatsDTO> aggregateByTeam(String teamId, Pageable pageable) {
-        return repo.findAllByTeamIdAsDtoPaged(teamId, pageable);
-    }
-
-    public List<PlayerSeasonStatsDTO> getByTeamId(String teamId) {
-        return repo.findAllByTeamIdAsDto(teamId);
     }
 
     public List<RankingDTO> AlltopScorers(Pageable pageable) {
@@ -68,18 +60,26 @@ public class PlayerSeasonStatsService {
         return repo.AlltopAssists(pageable);
     }
 
-    public Page<PlayerStatsTableDTO> getAllWithNamesPaged(int page, int size, String sortField, String sortDir) {
-        Sort.Direction direction = sortDir.equals("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
-        Pageable pageable = PageRequest.of(page, size);
+    // === SIN PAGINACIÓN ===
+    public List<PlayerSeasonStatsDTO> aggregateByTeam(String teamId) {
+        return repo.findAllByTeamIdAsDto(teamId);
+    }
+
+    public List<PlayerSeasonStatsDTO> getByTeamId(String teamId) {
+        return repo.findAllByTeamIdAsDto(teamId);
+    }
+
+    public List<PlayerStatsTableDTO> getAllWithNamesSorted(String sortField, String sortDir) {
+        Sort.Direction direction = sortDir.equalsIgnoreCase("asc") ? Sort.Direction.ASC : Sort.Direction.DESC;
 
         return switch (sortField) {
             case "playerName" -> direction == Sort.Direction.ASC
-                    ? repo.findAllAsTableDtoOrderByPlayerNameAsc(pageable)
-                    : repo.findAllAsTableDtoOrderByPlayerNameDesc(pageable);
+                    ? repo.findAllAsTableDtoOrderByPlayerNameAsc()
+                    : repo.findAllAsTableDtoOrderByPlayerNameDesc();
             case "teamName" -> direction == Sort.Direction.ASC
-                    ? repo.findAllAsTableDtoOrderByTeamNameAsc(pageable)
-                    : repo.findAllAsTableDtoOrderByTeamNameDesc(pageable);
-            default -> repo.findAllAsTableDto(PageRequest.of(page, size, Sort.by(direction, sortField)));
+                    ? repo.findAllAsTableDtoOrderByTeamNameAsc()
+                    : repo.findAllAsTableDtoOrderByTeamNameDesc();
+            default -> repo.findAllAsTableDto(Sort.by(direction, sortField));
         };
     }
 }
