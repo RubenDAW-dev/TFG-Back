@@ -102,8 +102,8 @@ public class PlayerSeasonStatsController {
     }
 
     @GetMapping("/team/{teamId}/players")
-    public ResponseEntity<List<PlayerSeasonStatsDTO>> aggregateByTeam(@PathVariable String teamId) {
-        var result = service.aggregateByTeam(teamId);
+    public ResponseEntity<List<PlayerStatsTableDTO>> aggregateByTeam(@PathVariable String teamId) {
+        var result = service.getByTeamId(teamId);
         return ResponseEntity.ok(result);
     }
 

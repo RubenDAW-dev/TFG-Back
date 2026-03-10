@@ -60,12 +60,7 @@ public class PlayerSeasonStatsService {
         return repo.AlltopAssists(pageable);
     }
 
-    // === SIN PAGINACIÓN ===
-    public List<PlayerSeasonStatsDTO> aggregateByTeam(String teamId) {
-        return repo.findAllByTeamIdAsDto(teamId);
-    }
-
-    public List<PlayerSeasonStatsDTO> getByTeamId(String teamId) {
+    public List<PlayerStatsTableDTO> getByTeamId(String teamId) {
         return repo.findAllByTeamIdAsDto(teamId);
     }
 
