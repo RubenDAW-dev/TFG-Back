@@ -23,7 +23,8 @@ import lombok.RequiredArgsConstructor;
 public class PlayerSeasonStatsService {
 
     private final PlayerSeasonStatsRepository repo;
-    private final PlayerRepository __playerRepo__;
+    private final PlayerSeasonStatsRepository playerStatsRepo;
+    private final PlayerRepository playerRepo;
 
     public List<PlayerSeasonStatsEntity> getAll() {
         return repo.findAll();

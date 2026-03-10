@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ruben.tfg.DTOs.TeamStatsRowDTO;
+import com.ruben.tfg.DTOs.TeamSummaryDTO;
+import com.ruben.tfg.DTOs.TeamRadarDTO;
 import com.ruben.tfg.DTOs.TeamTableRowDTO;
 import com.ruben.tfg.entities.TeamSeasonStatsEntity;
 import com.ruben.tfg.services.TeamSeasonStatsService;
@@ -87,11 +90,6 @@ public class TeamSeasonStatsController {
 
     // ===== Dashboard / Lectura =====
 
-    /**
-     * Resumen del equipo para tarjetas del dashboard:
-     * - partidos, goles_favor, goles_contra, victorias, empates, derrotas, puntos
-     * - y nombre del equipo (vía relación OneToOne TeamEntity)
-     */
     @GetMapping("/summary/{teamId}")
     public ResponseEntity<?> summary(@PathVariable String teamId) {
         try {
@@ -105,11 +103,6 @@ public class TeamSeasonStatsController {
         }
     }
 
-    /**
-     * Radar del equipo con métricas medias:
-     * - posesion_media, tiros_media, tiros_puerta_media, paradas_media, tarjetas_media
-     * - (opcional) goles_por_partido derivado de goles_favor/partidos si quieres incluirlo
-     */
     @GetMapping("/radar/{teamId}")
     public ResponseEntity<?> radar(@PathVariable String teamId) {
         try {
@@ -123,17 +116,24 @@ public class TeamSeasonStatsController {
         }
     }
 
-    /**
-     * Clasificación de la liga:
-     * Devuelve filas ordenadas por: puntos DESC, (goles_favor - goles_contra) DESC,
-     * goles_favor DESC, victorias DESC.
-     */
     @GetMapping("/table")
     public ResponseEntity<?> table() {
         try {
             List<TeamTableRowDTO> tabla = service.table();
             if (tabla.isEmpty()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
             return ResponseEntity.ok(tabla);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Error: " + e.getMessage());
+        }
+    }
+
+    @GetMapping("/stats-table")
+    public ResponseEntity<?> statsTable() {
+        try {
+            List<TeamStatsRowDTO> data = service.statsTable();
+            if (data.isEmpty()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            return ResponseEntity.ok(data);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error: " + e.getMessage());

@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.ruben.tfg.DTOs.PlayerSeasonStatsDTO;
 import com.ruben.tfg.DTOs.PlayerStatsTableDTO;
 import com.ruben.tfg.DTOs.RankingDTO;
+import com.ruben.tfg.DTOs.TeamPlayerAggDTO;
 import com.ruben.tfg.entities.PlayerSeasonStatsEntity;
 
 public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonStatsEntity, String> {
@@ -169,4 +169,24 @@ List<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameDesc();
         where p.team.id = :teamId
     """)
 List<PlayerStatsTableDTO> findAllByTeamIdAsDto(@Param("teamId") String teamId);
+
+@Query("""
+	    select new com.ruben.tfg.DTOs.TeamPlayerAggDTO(
+	        p.team.id,
+	        sum(pss.goles), sum(pss.asistencias), sum(pss.disparos),
+	        sum(pss.disparosPuerta), sum(pss.amarillas), sum(pss.rojas),
+	        sum(pss.faltasCometidas), sum(pss.centros),
+	        sum(pss.entradasGanadas), sum(pss.intercepciones), sum(pss.autogoles),
+	        CASE WHEN sum(pss.disparos) > 0 
+	            THEN (sum(pss.disparosPuerta) * 1.0 / sum(pss.disparos)) * 100 
+	            ELSE 0.0 END,
+	        CASE WHEN sum(pss.penaltisIntentados) > 0 
+	            THEN (sum(pss.penaltisMarcados) * 1.0 / sum(pss.penaltisIntentados)) * 100 
+	            ELSE 0.0 END
+	    )
+	    from PlayerSeasonStatsEntity pss
+	    join pss.player p
+	    group by p.team.id
+	""")
+	List<TeamPlayerAggDTO> aggregateByTeam();
    }
