@@ -1,7 +1,9 @@
 package com.ruben.tfg.services;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.PageRequest;
@@ -10,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.ruben.tfg.DTOs.FutureMatchDTO;
 import com.ruben.tfg.DTOs.MatchDTO;
 import com.ruben.tfg.DTOs.PastMatchDTO;
+import com.ruben.tfg.DTOs.TeamFutureMatchDTO;
 import com.ruben.tfg.entities.MatchEntity;
 import com.ruben.tfg.repositories.MatchRepository;
 
@@ -78,6 +81,33 @@ public class MatchService {
 			dto.setTime(m.getTime());
 			return dto;
 		}).toList();
+	}
+	
+	public List<TeamFutureMatchDTO> getNextMatchesByTeam(String teamId) {
+	    LocalDate today = LocalDate.now();
+	 
+	    return repo.findAll().stream()
+	        .filter(m ->
+	            (m.getHomeTeam().getId().equals(teamId) || m.getAwayTeam().getId().equals(teamId))
+	            && m.getScore() == null        // sin resultado = partido futuro
+	            && m.getDate() != null
+	            && !m.getDate().isBefore(today)
+	        )
+	        .sorted(Comparator.comparing(MatchEntity::getDate))
+	        .limit(5)
+	        .map(m -> new TeamFutureMatchDTO(
+	            m.getId(),
+	            m.getHomeTeam().getId(),
+	            m.getHomeTeam().getNombre(),
+	            m.getAwayTeam().getId(),
+	            m.getAwayTeam().getNombre(),
+	            m.getDay(),
+	            m.getTime(),
+	            m.getVenue(),
+	            m.getWk(),
+	            m.getDate().toString()
+	        ))
+	        .collect(Collectors.toList());
 	}
 
 }

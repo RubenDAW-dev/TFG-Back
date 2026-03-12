@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import com.ruben.tfg.DTOs.FutureMatchDTO;
 import com.ruben.tfg.DTOs.MatchDTO;
 import com.ruben.tfg.DTOs.PastMatchDTO;
+import com.ruben.tfg.DTOs.TeamFutureMatchDTO;
 import com.ruben.tfg.entities.MatchEntity;
 import com.ruben.tfg.services.MatchService;
 import lombok.AllArgsConstructor;
@@ -118,4 +119,16 @@ public class MatchController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
         }
     }
+    
+    @GetMapping("/next/{teamId}")
+    public ResponseEntity<?> getNextMatchesByTeam(@PathVariable String teamId) {
+        try {
+            List<TeamFutureMatchDTO> lista = service.getNextMatchesByTeam(teamId);
+            if (lista.isEmpty()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            return ResponseEntity.ok(lista);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+        }
+    }
+     
 }

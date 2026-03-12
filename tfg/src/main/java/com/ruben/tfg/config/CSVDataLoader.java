@@ -33,7 +33,6 @@ import com.ruben.tfg.repositories.TeamSeasonStatsRepository;
 import jakarta.persistence.PersistenceContext;
 import lombok.RequiredArgsConstructor;
 
-@Component
 @RequiredArgsConstructor
 public class CSVDataLoader implements CommandLineRunner {
 

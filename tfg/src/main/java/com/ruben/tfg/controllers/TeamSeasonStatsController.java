@@ -46,9 +46,13 @@ public class TeamSeasonStatsController {
     @GetMapping("/get/{id}")
     public ResponseEntity<?> getById(@PathVariable String id) {
         try {
-            return service.getById(id)
-                    .map(ResponseEntity::ok)
-                    .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
+            TeamStatsRowDTO dto = service.getStatsByTeamId(id);
+            return ResponseEntity.ok(dto);
+
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(e.getMessage());
+
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error: " + e.getMessage());
