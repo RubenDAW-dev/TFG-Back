@@ -21,31 +21,47 @@ public class ComentarioService {
 
     // ── CREAR ─────────────────────────────────────────────────────────────────
 
-    public ComentarioEntity crearComentario(CrearComentarioDTO req) {
+    public ComentarioResponseDTO crearComentario(CrearComentarioDTO req) {
 
-        // Validar objetivo: exactamente uno de los tres
-        int objetivos = (req.getEquipoId()  != null ? 1 : 0)
-                      + (req.getJugadorId() != null ? 1 : 0)
-                      + (req.getPartidoId() != null ? 1 : 0);
-
-        if (objetivos != 1) {
-            throw new IllegalArgumentException(
-                "Debes indicar exactamente un objetivo: equipoId, jugadorId o partidoId.");
-        }
-
-        // Validar título en topics raíz (sin padre)
-        if (req.getComentarioPadreId() == null) {
-            if (req.getTitulo() == null || req.getTitulo().isBlank()) {
-                throw new IllegalArgumentException(
-                    "Los topics del foro deben tener un título.");
-            }
-        }
+        validarObjetivo(req);
+        validarTitulo(req);
 
         UsuarioEntity usuario = usuarioRepository.findById(req.getUsuarioId())
                 .orElseThrow(() -> new EntityNotFoundException(
-                    "Usuario no encontrado: " + req.getUsuarioId()));
+                        "Usuario no encontrado: " + req.getUsuarioId()));
+
+        ComentarioEntity comentario = construirEntidad(req, usuario);
+
+        ComentarioEntity guardado = comentarioRepository.save(comentario);
+
+        return mapToDTO(guardado);
+    }
+    
+    private void validarObjetivo(CrearComentarioDTO req) {
+
+        int objetivos =
+                (req.getEquipoId()  != null ? 1 : 0) +
+                (req.getJugadorId() != null ? 1 : 0) +
+                (req.getPartidoId() != null ? 1 : 0);
+
+        if (objetivos != 1) {
+            throw new IllegalArgumentException(
+                    "Debes indicar exactamente un objetivo: equipoId, jugadorId o partidoId.");
+        }
+    }
+    private void validarTitulo(CrearComentarioDTO req) {
+
+        if (req.getComentarioPadreId() == null) {
+            if (req.getTitulo() == null || req.getTitulo().isBlank()) {
+                throw new IllegalArgumentException(
+                        "Los topics del foro deben tener un título.");
+            }
+        }
+    }
+    private ComentarioEntity construirEntidad(CrearComentarioDTO req, UsuarioEntity usuario) {
 
         ComentarioEntity c = new ComentarioEntity();
+
         c.setComentario(req.getComentario().trim());
         c.setFecha(LocalDate.now());
         c.setUsuario(usuario);
@@ -59,11 +75,13 @@ public class ComentarioService {
             ref.setId(req.getEquipoId());
             c.setEquipo(ref);
         }
+
         if (req.getJugadorId() != null) {
             PlayerEntity ref = new PlayerEntity();
             ref.setId(req.getJugadorId());
             c.setJugador(ref);
         }
+
         if (req.getPartidoId() != null) {
             MatchEntity ref = new MatchEntity();
             ref.setId(req.getPartidoId());
@@ -74,11 +92,26 @@ public class ComentarioService {
             ComentarioEntity padre = comentarioRepository
                     .findById(req.getComentarioPadreId())
                     .orElseThrow(() -> new EntityNotFoundException(
-                        "Comentario padre no encontrado: " + req.getComentarioPadreId()));
+                            "Comentario padre no encontrado: " + req.getComentarioPadreId()));
+
             c.setComentarioPadre(padre);
         }
 
-        return comentarioRepository.save(c);
+        return c;
+    }
+    
+    private ComentarioResponseDTO mapToDTO(ComentarioEntity creado) {
+
+        ComentarioResponseDTO dto = new ComentarioResponseDTO();
+
+        dto.setId(creado.getId());
+        dto.setComentario(creado.getComentario());
+        dto.setTitulo(creado.getTitulo());
+        dto.setFecha(creado.getFecha());
+        dto.setUsuarioId(creado.getUsuario().getId());
+        dto.setUsuarioNombre(creado.getUsuario().getNombre());
+
+        return dto;
     }
 
     // ── ACTUALIZAR ────────────────────────────────────────────────────────────

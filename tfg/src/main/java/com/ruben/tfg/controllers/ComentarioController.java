@@ -23,24 +23,9 @@ public class ComentarioController {
  // En ComentarioController, reemplaza el método crear():
 
     @PostMapping("/create")
-    public ResponseEntity<?> crear(@RequestBody CrearComentarioDTO req) {
-        try {
-            ComentarioEntity creado = comentarioService.crearComentario(req);
-            ComentarioResponseDTO dto = new ComentarioResponseDTO();
-            dto.setId(creado.getId());
-            dto.setComentario(creado.getComentario());
-            dto.setTitulo(creado.getTitulo());
-            dto.setFecha(creado.getFecha());
-            dto.setUsuarioId(creado.getUsuario().getId());
-            dto.setUsuarioNombre(creado.getUsuario().getNombre());
-            return ResponseEntity.status(HttpStatus.CREATED).body(dto);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                    .body("Datos inválidos: " + e.getMessage());
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Error al crear comentario: " + e.getMessage());
-        }
+    public ResponseEntity<ComentarioResponseDTO> crear(@RequestBody CrearComentarioDTO req) {
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(comentarioService.crearComentario(req));
     }
 
     // ── ACTUALIZAR ────────────────────────────────────────────────────────────
