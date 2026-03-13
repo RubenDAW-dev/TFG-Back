@@ -12,7 +12,9 @@ import org.springframework.stereotype.Service;
 import com.ruben.tfg.DTOs.FutureMatchDTO;
 import com.ruben.tfg.DTOs.MatchDTO;
 import com.ruben.tfg.DTOs.PastMatchDTO;
+import com.ruben.tfg.DTOs.SearchItemDTO;
 import com.ruben.tfg.DTOs.TeamFutureMatchDTO;
+import com.ruben.tfg.DTOs.TeamPastMatchDTO;
 import com.ruben.tfg.entities.MatchEntity;
 import com.ruben.tfg.repositories.MatchRepository;
 
@@ -62,6 +64,7 @@ public class MatchService {
 
 		return matches.stream().map(m -> {
 			PastMatchDTO dto = new PastMatchDTO();
+			dto.setId(m.getId());
 			dto.setHomeTeam(m.getHomeTeam().getNombre());
 			dto.setAwayTeam(m.getAwayTeam().getNombre());
 			dto.setScore(m.getScore());
@@ -75,6 +78,7 @@ public class MatchService {
 
 		return matches.stream().map(m -> {
 			FutureMatchDTO dto = new FutureMatchDTO();
+			dto.setId(m.getId());
 			dto.setHomeTeam(m.getHomeTeam().getNombre());
 			dto.setAwayTeam(m.getAwayTeam().getNombre());
 			dto.setDay(m.getDay());
@@ -106,6 +110,45 @@ public class MatchService {
 	            m.getVenue(),
 	            m.getWk(),
 	            m.getDate().toString()
+	        ))
+	        .collect(Collectors.toList());
+	}
+
+	public List<TeamPastMatchDTO> getLastMatchesByTeam(String teamId) {
+		LocalDate today = LocalDate.now();
+		
+		return repo.findAll().stream()
+				.filter(m -> (m.getHomeTeam().getId().equals(teamId) || m.getAwayTeam().getId().equals(teamId))
+						&& m.getScore() != null 
+						&& m.getDate() != null
+						&& m.getDate().isBefore(today))
+				.sorted(Comparator.comparing(MatchEntity::getDate).reversed())
+				.limit(5)
+				.map(m -> new TeamPastMatchDTO(
+						m.getId(),
+						m.getHomeTeam().getId(),
+						m.getHomeTeam().getNombre(),
+						m.getAwayTeam().getId(),
+						m.getAwayTeam().getNombre(),
+						m.getDay(),
+						m.getTime(),
+						m.getVenue(),
+						m.getWk(),
+						m.getDate().toString(),
+						m.getScore()
+				))
+				.collect(Collectors.toList());
+	}
+
+	public List<SearchItemDTO> search(String q) {
+	    List<MatchEntity> lista = (q == null || q.isBlank())
+	        ? repo.findAll()
+	        : repo.findByHomeTeamNombreContainingIgnoreCaseOrAwayTeamNombreContainingIgnoreCase(q, q);
+	    return lista.stream()
+	        .map(m -> new SearchItemDTO(
+	            m.getId().toString(),
+	            m.getHomeTeam().getNombre() + " vs " + m.getAwayTeam().getNombre()
+	            + (m.getDate() != null ? " — " + m.getDate() : "")
 	        ))
 	        .collect(Collectors.toList());
 	}

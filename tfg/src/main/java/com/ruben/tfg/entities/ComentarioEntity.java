@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,18 +22,12 @@ public class ComentarioEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	// Objetivo del comentario (solo uno de los tres debería rellenarse)
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_equipo", foreignKey = @ForeignKey(name = "fk_comentario_equipo"))
-	private TeamEntity equipo; // teams.id (String)
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_jugador", foreignKey = @ForeignKey(name = "fk_comentario_jugador"))
-	private PlayerEntity jugador; // players.id (String)
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "id_partido", foreignKey = @ForeignKey(name = "fk_comentario_partido"))
-	private MatchEntity partido; // matches.id (Long)
+	/**
+	 * Título del topic (solo se rellena en comentarios raíz del Foro). Las
+	 * respuestas anidadas no tienen título.
+	 */
+	@Column(length = 200)
+	private String titulo;
 
 	@Column(columnDefinition = "TEXT", nullable = false)
 	private String comentario;
@@ -42,15 +35,30 @@ public class ComentarioEntity {
 	@Column(nullable = false)
 	private LocalDate fecha;
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "id_equipo", foreignKey = @ForeignKey(name = "fk_comentario_equipo"))
+	private TeamEntity equipo;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "id_jugador", foreignKey = @ForeignKey(name = "fk_comentario_jugador"))
+	private PlayerEntity jugador;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "id_partido", foreignKey = @ForeignKey(name = "fk_comentario_partido"))
+	private MatchEntity partido;
+
+	// ── Autor ─────────────────────────────────────────────────────────────────
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	@JoinColumn(name = "id_usuario", nullable = false, foreignKey = @ForeignKey(name = "fk_comentario_usuario"))
 	private UsuarioEntity usuario;
 
-	// Comentarios anidados (self reference)
+	// ── Jerarquía ─────────────────────────────────────────────────────────────
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "comentario_padre", foreignKey = @ForeignKey(name = "fk_comentario_padre"))
 	private ComentarioEntity comentarioPadre;
 
 	@OneToMany(mappedBy = "comentarioPadre", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ComentarioEntity> respuestas = new ArrayList<>();
+	private List<ComentarioEntity> respuestas = new ArrayList<>();
 }

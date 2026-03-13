@@ -1,104 +1,192 @@
 package com.ruben.tfg.services;
 
-import java.time.LocalDate;
-import java.util.List;
-
+import com.ruben.tfg.DTOs.ComentarioResponseDTO;
+import com.ruben.tfg.DTOs.CrearComentarioDTO;
+import com.ruben.tfg.entities.*;
+import com.ruben.tfg.repositories.*;
+import jakarta.persistence.EntityNotFoundException;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import com.ruben.tfg.DTOs.CrearComentarioDTO;
-import com.ruben.tfg.entities.ComentarioEntity;
-import com.ruben.tfg.entities.MatchEntity;
-import com.ruben.tfg.entities.PlayerEntity;
-import com.ruben.tfg.entities.TeamEntity;
-import com.ruben.tfg.entities.UsuarioEntity;
-import com.ruben.tfg.repositories.ComentarioRepository;
-import com.ruben.tfg.repositories.UsuarioRepository;
-
-import jakarta.persistence.EntityNotFoundException;
-import lombok.RequiredArgsConstructor;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class ComentarioService {
 
-	private final ComentarioRepository comentarioRepository;
-	private final UsuarioRepository usuarioRepository;
+    private final ComentarioRepository  comentarioRepository;
+    private final UsuarioRepository     usuarioRepository;
 
-	public ComentarioEntity crearComentario(CrearComentarioDTO req) {
-		// Validar “exactamente un objetivo”
-		int objetivos = (req.getEquipoId() != null ? 1 : 0) + (req.getJugadorId() != null ? 1 : 0)
-				+ (req.getPartidoId() != null ? 1 : 0);
-		if (objetivos != 1) {
-			throw new IllegalArgumentException(
-					"Debes indicar exactamente un objetivo: equipoId, jugadorId o partidoId");
-		}
-		if (req.getComentario() == null || req.getComentario().isBlank()) {
-			throw new IllegalArgumentException("El comentario no puede estar vacío");
-		}
+    // ── CREAR ─────────────────────────────────────────────────────────────────
 
-		UsuarioEntity usuario = usuarioRepository.findById(req.getUsuarioId())
-				.orElseThrow(() -> new EntityNotFoundException("Usuario no encontrado: " + req.getUsuarioId()));
+    public ComentarioEntity crearComentario(CrearComentarioDTO req) {
 
-		ComentarioEntity c = new ComentarioEntity();
-		c.setComentario(req.getComentario().trim());
-		c.setFecha(LocalDate.now());
-		c.setUsuario(usuario);
+        // Validar objetivo: exactamente uno de los tres
+        int objetivos = (req.getEquipoId()  != null ? 1 : 0)
+                      + (req.getJugadorId() != null ? 1 : 0)
+                      + (req.getPartidoId() != null ? 1 : 0);
 
-		// Asociaciones por ID sin cargar todo (getReference)
-		if (req.getEquipoId() != null) {
-			TeamEntity equipoRef = new TeamEntity();
-			equipoRef.setId(req.getEquipoId());
-			c.setEquipo(equipoRef);
-		}
-		if (req.getJugadorId() != null) {
-			PlayerEntity jugadorRef = new PlayerEntity();
-			jugadorRef.setId(req.getJugadorId());
-			c.setJugador(jugadorRef);
-		}
-		if (req.getPartidoId() != null) {
-			MatchEntity partidoRef = new MatchEntity();
-			partidoRef.setId(req.getPartidoId());
-			c.setPartido(partidoRef);
-		}
+        if (objetivos != 1) {
+            throw new IllegalArgumentException(
+                "Debes indicar exactamente un objetivo: equipoId, jugadorId o partidoId.");
+        }
 
-		if (req.getComentarioPadreId() != null) {
-			ComentarioEntity padre = comentarioRepository.findById(req.getComentarioPadreId()).orElseThrow(
-					() -> new EntityNotFoundException("Comentario padre no encontrado: " + req.getComentarioPadreId()));
-			c.setComentarioPadre(padre);
-		}
-		return comentarioRepository.save(c);
-	}
+        // Validar título en topics raíz (sin padre)
+        if (req.getComentarioPadreId() == null) {
+            if (req.getTitulo() == null || req.getTitulo().isBlank()) {
+                throw new IllegalArgumentException(
+                    "Los topics del foro deben tener un título.");
+            }
+        }
 
-	public List<ComentarioEntity> listarPorPartido(Long matchId) {
-		return comentarioRepository.findByPartido_IdOrderByFechaAsc(matchId);
-	}
+        UsuarioEntity usuario = usuarioRepository.findById(req.getUsuarioId())
+                .orElseThrow(() -> new EntityNotFoundException(
+                    "Usuario no encontrado: " + req.getUsuarioId()));
 
-	public List<ComentarioEntity> listarPorEquipo(String teamId) {
-		return comentarioRepository.findByEquipo_IdOrderByFechaAsc(teamId);
-	}
+        ComentarioEntity c = new ComentarioEntity();
+        c.setComentario(req.getComentario().trim());
+        c.setFecha(LocalDate.now());
+        c.setUsuario(usuario);
 
-	public List<ComentarioEntity> listarPorJugador(String playerId) {
-		return comentarioRepository.findByJugador_IdOrderByFechaAsc(playerId);
-	}
+        if (req.getTitulo() != null && !req.getTitulo().isBlank()) {
+            c.setTitulo(req.getTitulo().trim());
+        }
 
-	public List<ComentarioEntity> respuestasDe(Integer comentarioPadreId) {
-		return comentarioRepository.findByComentarioPadre_IdOrderByFechaAsc(comentarioPadreId);
-	}
+        if (req.getEquipoId() != null) {
+            TeamEntity ref = new TeamEntity();
+            ref.setId(req.getEquipoId());
+            c.setEquipo(ref);
+        }
+        if (req.getJugadorId() != null) {
+            PlayerEntity ref = new PlayerEntity();
+            ref.setId(req.getJugadorId());
+            c.setJugador(ref);
+        }
+        if (req.getPartidoId() != null) {
+            MatchEntity ref = new MatchEntity();
+            ref.setId(req.getPartidoId());
+            c.setPartido(ref);
+        }
 
-	public ComentarioEntity actualizarComentario(ComentarioEntity comentario) {
-		if (comentario.getId() == null) {
-			throw new IllegalArgumentException("El ID del comentario es requerido para actualizar");
-		}
-		ComentarioEntity existente = comentarioRepository.findById(comentario.getId())
-				.orElseThrow(() -> new EntityNotFoundException("Comentario no encontrado: " + comentario.getId()));
-		existente.setComentario(comentario.getComentario());
-		return comentarioRepository.save(existente);
-	}
+        if (req.getComentarioPadreId() != null) {
+            ComentarioEntity padre = comentarioRepository
+                    .findById(req.getComentarioPadreId())
+                    .orElseThrow(() -> new EntityNotFoundException(
+                        "Comentario padre no encontrado: " + req.getComentarioPadreId()));
+            c.setComentarioPadre(padre);
+        }
 
-	public void eliminarComentario(Integer comentarioId) {
-		if (!comentarioRepository.existsById(comentarioId)) {
-			throw new EntityNotFoundException("Comentario no encontrado: " + comentarioId);
-		}
-		comentarioRepository.deleteById(comentarioId);
-	}
+        return comentarioRepository.save(c);
+    }
+
+    // ── ACTUALIZAR ────────────────────────────────────────────────────────────
+
+    public ComentarioEntity actualizarComentario(ComentarioEntity comentario) {
+        if (!comentarioRepository.existsById(comentario.getId())) {
+            throw new EntityNotFoundException("Comentario no encontrado: " + comentario.getId());
+        }
+        return comentarioRepository.save(comentario);
+    }
+
+    // ── ELIMINAR ──────────────────────────────────────────────────────────────
+
+    public void eliminarComentario(Integer id) {
+        if (!comentarioRepository.existsById(id)) {
+            throw new EntityNotFoundException("Comentario no encontrado: " + id);
+        }
+        comentarioRepository.deleteById(id);
+    }
+
+    // ── LISTAR POR CONTEXTO (para páginas de partido/equipo/jugador) ──────────
+
+    public List<ComentarioResponseDTO> listarPorPartido(Long matchId) {
+        return comentarioRepository.findByPartidoIdAndComentarioPadreIsNull(matchId)
+                .stream().map(this::toDTO).collect(Collectors.toList());
+    }
+
+    public List<ComentarioResponseDTO> listarPorEquipo(String teamId) {
+        return comentarioRepository.findByEquipoIdAndComentarioPadreIsNull(teamId)
+                .stream().map(this::toDTO).collect(Collectors.toList());
+    }
+
+    public List<ComentarioResponseDTO> listarPorJugador(String playerId) {
+        return comentarioRepository.findByJugadorIdAndComentarioPadreIsNull(playerId)
+                .stream().map(this::toDTO).collect(Collectors.toList());
+    }
+
+    // ── FORO GENERAL: todos los topics raíz (ordenados por fecha desc) ────────
+
+    public List<ComentarioResponseDTO> listarTopicsForo() {
+        return comentarioRepository
+                .findByComentarioPadreIsNullOrderByFechaDesc()
+                .stream().map(this::toDTOResumen).collect(Collectors.toList());
+    }
+
+    // ── HILO: respuestas de un comentario ─────────────────────────────────────
+
+    public List<ComentarioResponseDTO> respuestasDe(Integer comentarioId) {
+        ComentarioEntity padre = comentarioRepository.findById(comentarioId)
+                .orElseThrow(() -> new EntityNotFoundException(
+                    "Comentario no encontrado: " + comentarioId));
+        return padre.getRespuestas()
+                .stream().map(this::toDTO).collect(Collectors.toList());
+    }
+
+    // ── TOPIC INDIVIDUAL (para vista de hilo) ─────────────────────────────────
+
+    public ComentarioResponseDTO obtenerTopic(Integer id) {
+        ComentarioEntity c = comentarioRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException(
+                    "Comentario no encontrado: " + id));
+        return toDTO(c);
+    }
+
+    // ── MAPEO ─────────────────────────────────────────────────────────────────
+
+    /** DTO completo con respuestas anidadas (para vista de hilo). */
+    private ComentarioResponseDTO toDTO(ComentarioEntity c) {
+        ComentarioResponseDTO dto = buildBase(c);
+        dto.setRespuestas(
+            c.getRespuestas().stream().map(this::toDTO).collect(Collectors.toList())
+        );
+        dto.setTotalRespuestas(c.getRespuestas().size());
+        return dto;
+    }
+
+    /** DTO resumen sin respuestas anidadas (para lista del foro). */
+    private ComentarioResponseDTO toDTOResumen(ComentarioEntity c) {
+        ComentarioResponseDTO dto = buildBase(c);
+        dto.setTotalRespuestas(c.getRespuestas().size());
+        return dto;
+    }
+
+    private ComentarioResponseDTO buildBase(ComentarioEntity c) {
+        ComentarioResponseDTO dto = new ComentarioResponseDTO();
+        dto.setId(c.getId());
+        dto.setTitulo(c.getTitulo());
+        dto.setComentario(c.getComentario());
+        dto.setFecha(c.getFecha());
+        dto.setUsuarioId(c.getUsuario().getId());
+        dto.setUsuarioNombre(c.getUsuario().getNombre());
+
+        if (c.getComentarioPadre() != null) {
+            dto.setComentarioPadreId(c.getComentarioPadre().getId());
+        }
+        if (c.getEquipo() != null) {
+            dto.setEquipoId(c.getEquipo().getId());
+            dto.setTargetNombre(c.getEquipo().getNombre()); // ajusta al getter real
+        }
+        if (c.getJugador() != null) {
+            dto.setJugadorId(c.getJugador().getId());
+            dto.setTargetNombre(c.getJugador().getNombre()); // ajusta al getter real
+        }
+        if (c.getPartido() != null) {
+            dto.setPartidoId(c.getPartido().getId());
+            // Ajusta según tu MatchEntity (homeTeam vs awayTeam, etc.)
+            dto.setTargetNombre(c.getPartido().getId().toString());
+        }
+        return dto;
+    }
 }

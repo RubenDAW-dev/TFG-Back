@@ -2,11 +2,13 @@ package com.ruben.tfg.services;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import com.ruben.tfg.DTOs.PlayerDTO;
+import com.ruben.tfg.DTOs.SearchItemDTO;
 import com.ruben.tfg.entities.PlayerEntity;
 import com.ruben.tfg.repositories.PlayerRepository;
 
@@ -50,5 +52,14 @@ public class PlayerService {
 		} else {
 			return null; // O lanzar una excepción si prefieres
 		}
+	}
+
+	public List<SearchItemDTO> search(String q) {
+	    List<PlayerEntity> lista = (q == null || q.isBlank())
+	        ? repo.findAll()
+	        : repo.findByNombreContainingIgnoreCase(q);
+	    return lista.stream()
+	        .map(p -> new SearchItemDTO(p.getId(), p.getNombre()))
+	        .collect(Collectors.toList());
 	}
 }

@@ -1,6 +1,7 @@
 package com.ruben.tfg.repositories;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.List;
 
 import org.springframework.data.domain.Pageable;
@@ -28,5 +29,9 @@ public interface MatchRepository extends JpaRepository<MatchEntity, Long> {
 
     @Query("SELECT m FROM MatchEntity m WHERE m.date >= :today ORDER BY m.date ASC")
     List<MatchEntity> findNextMatches(@Param("today") LocalDate today, Pageable pageable);
+
+
+    List<MatchEntity> findByHomeTeamNombreContainingIgnoreCaseOrAwayTeamNombreContainingIgnoreCase(
+    	    String homeNombre, String awayNombre);
     
 }
