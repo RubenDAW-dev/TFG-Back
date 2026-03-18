@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -33,6 +32,7 @@ import com.ruben.tfg.repositories.TeamSeasonStatsRepository;
 import jakarta.persistence.PersistenceContext;
 import lombok.RequiredArgsConstructor;
 
+@Component
 @RequiredArgsConstructor
 public class CSVDataLoader implements CommandLineRunner {
 
@@ -51,6 +51,7 @@ public class CSVDataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         loadTeams();
+        loadTeamShields();  // NUEVO: cargar escudos
         loadPlayers();
         loadMatches();
         loadTeamMatchStats();
@@ -81,7 +82,37 @@ public class CSVDataLoader implements CommandLineRunner {
         }
     }
 
+    // NUEVO: Cargar escudos desde TEAMS_IMAGES.csv
+    private void loadTeamShields() throws Exception {
+        CSVReader reader = new CSVReader(
+                new InputStreamReader(new ClassPathResource("csv/TEAMS_IMAGES.csv").getInputStream()));
+
+        reader.readNext(); // Saltar encabezado
+        String[] d;
+
+        while ((d = reader.readNext()) != null) {
+            if (d.length >= 2) {
+                String teamName = d[0].trim();     // team_name
+                String shieldUrl = d[1].trim();    // shield_url
+
+                // Buscar el equipo por nombre
+                List<TeamEntity> teams = teamRepo.findAll().stream()
+                        .filter(t -> t.getNombre().equalsIgnoreCase(teamName))
+                        .toList();
+
+                if (!teams.isEmpty()) {
+                    TeamEntity team = teams.get(0);
+                    team.setEscudo(shieldUrl);
+                    teamRepo.save(team);
+                }
+            }
+        }
+    }
+
     private void loadPlayers() throws Exception {
+        // Primero cargar el mapa de imágenes desde players_images_la_liga.csv
+        Map<String, String> playerImages = loadPlayerImages();
+        
         CSVReader reader = new CSVReader(
                 new InputStreamReader(new ClassPathResource("csv/jugadores_laliga_ids_FINAL.csv").getInputStream()));
 
@@ -91,17 +122,45 @@ public class CSVDataLoader implements CommandLineRunner {
         while ((d = reader.readNext()) != null) {
             String playerId = d[0];
             String teamId = d[1];
+            String playerName = d[2];
 
             PlayerEntity p = playerRepo.findById(playerId).orElseGet(PlayerEntity::new);
             p.setId(playerId);
-            p.setNombre(d[2]);
+            p.setNombre(playerName);
             p.setNacionalidad(d[3]);
             p.setPosicion(d[4]);
             p.setEdad(parseAge(d[6]));
             p.setTeam(teamRepo.findById(teamId).orElse(null));
+            
+            // Agregar imagen si existe
+            String imageUrl = playerImages.get(playerName);
+            if (imageUrl != null) {
+                p.setImageUrl(imageUrl);
+            }
 
             playerRepo.save(p);
         }
+    }
+
+    private Map<String, String> loadPlayerImages() throws Exception {
+        Map<String, String> images = new java.util.HashMap<>();
+        
+        CSVReader reader = new CSVReader(
+                new InputStreamReader(new ClassPathResource("csv/players_images_la_liga.csv").getInputStream()));
+
+        reader.readNext(); // Saltar encabezado
+        String[] d;
+
+        while ((d = reader.readNext()) != null) {
+            if (d.length >= 3) {
+                String playerName = d[0]; // player_name
+                String imageUrl = d[2];   // image_url (índice 2)
+                
+                images.put(playerName, imageUrl);
+            }
+        }
+        
+        return images;
     }
 
     private Integer parseAge(String age) {

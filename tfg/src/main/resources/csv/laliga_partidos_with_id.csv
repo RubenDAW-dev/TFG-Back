@@ -269,76 +269,76 @@ Wk,Day,Date,Time,Home,Score,Away,Attendance,Venue,Referee,Match Report,Notes,Hom
 27,Sun,2026-03-08,18:30,Sevilla,1–1,Rayo Vallecano,37178,Estadio Ramón Sánchez Pizjuán,Alejandro Muñíz,Match Report,,1.0,1.0,276590001159030
 27,Sun,2026-03-08,21:00,Valencia,3–2,Alavés,41512,Estadio de Mestalla,José Guzmán,Match Report,,3.0,2.0,236257366529703
 27,Mon,2026-03-09,21:00,Espanyol,1–1,Oviedo,24807,RCDE Stadium,Javier Alberola,Match Report,,1.0,1.0,126758067200606
-28,Fri,2026-03-13,21:00,Alavés,,Villarreal,,Estadio de Mendizorroza,,Head-to-Head,,,,182335306739226
-28,Sat,2026-03-14,14:00,Girona,,Athletic Club,,Estadi Municipal de Montilivi,,Head-to-Head,,,,2578967961222
-28,Sat,2026-03-14,16:15,Atlético Madrid,,Getafe,,Riyadh Air Metropolitano,,Head-to-Head,,,,175056615553893
-28,Sat,2026-03-14,18:30,Oviedo,,Valencia,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,73492925123716
-28,Sat,2026-03-14,21:00,Real Madrid,,Elche,,Estadio Santiago Bernabéu,,Head-to-Head,,,,260221133373174
-28,Sun,2026-03-15,14:00,Mallorca,,Espanyol,,Estadi Mallorca Son Moix,,Head-to-Head,,,,263012971060654
-28,Sun,2026-03-15,16:15,Barcelona,,Sevilla,,Spotify Camp Nou,,Head-to-Head,,,,72385216537621
-28,Sun,2026-03-15,18:30,Real Betis,,Celta Vigo,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,159818626721587
-28,Sun,2026-03-15,21:00,Real Sociedad,,Osasuna,,Reale Arena,,Head-to-Head,,,,9995983172444
-28,Mon,2026-03-16,21:00,Rayo Vallecano,,Levante,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,133847234564442
+28,Fri,2026-03-13,21:00,Alavés,1–1,Villarreal,16215,Estadio de Mendizorroza,Alejandro Quintero,Match Report,,1.0,1.0,182335306739226
+28,Sat,2026-03-14,14:00,Girona,3–0,Athletic Club,8811,Estadi Municipal de Montilivi,Iosu Galech,Match Report,,3.0,0.0,2578967961222
+28,Sat,2026-03-14,16:15,Atlético Madrid,1–0,Getafe,58893,Riyadh Air Metropolitano,Miguel Ángel Ortiz Arias,Match Report,,1.0,0.0,175056615553893
+28,Sat,2026-03-14,18:30,Oviedo,1–0,Valencia,22826,Estadio Nuevo Carlos Tartiere,Miguel Sesma,Match Report,,1.0,0.0,73492925123716
+28,Sat,2026-03-14,21:00,Real Madrid,4–1,Elche,71048,Estadio Santiago Bernabéu,Jesús Gil,Match Report,,4.0,1.0,260221133373174
+28,Sun,2026-03-15,14:00,Mallorca,2–1,Espanyol,17879,Estadi Mallorca Son Moix,Ricardo de Burgos,Match Report,,2.0,1.0,263012971060654
+28,Sun,2026-03-15,16:15,Barcelona,5–2,Sevilla,56483,Spotify Camp Nou,Juan Martínez,Match Report,,5.0,2.0,72385216537621
+28,Sun,2026-03-15,18:30,Real Betis,1–1,Celta Vigo,58689,Estadio La Cartuja de Sevilla,Jose Maria Sánchez,Match Report,,1.0,1.0,159818626721587
+28,Sun,2026-03-15,21:00,Real Sociedad,3–1,Osasuna,30856,Reale Arena,Guillermo Cuadra,Match Report,,3.0,1.0,9995983172444
+28,Mon,2026-03-16,21:00,Rayo Vallecano,1–1,Levante,10975,Campo de Fútbol de Vallecas,César Soto,Match Report,,1.0,1.0,133847234564442
 29,Fri,2026-03-20,21:00,Villarreal,,Real Sociedad,,Estadio de la Cerámica,,Head-to-Head,,,,60029667495387
 29,Sat,2026-03-21,14:00,Elche,,Mallorca,,Estadio Manuel Martínez Valero,,Head-to-Head,,,,966984278071
 29,Sat,2026-03-21,16:15,Espanyol,,Getafe,,RCDE Stadium,,Head-to-Head,,,,249107241091576
-29,Sat,2026-03-21,18:30,Osasuna,,Girona,,Estadio El Sadar,,Head-to-Head,,,,272967077679019
 29,Sat,2026-03-21,18:30,Levante,,Oviedo,,Estadio Ciudad de Valencia,,Head-to-Head,,,,181734927181451
+29,Sat,2026-03-21,18:30,Osasuna,,Girona,,Estadio El Sadar,,Head-to-Head,,,,272967077679019
 29,Sat,2026-03-21,21:00,Sevilla,,Valencia,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,192139631797468
 29,Sun,2026-03-22,14:00,Barcelona,,Rayo Vallecano,,Spotify Camp Nou,,Head-to-Head,,,,113991653919723
 29,Sun,2026-03-22,16:15,Celta Vigo,,Alavés,,Estadio Abanca Balaídos,,Head-to-Head,,,,280062639872375
 29,Sun,2026-03-22,18:30,Athletic Club,,Real Betis,,San Mamés,,Head-to-Head,,,,208116569804276
 29,Sun,2026-03-22,21:00,Real Madrid,,Atlético Madrid,,Estadio Santiago Bernabéu,,Head-to-Head,,,,247680621158552
-30,Sun,2026-04-05,,Real Sociedad,,Levante,,Reale Arena,,Head-to-Head,,,,118324403737434
-30,Sun,2026-04-05,,Getafe,,Athletic Club,,Coliseum Alfonso Pérez,,Head-to-Head,,,,70954277473801
-30,Sun,2026-04-05,,Atlético Madrid,,Barcelona,,Riyadh Air Metropolitano,,Head-to-Head,,,,223547109295601
-30,Sun,2026-04-05,,Oviedo,,Sevilla,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,255657509986015
-30,Sun,2026-04-05,,Valencia,,Celta Vigo,,Estadio de Mestalla,,Head-to-Head,,,,109251171367051
-30,Sun,2026-04-05,,Girona,,Villarreal,,Estadi Municipal de Montilivi,,Head-to-Head,,,,46275893433312
-30,Sun,2026-04-05,,Alavés,,Osasuna,,Estadio de Mendizorroza,,Head-to-Head,,,,190080655876356
-30,Sun,2026-04-05,,Mallorca,,Real Madrid,,Estadi Mallorca Son Moix,,Head-to-Head,,,,189383507522334
-30,Sun,2026-04-05,,Real Betis,,Espanyol,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,226737772924295
-30,Sun,2026-04-05,,Rayo Vallecano,,Elche,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,33314785656358
-31,Sun,2026-04-12,,Mallorca,,Rayo Vallecano,,Estadi Mallorca Son Moix,,Head-to-Head,,,,137965179038444
-31,Sun,2026-04-12,,Real Madrid,,Girona,,Estadio Santiago Bernabéu,,Head-to-Head,,,,8856601088593
-31,Sun,2026-04-12,,Athletic Club,,Villarreal,,San Mamés,,Head-to-Head,,,,238319576151040
-31,Sun,2026-04-12,,Levante,,Getafe,,Estadio Ciudad de Valencia,,Head-to-Head,,,,114045864477102
-31,Sun,2026-04-12,,Elche,,Valencia,,Estadio Manuel Martínez Valero,,Head-to-Head,,,,131128405878934
-31,Sun,2026-04-12,,Sevilla,,Atlético Madrid,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,38778677312802
+30,Fri,2026-04-03,21:00,Rayo Vallecano,,Elche,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,9793268159234
+30,Sat,2026-04-04,14:00,Real Sociedad,,Levante,,Reale Arena,,Head-to-Head,,,,229016120391466
+30,Sat,2026-04-04,16:15,Mallorca,,Real Madrid,,Estadi Mallorca Son Moix,,Head-to-Head,,,,89928190909893
+30,Sat,2026-04-04,18:30,Alavés,,Osasuna,,Estadio de Mendizorroza,,Head-to-Head,,,,98527733264531
+30,Sat,2026-04-04,21:00,Atlético Madrid,,Barcelona,,Riyadh Air Metropolitano,,Head-to-Head,,,,13382617453063
+30,Sun,2026-04-05,14:00,Getafe,,Athletic Club,,Coliseum Alfonso Pérez,,Head-to-Head,,,,70954277473801
+30,Sun,2026-04-05,16:15,Valencia,,Celta Vigo,,Estadio de Mestalla,,Head-to-Head,,,,109251171367051
+30,Sun,2026-04-05,18:30,Oviedo,,Sevilla,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,255657509986015
+30,Sun,2026-04-05,21:00,Real Betis,,Espanyol,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,226737772924295
+30,Mon,2026-04-06,21:00,Girona,,Villarreal,,Estadi Municipal de Montilivi,,Head-to-Head,,,,51336606785177
 31,Sun,2026-04-12,,Celta Vigo,,Oviedo,,Estadio Abanca Balaídos,,Head-to-Head,,,,187870174630051
+31,Sun,2026-04-12,,Real Madrid,,Girona,,Estadio Santiago Bernabéu,,Head-to-Head,,,,8856601088593
+31,Sun,2026-04-12,,Levante,,Getafe,,Estadio Ciudad de Valencia,,Head-to-Head,,,,114045864477102
+31,Sun,2026-04-12,,Athletic Club,,Villarreal,,San Mamés,,Head-to-Head,,,,238319576151040
+31,Sun,2026-04-12,,Sevilla,,Atlético Madrid,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,38778677312802
+31,Sun,2026-04-12,,Elche,,Valencia,,Estadio Manuel Martínez Valero,,Head-to-Head,,,,131128405878934
 31,Sun,2026-04-12,,Osasuna,,Real Betis,,Estadio El Sadar,,Head-to-Head,,,,269475719335433
 31,Sun,2026-04-12,,Barcelona,,Espanyol,,Spotify Camp Nou,,Head-to-Head,,,,263842963718334
 31,Sun,2026-04-12,,Real Sociedad,,Alavés,,Reale Arena,,Head-to-Head,,,,183731417360531
+31,Sun,2026-04-12,,Mallorca,,Rayo Vallecano,,Estadi Mallorca Son Moix,,Head-to-Head,,,,137965179038444
 33,Wed,2026-04-22,,Elche,,Atlético Madrid,,Estadio Manuel Martínez Valero,,Head-to-Head,,,,203063321407769
+33,Wed,2026-04-22,,Girona,,Real Betis,,Estadi Municipal de Montilivi,,Head-to-Head,,,,213589917813659
 33,Wed,2026-04-22,,Barcelona,,Celta Vigo,,Spotify Camp Nou,,Head-to-Head,,,,64630535507677
-33,Wed,2026-04-22,,Levante,,Sevilla,,Estadio Ciudad de Valencia,,Head-to-Head,,,,221823571823063
-33,Wed,2026-04-22,,Real Madrid,,Alavés,,Estadio Santiago Bernabéu,,Head-to-Head,,,,16486457801784
 33,Wed,2026-04-22,,Real Sociedad,,Getafe,,Reale Arena,,Head-to-Head,,,,4134997017948
 33,Wed,2026-04-22,,Mallorca,,Valencia,,Estadi Mallorca Son Moix,,Head-to-Head,,,,156520746538426
-33,Wed,2026-04-22,,Girona,,Real Betis,,Estadi Municipal de Montilivi,,Head-to-Head,,,,213589917813659
+33,Wed,2026-04-22,,Levante,,Sevilla,,Estadio Ciudad de Valencia,,Head-to-Head,,,,221823571823063
+33,Wed,2026-04-22,,Real Madrid,,Alavés,,Estadio Santiago Bernabéu,,Head-to-Head,,,,16486457801784
+33,Wed,2026-04-22,,Rayo Vallecano,,Espanyol,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,127785661998589
 33,Wed,2026-04-22,,Oviedo,,Villarreal,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,137597844864929
 33,Wed,2026-04-22,,Athletic Club,,Osasuna,,San Mamés,,Head-to-Head,,,,176967301607945
-33,Wed,2026-04-22,,Rayo Vallecano,,Espanyol,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,127785661998589
-32,Sun,2026-04-26,,Osasuna,,Sevilla,,Estadio El Sadar,,Head-to-Head,,,,49163500400424
 32,Sun,2026-04-26,,Real Betis,,Real Madrid,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,124732468967602
+32,Sun,2026-04-26,,Osasuna,,Sevilla,,Estadio El Sadar,,Head-to-Head,,,,49163500400424
 32,Sun,2026-04-26,,Rayo Vallecano,,Real Sociedad,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,216335396716711
 32,Sun,2026-04-26,,Alavés,,Mallorca,,Estadio de Mendizorroza,,Head-to-Head,,,,59016981890316
-32,Sun,2026-04-26,,Oviedo,,Elche,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,230066862676340
-32,Sun,2026-04-26,,Espanyol,,Levante,,RCDE Stadium,,Head-to-Head,,,,205551065168251
 32,Sun,2026-04-26,,Getafe,,Barcelona,,Coliseum Alfonso Pérez,,Head-to-Head,,,,99335290532409
+32,Sun,2026-04-26,,Espanyol,,Levante,,RCDE Stadium,,Head-to-Head,,,,205551065168251
+32,Sun,2026-04-26,,Oviedo,,Elche,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,230066862676340
 32,Sun,2026-04-26,,Valencia,,Girona,,Estadio de Mestalla,,Head-to-Head,,,,188878696721360
 32,Sun,2026-04-26,,Atlético Madrid,,Athletic Club,,Riyadh Air Metropolitano,,Head-to-Head,,,,151179176072930
 32,Sun,2026-04-26,,Villarreal,,Celta Vigo,,Estadio de la Cerámica,,Head-to-Head,,,,175236264783600
-34,Sun,2026-05-03,,Sevilla,,Real Sociedad,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,68721499709377
 34,Sun,2026-05-03,,Espanyol,,Real Madrid,,RCDE Stadium,,Head-to-Head,,,,136642593989144
+34,Sun,2026-05-03,,Sevilla,,Real Sociedad,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,68721499709377
 34,Sun,2026-05-03,,Getafe,,Rayo Vallecano,,Coliseum Alfonso Pérez,,Head-to-Head,,,,113613210219853
 34,Sun,2026-05-03,,Real Betis,,Oviedo,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,46952270883942
-34,Sun,2026-05-03,,Celta Vigo,,Elche,,Estadio Abanca Balaídos,,Head-to-Head,,,,141474607300017
-34,Sun,2026-05-03,,Osasuna,,Barcelona,,Estadio El Sadar,,Head-to-Head,,,,100814823293582
 34,Sun,2026-05-03,,Alavés,,Athletic Club,,Estadio de Mendizorroza,,Head-to-Head,,,,81151371865725
+34,Sun,2026-05-03,,Osasuna,,Barcelona,,Estadio El Sadar,,Head-to-Head,,,,100814823293582
+34,Sun,2026-05-03,,Celta Vigo,,Elche,,Estadio Abanca Balaídos,,Head-to-Head,,,,141474607300017
 34,Sun,2026-05-03,,Valencia,,Atlético Madrid,,Estadio de Mestalla,,Head-to-Head,,,,140377639226940
-34,Sun,2026-05-03,,Girona,,Mallorca,,Estadi Municipal de Montilivi,,Head-to-Head,,,,226375279454238
 34,Sun,2026-05-03,,Villarreal,,Levante,,Estadio de la Cerámica,,Head-to-Head,,,,178986158313354
+34,Sun,2026-05-03,,Girona,,Mallorca,,Estadi Municipal de Montilivi,,Head-to-Head,,,,226375279454238
 35,Sun,2026-05-10,,Oviedo,,Getafe,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,88142921910000
 35,Sun,2026-05-10,,Sevilla,,Espanyol,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,158940182433986
 35,Sun,2026-05-10,,Levante,,Osasuna,,Estadio Ciudad de Valencia,,Head-to-Head,,,,118896934630429
@@ -349,33 +349,33 @@ Wk,Day,Date,Time,Home,Score,Away,Attendance,Venue,Referee,Match Report,Notes,Hom
 35,Sun,2026-05-10,,Atlético Madrid,,Celta Vigo,,Riyadh Air Metropolitano,,Head-to-Head,,,,199270821408437
 35,Sun,2026-05-10,,Elche,,Alavés,,Estadio Manuel Martínez Valero,,Head-to-Head,,,,101412679560855
 35,Sun,2026-05-10,,Athletic Club,,Valencia,,San Mamés,,Head-to-Head,,,,48778277549468
-36,Wed,2026-05-13,,Alavés,,Barcelona,,Estadio de Mendizorroza,,Head-to-Head,,,,108621908789264
-36,Wed,2026-05-13,,Getafe,,Mallorca,,Coliseum Alfonso Pérez,,Head-to-Head,,,,232429751839984
-36,Wed,2026-05-13,,Valencia,,Rayo Vallecano,,Estadio de Mestalla,,Head-to-Head,,,,254448479280160
-36,Wed,2026-05-13,,Real Betis,,Elche,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,221680037030532
-36,Wed,2026-05-13,,Espanyol,,Athletic Club,,RCDE Stadium,,Head-to-Head,,,,69013532394846
-36,Wed,2026-05-13,,Celta Vigo,,Levante,,Estadio Abanca Balaídos,,Head-to-Head,,,,71147501522286
-36,Wed,2026-05-13,,Villarreal,,Sevilla,,Estadio de la Cerámica,,Head-to-Head,,,,28330554067217
-36,Wed,2026-05-13,,Osasuna,,Atlético Madrid,,Estadio El Sadar,,Head-to-Head,,,,272802592518787
 36,Wed,2026-05-13,,Girona,,Real Sociedad,,Estadi Municipal de Montilivi,,Head-to-Head,,,,265227090219082
+36,Wed,2026-05-13,,Celta Vigo,,Levante,,Estadio Abanca Balaídos,,Head-to-Head,,,,71147501522286
+36,Wed,2026-05-13,,Osasuna,,Atlético Madrid,,Estadio El Sadar,,Head-to-Head,,,,272802592518787
+36,Wed,2026-05-13,,Getafe,,Mallorca,,Coliseum Alfonso Pérez,,Head-to-Head,,,,232429751839984
+36,Wed,2026-05-13,,Villarreal,,Sevilla,,Estadio de la Cerámica,,Head-to-Head,,,,28330554067217
+36,Wed,2026-05-13,,Alavés,,Barcelona,,Estadio de Mendizorroza,,Head-to-Head,,,,108621908789264
+36,Wed,2026-05-13,,Valencia,,Rayo Vallecano,,Estadio de Mestalla,,Head-to-Head,,,,254448479280160
 36,Wed,2026-05-13,,Real Madrid,,Oviedo,,Estadio Santiago Bernabéu,,Head-to-Head,,,,89262998385449
-37,Sun,2026-05-17,,Oviedo,,Alavés,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,250956283457130
-37,Sun,2026-05-17,,Athletic Club,,Celta Vigo,,San Mamés,,Head-to-Head,,,,102936112197675
-37,Sun,2026-05-17,,Real Sociedad,,Valencia,,Reale Arena,,Head-to-Head,,,,96929992484336
-37,Sun,2026-05-17,,Atlético Madrid,,Girona,,Riyadh Air Metropolitano,,Head-to-Head,,,,177403760537686
-37,Sun,2026-05-17,,Osasuna,,Espanyol,,Estadio El Sadar,,Head-to-Head,,,,209748011611463
-37,Sun,2026-05-17,,Sevilla,,Real Madrid,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,168329939092729
-37,Sun,2026-05-17,,Levante,,Mallorca,,Estadio Ciudad de Valencia,,Head-to-Head,,,,188956343663886
-37,Sun,2026-05-17,,Barcelona,,Real Betis,,Spotify Camp Nou,,Head-to-Head,,,,141517663137629
+36,Wed,2026-05-13,,Espanyol,,Athletic Club,,RCDE Stadium,,Head-to-Head,,,,69013532394846
+36,Wed,2026-05-13,,Real Betis,,Elche,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,221680037030532
 37,Sun,2026-05-17,,Rayo Vallecano,,Villarreal,,Campo de Fútbol de Vallecas,,Head-to-Head,,,,202669021766095
+37,Sun,2026-05-17,,Oviedo,,Alavés,,Estadio Nuevo Carlos Tartiere,,Head-to-Head,,,,250956283457130
+37,Sun,2026-05-17,,Levante,,Mallorca,,Estadio Ciudad de Valencia,,Head-to-Head,,,,188956343663886
+37,Sun,2026-05-17,,Osasuna,,Espanyol,,Estadio El Sadar,,Head-to-Head,,,,209748011611463
+37,Sun,2026-05-17,,Real Sociedad,,Valencia,,Reale Arena,,Head-to-Head,,,,96929992484336
+37,Sun,2026-05-17,,Sevilla,,Real Madrid,,Estadio Ramón Sánchez Pizjuán,,Head-to-Head,,,,168329939092729
+37,Sun,2026-05-17,,Atlético Madrid,,Girona,,Riyadh Air Metropolitano,,Head-to-Head,,,,177403760537686
+37,Sun,2026-05-17,,Barcelona,,Real Betis,,Spotify Camp Nou,,Head-to-Head,,,,141517663137629
 37,Sun,2026-05-17,,Elche,,Getafe,,Estadio Manuel Martínez Valero,,Head-to-Head,,,,99514339233431
-38,Sun,2026-05-24,,Getafe,,Osasuna,,Coliseum Alfonso Pérez,,Head-to-Head,,,,209439497265362
-38,Sun,2026-05-24,,Villarreal,,Atlético Madrid,,Estadio de la Cerámica,,Head-to-Head,,,,6043697052988
-38,Sun,2026-05-24,,Real Madrid,,Athletic Club,,Estadio Santiago Bernabéu,,Head-to-Head,,,,223321602168246
+37,Sun,2026-05-17,,Athletic Club,,Celta Vigo,,San Mamés,,Head-to-Head,,,,102936112197675
 38,Sun,2026-05-24,,Alavés,,Rayo Vallecano,,Estadio de Mendizorroza,,Head-to-Head,,,,45119014092660
-38,Sun,2026-05-24,,Espanyol,,Real Sociedad,,RCDE Stadium,,Head-to-Head,,,,192508960801731
-38,Sun,2026-05-24,,Real Betis,,Levante,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,59937157497706
-38,Sun,2026-05-24,,Mallorca,,Oviedo,,Estadi Mallorca Son Moix,,Head-to-Head,,,,45893513531146
-38,Sun,2026-05-24,,Celta Vigo,,Sevilla,,Estadio Abanca Balaídos,,Head-to-Head,,,,135762628638373
 38,Sun,2026-05-24,,Valencia,,Barcelona,,Estadio de Mestalla,,Head-to-Head,,,,255497748536575
 38,Sun,2026-05-24,,Girona,,Elche,,Estadi Municipal de Montilivi,,Head-to-Head,,,,149596871420899
+38,Sun,2026-05-24,,Mallorca,,Oviedo,,Estadi Mallorca Son Moix,,Head-to-Head,,,,45893513531146
+38,Sun,2026-05-24,,Espanyol,,Real Sociedad,,RCDE Stadium,,Head-to-Head,,,,192508960801731
+38,Sun,2026-05-24,,Villarreal,,Atlético Madrid,,Estadio de la Cerámica,,Head-to-Head,,,,6043697052988
+38,Sun,2026-05-24,,Real Madrid,,Athletic Club,,Estadio Santiago Bernabéu,,Head-to-Head,,,,223321602168246
+38,Sun,2026-05-24,,Real Betis,,Levante,,Estadio La Cartuja de Sevilla,,Head-to-Head,,,,59937157497706
+38,Sun,2026-05-24,,Celta Vigo,,Sevilla,,Estadio Abanca Balaídos,,Head-to-Head,,,,135762628638373
+38,Sun,2026-05-24,,Getafe,,Osasuna,,Coliseum Alfonso Pérez,,Head-to-Head,,,,209439497265362

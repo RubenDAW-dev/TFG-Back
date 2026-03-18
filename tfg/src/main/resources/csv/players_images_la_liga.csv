@@ -1,0 +1,626 @@
+player_name,player_id,image_url,player_url,team_name
+Eric García,players,https://fbref.com/req/202302030/images/headshots/2bed3eab_2022.jpg,https://fbref.com/en/players/2bed3eab/Eric-Garcia,Barcelona
+Pau Cubarsí,players,https://fbref.com/req/202302030/images/headshots/cc7888f3_2022.jpg,https://fbref.com/en/players/cc7888f3/Pau-Cubarsi,Barcelona
+Joan García,players,https://fbref.com/req/202302030/images/headshots/87b498b0_2022.jpg,https://fbref.com/en/players/87b498b0/Joan-Garcia,Barcelona
+Lamine Yamal,players,https://fbref.com/req/202302030/images/headshots/82ec26c1_2022.jpg,https://fbref.com/en/players/82ec26c1/Lamine-Yamal,Barcelona
+Jules Koundé,players,https://fbref.com/req/202302030/images/headshots/4d1666ff_2022.jpg,https://fbref.com/en/players/4d1666ff/Jules-Kounde,Barcelona
+Ferrán Torres,players,https://fbref.com/req/202302030/images/headshots/9e1035f8_2022.jpg,https://fbref.com/en/players/9e1035f8/Ferran-Torres,Barcelona
+Alejandro Balde,players,https://fbref.com/req/202302030/images/headshots/5ccc9672_2022.jpg,https://fbref.com/en/players/5ccc9672/Alejandro-Balde,Barcelona
+Dani Olmo,players,https://fbref.com/req/202302030/images/headshots/ae44e8e2_2022.jpg,https://fbref.com/en/players/ae44e8e2/Dani-Olmo,Barcelona
+Gerard Martín,players,https://fbref.com/req/202302030/images/headshots/b792c59d_2022.jpg,https://fbref.com/en/players/b792c59d/Gerard-Martin,Barcelona
+Frenkie de Jong,players,https://fbref.com/req/202302030/images/headshots/1bacc518_2022.jpg,https://fbref.com/en/players/1bacc518/Frenkie-de-Jong,Barcelona
+Raphinha,players,https://fbref.com/req/202302030/images/headshots/3423f250_2022.jpg,https://fbref.com/en/players/3423f250/Raphinha,Barcelona
+Pedri,players,https://fbref.com/req/202302030/images/headshots/0d9b2d31_2022.jpg,https://fbref.com/en/players/0d9b2d31/Pedri,Barcelona
+Marcus Rashford,players,https://fbref.com/req/202302030/images/headshots/a1d5bd30_2022.jpg,https://fbref.com/en/players/a1d5bd30/Marcus-Rashford,Barcelona
+Fermin López,players,https://fbref.com/req/202302030/images/headshots/c1fe5f0b_2022.jpg,https://fbref.com/en/players/c1fe5f0b/Fermin-Lopez,Barcelona
+Robert Lewandowski,players,https://fbref.com/req/202302030/images/headshots/8d78e732_2022.jpg,https://fbref.com/en/players/8d78e732/Robert-Lewandowski,Barcelona
+Marc Casado,players,https://fbref.com/req/202302030/images/headshots/2ef08833_2022.jpg,https://fbref.com/en/players/2ef08833/Marc-Casado,Barcelona
+Ronald Araújo,players,https://fbref.com/req/202302030/images/headshots/2bef2bca_2022.jpg,https://fbref.com/en/players/2bef2bca/Ronald-Araujo,Barcelona
+Wojciech Szczęsny,players,https://fbref.com/req/202302030/images/headshots/01b8a2b2_2022.jpg,https://fbref.com/en/players/01b8a2b2/Wojciech-Szczesny,Barcelona
+Marc Bernal,players,https://fbref.com/req/202302030/images/headshots/29117812_2022.jpg,https://fbref.com/en/players/29117812/Marc-Bernal,Barcelona
+Roony Bardghji,players,https://fbref.com/req/202302030/images/headshots/88ce7ddc_2022.jpg,https://fbref.com/en/players/88ce7ddc/Roony-Bardghji,Barcelona
+João Cancelo,players,https://fbref.com/req/202302030/images/headshots/bd6351cd_2022.jpg,https://fbref.com/en/players/bd6351cd/Joao-Cancelo,Barcelona
+Andreas Christensen,players,https://fbref.com/req/202302030/images/headshots/1cb49278_2022.jpg,https://fbref.com/en/players/1cb49278/Andreas-Christensen,Barcelona
+Dro Fernández,players,https://fbref.com/req/202302030/images/headshots/5eeaca99_2022.jpg,https://fbref.com/en/players/5eeaca99/Dro-Fernandez,Barcelona
+Toni Fernández,players,https://fbref.com/req/202302030/images/headshots/285ff324_2022.jpg,https://fbref.com/en/players/285ff324/Toni-Fernandez,Barcelona
+Gavi,players,https://fbref.com/req/202302030/images/headshots/19cae58d_2022.jpg,https://fbref.com/en/players/19cae58d/Gavi,Barcelona
+Jofre Torrents,players,https://fbref.com/req/202302030/images/headshots/5ec25d0e_2022.jpg,https://fbref.com/en/players/5ec25d0e/Jofre-Torrents,Barcelona
+Eder Aller,players,https://fbref.com/req/202302030/images/headshots/9406998c_2022.jpg,https://fbref.com/en/players/9406998c/Eder-Aller,Barcelona
+Alvaro Cortes,players,https://fbref.com/req/202302030/images/headshots/493e1869_2022.jpg,https://fbref.com/en/players/493e1869/Alvaro-Cortes,Barcelona
+Guillermo Fernandez,players,https://fbref.com/req/202302030/images/headshots/4390bf25_2022.jpg,https://fbref.com/en/players/4390bf25/Guillermo-Fernandez,Barcelona
+Juan Hernández,players,https://fbref.com/req/202302030/images/headshots/e584f04c_2022.jpg,https://fbref.com/en/players/e584f04c/Juan-Hernandez,Barcelona
+Diego Kochen,players,https://fbref.com/req/202302030/images/headshots/497144d6_2022.jpg,https://fbref.com/en/players/497144d6/Diego-Kochen,Barcelona
+Iñaki Peña,players,https://fbref.com/req/202302030/images/headshots/cc1c5035_2022.jpg,https://fbref.com/en/players/cc1c5035/Inaki-Pena,Barcelona
+Marc-André ter Stegen,players,https://fbref.com/req/202302030/images/headshots/6f51e382_2022.jpg,https://fbref.com/en/players/6f51e382/Marc-Andre-ter-Stegen,Barcelona
+Thibaut Courtois,players,https://fbref.com/req/202302030/images/headshots/1840e36d_2022.jpg,https://fbref.com/en/players/1840e36d/Thibaut-Courtois,Real Madrid
+Federico Valverde,players,https://fbref.com/req/202302030/images/headshots/0959c2a2_2022.jpg,https://fbref.com/en/players/0959c2a2/Federico-Valverde,Real Madrid
+Vinicius Júnior,players,https://fbref.com/req/202302030/images/headshots/7111d552_2022.jpg,https://fbref.com/en/players/7111d552/Vinicius-Junior,Real Madrid
+Aurélien Tchouaméni,players,https://fbref.com/req/202302030/images/headshots/4f255115_2022.jpg,https://fbref.com/en/players/4f255115/Aurelien-Tchouameni,Real Madrid
+Kylian Mbappé,players,https://fbref.com/req/202302030/images/headshots/42fd9c7f_2022.jpg,https://fbref.com/en/players/42fd9c7f/Kylian-Mbappe,Real Madrid
+Álvaro Carreras,players,https://fbref.com/req/202302030/images/headshots/33a68b9b_2022.jpg,https://fbref.com/en/players/33a68b9b/Alvaro-Carreras,Real Madrid
+Arda Güler,players,https://fbref.com/req/202302030/images/headshots/3741ca58_2022.jpg,https://fbref.com/en/players/3741ca58/Arda-Guler,Real Madrid
+Dean Huijsen,players,https://fbref.com/req/202302030/images/headshots/87278bce_2022.jpg,https://fbref.com/en/players/87278bce/Dean-Huijsen,Real Madrid
+Jude Bellingham,players,https://fbref.com/req/202302030/images/headshots/57d88cf9_2022.jpg,https://fbref.com/en/players/57d88cf9/Jude-Bellingham,Real Madrid
+Raúl Asencio,players,https://fbref.com/req/202302030/images/headshots/4731cd4c_2022.jpg,https://fbref.com/en/players/4731cd4c/Raul-Asencio,Real Madrid
+Eduardo Camavinga,players,https://fbref.com/req/202302030/images/headshots/7b9c2d84_2022.jpg,https://fbref.com/en/players/7b9c2d84/Eduardo-Camavinga,Real Madrid
+Éder Militão,players,https://fbref.com/req/202302030/images/headshots/2784f898_2022.jpg,https://fbref.com/en/players/2784f898/Eder-Militao,Real Madrid
+Antonio Rüdiger,players,https://fbref.com/req/202302030/images/headshots/18b896d6_2022.jpg,https://fbref.com/en/players/18b896d6/Antonio-Rudiger,Real Madrid
+Franco Mastantuono,players,https://fbref.com/req/202302030/images/headshots/633b2b1f_2022.jpg,https://fbref.com/en/players/633b2b1f/Franco-Mastantuono,Real Madrid
+Trent Alexander-Arnold,players,https://fbref.com/req/202302030/images/headshots/cd1acf9d_2022.jpg,https://fbref.com/en/players/cd1acf9d/Trent-Alexander-Arnold,Real Madrid
+Rodrygo,players,https://fbref.com/req/202302030/images/headshots/8f5e92a6_2022.jpg,https://fbref.com/en/players/8f5e92a6/Rodrygo,Real Madrid
+Gonzalo García,players,https://fbref.com/req/202302030/images/headshots/74c2d562_2022.jpg,https://fbref.com/en/players/74c2d562/Gonzalo-Garcia,Real Madrid
+Dani Carvajal,players,https://fbref.com/req/202302030/images/headshots/4958bfb2_2022.jpg,https://fbref.com/en/players/4958bfb2/Dani-Carvajal,Real Madrid
+Fran Garcia,players,https://fbref.com/req/202302030/images/headshots/7226539b_2022.jpg,https://fbref.com/en/players/7226539b/Fran-Garcia,Real Madrid
+Brahim Díaz,players,https://fbref.com/req/202302030/images/headshots/407feb71_2022.jpg,https://fbref.com/en/players/407feb71/Brahim-Diaz,Real Madrid
+Dani Ceballos,players,https://fbref.com/req/202302030/images/headshots/c0617e2b_2022.jpg,https://fbref.com/en/players/c0617e2b/Dani-Ceballos,Real Madrid
+David Alaba,players,https://fbref.com/req/202302030/images/headshots/05439de2_2022.jpg,https://fbref.com/en/players/05439de2/David-Alaba,Real Madrid
+Thiago Pinar,players,https://fbref.com/req/202302030/images/headshots/337ef123_2022.jpg,https://fbref.com/en/players/337ef123/Thiago-Pinar,Real Madrid
+Ferland Mendy,players,https://fbref.com/req/202302030/images/headshots/3cefcaef_2022.jpg,https://fbref.com/en/players/3cefcaef/Ferland-Mendy,Real Madrid
+David Jiménez,players,https://fbref.com/req/202302030/images/headshots/aa2aab45_2022.jpg,https://fbref.com/en/players/aa2aab45/David-Jimenez,Real Madrid
+Daniel Yáñez,players,https://fbref.com/req/202302030/images/headshots/79310b33_2022.jpg,https://fbref.com/en/players/79310b33/Daniel-Yanez,Real Madrid
+Diego Aguado,players,https://fbref.com/req/202302030/images/headshots/2b16b2f5_2022.jpg,https://fbref.com/en/players/2b16b2f5/Diego-Aguado,Real Madrid
+Endrick,players,https://fbref.com/req/202302030/images/headshots/a2728fbf_2022.jpg,https://fbref.com/en/players/a2728fbf/Endrick,Real Madrid
+Andriy Lunin,players,https://fbref.com/req/202302030/images/headshots/3061e1ec_2022.jpg,https://fbref.com/en/players/3061e1ec/Andriy-Lunin,Real Madrid
+Fran,players,https://fbref.com/req/202302030/images/headshots/5e550a91_2022.jpg,https://fbref.com/en/players/5e550a91/Fran,Real Madrid
+Sergio Mestre,players,https://fbref.com/req/202302030/images/headshots/b2cd9dff_2022.jpg,https://fbref.com/en/players/b2cd9dff/Sergio-Mestre,Real Madrid
+Jan Oblak,players,https://fbref.com/req/202302030/images/headshots/ee8508c0_2022.jpg,https://fbref.com/en/players/ee8508c0/Jan-Oblak,Atlético Madrid
+Dávid Hancko,players,https://fbref.com/req/202302030/images/headshots/4fac8f81_2022.jpg,https://fbref.com/en/players/4fac8f81/David-Hancko,Atlético Madrid
+Julián Álvarez,players,https://fbref.com/req/202302030/images/headshots/15ab5a2b_2022.jpg,https://fbref.com/en/players/15ab5a2b/Julian-Alvarez,Atlético Madrid
+Giuliano Simeone,players,https://fbref.com/req/202302030/images/headshots/a6536561_2022.jpg,https://fbref.com/en/players/a6536561/Giuliano-Simeone,Atlético Madrid
+Marcos Llorente,players,https://fbref.com/req/202302030/images/headshots/02c15616_2022.jpg,https://fbref.com/en/players/02c15616/Marcos-Llorente,Atlético Madrid
+Pablo Barrios,players,https://fbref.com/req/202302030/images/headshots/45736cec_2022.jpg,https://fbref.com/en/players/45736cec/Pablo-Barrios,Atlético Madrid
+Koke,players,https://fbref.com/req/202302030/images/headshots/55126f3b_2022.jpg,https://fbref.com/en/players/55126f3b/Koke,Atlético Madrid
+Alexander Sørloth,players,https://fbref.com/req/202302030/images/headshots/e92cd3f7_2022.jpg,https://fbref.com/en/players/e92cd3f7/Alexander-Sorloth,Atlético Madrid
+Nicolás González,players,https://fbref.com/req/202302030/images/headshots/2374aaca_2022.jpg,https://fbref.com/en/players/2374aaca/Nicolas-Gonzalez,Atlético Madrid
+Matteo Ruggeri,players,https://fbref.com/req/202302030/images/headshots/ae9898c5_2022.jpg,https://fbref.com/en/players/ae9898c5/Matteo-Ruggeri,Atlético Madrid
+Alex Baena,players,https://fbref.com/req/202302030/images/headshots/518f2234_2022.jpg,https://fbref.com/en/players/518f2234/Alex-Baena,Atlético Madrid
+Robin Le Normand,players,https://fbref.com/req/202302030/images/headshots/9a64e67e_2022.jpg,https://fbref.com/en/players/9a64e67e/Robin-Le-Normand,Atlético Madrid
+José María Giménez,players,https://fbref.com/req/202302030/images/headshots/f0da930c_2022.jpg,https://fbref.com/en/players/f0da930c/Jose-Maria-Gimenez,Atlético Madrid
+Clément Lenglet,players,https://fbref.com/req/202302030/images/headshots/4f28a6ff_2022.jpg,https://fbref.com/en/players/4f28a6ff/Clement-Lenglet,Atlético Madrid
+Nahuel Molina,players,https://fbref.com/req/202302030/images/headshots/23610943_2022.jpg,https://fbref.com/en/players/23610943/Nahuel-Molina,Atlético Madrid
+Thiago Almada,players,https://fbref.com/req/202302030/images/headshots/27f33438_2022.jpg,https://fbref.com/en/players/27f33438/Thiago-Almada,Atlético Madrid
+Johnny Cardoso,players,https://fbref.com/req/202302030/images/headshots/7426f085_2022.jpg,https://fbref.com/en/players/7426f085/Johnny-Cardoso,Atlético Madrid
+Marc Pubill,players,https://fbref.com/req/202302030/images/headshots/365113c0_2022.jpg,https://fbref.com/en/players/365113c0/Marc-Pubill,Atlético Madrid
+Antoine Griezmann,players,https://fbref.com/req/202302030/images/headshots/df69b544_2022.jpg,https://fbref.com/en/players/df69b544/Antoine-Griezmann,Atlético Madrid
+Conor Gallagher,players,https://fbref.com/req/202302030/images/headshots/c2731c10_2022.jpg,https://fbref.com/en/players/c2731c10/Conor-Gallagher,Atlético Madrid
+Ademola Lookman,players,https://fbref.com/req/202302030/images/headshots/7c104bb7_2022.jpg,https://fbref.com/en/players/7c104bb7/Ademola-Lookman,Atlético Madrid
+Juan Musso,players,https://fbref.com/req/202302030/images/headshots/a111cf41_2022.jpg,https://fbref.com/en/players/a111cf41/Juan-Musso,Atlético Madrid
+Giacomo Raspadori,players,https://fbref.com/req/202302030/images/headshots/6e058f06_2022.jpg,https://fbref.com/en/players/6e058f06/Giacomo-Raspadori,Atlético Madrid
+Javi Galán,players,https://fbref.com/req/202302030/images/headshots/a4b00319_2022.jpg,https://fbref.com/en/players/a4b00319/Javi-Galan,Atlético Madrid
+Obed Vargas,players,https://fbref.com/req/202302030/images/headshots/9cc1fde4_2022.jpg,https://fbref.com/en/players/9cc1fde4/Obed-Vargas,Atlético Madrid
+Julio Diaz,players,https://fbref.com/req/202302030/images/headshots/4f1678a5_2022.jpg,https://fbref.com/en/players/4f1678a5/Julio-Diaz,Atlético Madrid
+Jano Monserrate,players,https://fbref.com/req/202302030/images/headshots/4d4b15c2_2022.jpg,https://fbref.com/en/players/4d4b15c2/Jano-Monserrate,Atlético Madrid
+Rayane Belaid,players,https://fbref.com/req/202302030/images/headshots/b8be4b5f_2022.jpg,https://fbref.com/en/players/b8be4b5f/Rayane-Belaid,Atlético Madrid
+Salvi Esquivel,players,https://fbref.com/req/202302030/images/headshots/17e74dce_2022.jpg,https://fbref.com/en/players/17e74dce/Salvi-Esquivel,Atlético Madrid
+Ilias Kostis,players,https://fbref.com/req/202302030/images/headshots/9b94c838_2022.jpg,https://fbref.com/en/players/9b94c838/Ilias-Kostis,Atlético Madrid
+Mario de Luis,players,https://fbref.com/req/202302030/images/headshots/3813d6d4_2022.jpg,https://fbref.com/en/players/3813d6d4/Mario-de-Luis,Atlético Madrid
+Carlos Martín,players,https://fbref.com/req/202302030/images/headshots/64035864_2022.jpg,https://fbref.com/en/players/64035864/Carlos-Martin,Atlético Madrid
+Taufik Seidu,players,https://fbref.com/req/202302030/images/headshots/db61413a_2022.jpg,https://fbref.com/en/players/db61413a/Taufik-Seidu,Atlético Madrid
+Javier Serrano,players,https://fbref.com/req/202302030/images/headshots/0a8fd9cb_2022.jpg,https://fbref.com/en/players/0a8fd9cb/Javier-Serrano,Atlético Madrid
+Luiz Lúcio Reis Júnior,players,https://fbref.com/req/202302030/images/headshots/d0530e29_2022.jpg,https://fbref.com/en/players/d0530e29/Luiz-Lucio-Reis-Junior,Villarreal
+Alberto Moleiro,players,https://fbref.com/req/202302030/images/headshots/c2c8897d_2022.jpg,https://fbref.com/en/players/c2c8897d/Alberto-Moleiro,Villarreal
+Santi Comesaña,players,https://fbref.com/req/202302030/images/headshots/5ae499d0_2022.jpg,https://fbref.com/en/players/5ae499d0/Santi-Comesana,Villarreal
+Santiago Mouriño,players,https://fbref.com/req/202302030/images/headshots/91ee5785_2022.jpg,https://fbref.com/en/players/91ee5785/Santiago-Mourino,Villarreal
+Nicolas Pépé,players,https://fbref.com/req/202302030/images/headshots/57e3f0c7_2022.jpg,https://fbref.com/en/players/57e3f0c7/Nicolas-Pepe,Villarreal
+Renato Veiga,players,https://fbref.com/req/202302030/images/headshots/fc8fcbd1_2022.jpg,https://fbref.com/en/players/fc8fcbd1/Renato-Veiga,Villarreal
+Pape Gueye,players,https://fbref.com/req/202302030/images/headshots/7155e3e1_2022.jpg,https://fbref.com/en/players/7155e3e1/Pape-Gueye,Villarreal
+Rafa Marín,players,https://fbref.com/req/202302030/images/headshots/3239a8ed_2022.jpg,https://fbref.com/en/players/3239a8ed/Rafa-Marin,Villarreal
+Georges Mikautadze,players,https://fbref.com/req/202302030/images/headshots/4788cb6b_2022.jpg,https://fbref.com/en/players/4788cb6b/Georges-Mikautadze,Villarreal
+Tajon Buchanan,players,https://fbref.com/req/202302030/images/headshots/3aca6420_2022.jpg,https://fbref.com/en/players/3aca6420/Tajon-Buchanan,Villarreal
+Sergi Cardona,players,https://fbref.com/req/202302030/images/headshots/74e90475_2022.jpg,https://fbref.com/en/players/74e90475/Sergi-Cardona,Villarreal
+Pau Navarro,players,https://fbref.com/req/202302030/images/headshots/3171351c_2022.jpg,https://fbref.com/en/players/3171351c/Pau-Navarro,Villarreal
+Alfonso Pedraza,players,https://fbref.com/req/202302030/images/headshots/63f04c6c_2022.jpg,https://fbref.com/en/players/63f04c6c/Alfonso-Pedraza,Villarreal
+Daniel Parejo,players,https://fbref.com/req/202302030/images/headshots/7460ca0d_2022.jpg,https://fbref.com/en/players/7460ca0d/Daniel-Parejo,Villarreal
+Juan Foyth,players,https://fbref.com/req/202302030/images/headshots/6c7762c3_2022.jpg,https://fbref.com/en/players/6c7762c3/Juan-Foyth,Villarreal
+Gerard Moreno,players,https://fbref.com/req/202302030/images/headshots/81f0781e_2022.jpg,https://fbref.com/en/players/81f0781e/Gerard-Moreno,Villarreal
+Ayoze Pérez,players,https://fbref.com/req/202302030/images/headshots/819aa8e7_2022.jpg,https://fbref.com/en/players/819aa8e7/Ayoze-Perez,Villarreal
+Thomas Partey,players,https://fbref.com/req/202302030/images/headshots/529f49ab_2022.jpg,https://fbref.com/en/players/529f49ab/Thomas-Partey,Villarreal
+Tani Oluwaseyi,players,https://fbref.com/req/202302030/images/headshots/950ef017_2022.jpg,https://fbref.com/en/players/950ef017/Tani-Oluwaseyi,Villarreal
+Arnau Tenas,players,https://fbref.com/req/202302030/images/headshots/30670b0e_2022.jpg,https://fbref.com/en/players/30670b0e/Arnau-Tenas,Villarreal
+Karl Etta Eyong,players,https://fbref.com/req/202302030/images/headshots/f0f499ea_2022.jpg,https://fbref.com/en/players/f0f499ea/Karl-Etta-Eyong,Villarreal
+Ilias Akhomach,players,https://fbref.com/req/202302030/images/headshots/b8bd60fe_2022.jpg,https://fbref.com/en/players/b8bd60fe/Ilias-Akhomach,Villarreal
+Yeremi Pino,players,https://fbref.com/req/202302030/images/headshots/540ec57b_2022.jpg,https://fbref.com/en/players/540ec57b/Yeremi-Pino,Villarreal
+Manor Solomon,players,https://fbref.com/req/202302030/images/headshots/886f9aac_2022.jpg,https://fbref.com/en/players/886f9aac/Manor-Solomon,Villarreal
+Hugo López,players,https://fbref.com/req/202302030/images/headshots/96ba6d3b_2022.jpg,https://fbref.com/en/players/96ba6d3b/Hugo-Lopez,Villarreal
+Alfon,players,https://fbref.com/req/202302030/images/headshots/1c772b46_2022.jpg,https://fbref.com/en/players/1c772b46/Alfon,Villarreal
+Adrià Altimira,players,https://fbref.com/req/202302030/images/headshots/757a3431_2022.jpg,https://fbref.com/en/players/757a3431/Adria-Altimira,Villarreal
+Mahamoud Barry,players,https://fbref.com/req/202302030/images/headshots/7c6c1de4_2022.jpg,https://fbref.com/en/players/7c6c1de4/Mahamoud-Barry,Villarreal
+Pau Cabanes,players,https://fbref.com/req/202302030/images/headshots/53440b64_2022.jpg,https://fbref.com/en/players/53440b64/Pau-Cabanes,Villarreal
+Diego Conde,players,https://fbref.com/req/202302030/images/headshots/4eae5bc4_2022.jpg,https://fbref.com/en/players/4eae5bc4/Diego-Conde,Villarreal
+Rubén Gómez,players,https://fbref.com/req/202302030/images/headshots/e9f20735_2022.jpg,https://fbref.com/en/players/e9f20735/Ruben-Gomez,Villarreal
+Willy Kambwala,players,https://fbref.com/req/202302030/images/headshots/6a7353d7_2022.jpg,https://fbref.com/en/players/6a7353d7/Willy-Kambwala,Villarreal
+Ismael Sierra,players,https://fbref.com/req/202302030/images/headshots/04ac0afe_2022.jpg,https://fbref.com/en/players/04ac0afe/Ismael-Sierra,Villarreal
+Denis Suárez,players,https://fbref.com/req/202302030/images/headshots/12c50af5_2022.jpg,https://fbref.com/en/players/12c50af5/Denis-Suarez,Villarreal
+Jean Valou,players,https://fbref.com/req/202302030/images/headshots/3d5e4f26_2022.jpg,https://fbref.com/en/players/3d5e4f26/Jean-Valou,Villarreal
+Pablo Fornals,players,https://fbref.com/req/202302030/images/headshots/82927de4_2022.jpg,https://fbref.com/en/players/82927de4/Pablo-Fornals,Real Betis
+Natan,players,https://fbref.com/req/202302030/images/headshots/94bccc82_2022.jpg,https://fbref.com/en/players/94bccc82/Natan,Real Betis
+Cucho,players,https://fbref.com/req/202302030/images/headshots/71b47ab9_2022.jpg,https://fbref.com/en/players/71b47ab9/Cucho,Real Betis
+Antony,players,https://fbref.com/req/202302030/images/headshots/99127249_2022.jpg,https://fbref.com/en/players/99127249/Antony,Real Betis
+Álvaro Vallés,players,https://fbref.com/req/202302030/images/headshots/0166a73e_2022.jpg,https://fbref.com/en/players/0166a73e/Alvaro-Valles,Real Betis
+Marc Roca,players,https://fbref.com/req/202302030/images/headshots/da27e268_2022.jpg,https://fbref.com/en/players/da27e268/Marc-Roca,Real Betis
+Marc Bartra,players,https://fbref.com/req/202302030/images/headshots/b742cc0d_2022.jpg,https://fbref.com/en/players/b742cc0d/Marc-Bartra,Real Betis
+Abde Ezzalzouli,players,https://fbref.com/req/202302030/images/headshots/bed68338_2022.jpg,https://fbref.com/en/players/bed68338/Abde-Ezzalzouli,Real Betis
+Aitor Ruibal,players,https://fbref.com/req/202302030/images/headshots/a55d8df5_2022.jpg,https://fbref.com/en/players/a55d8df5/Aitor-Ruibal,Real Betis
+Ricardo Rodríguez,players,https://fbref.com/req/202302030/images/headshots/7f78ad23_2022.jpg,https://fbref.com/en/players/7f78ad23/Ricardo-Rodriguez,Real Betis
+Héctor Bellerín,players,https://fbref.com/req/202302030/images/headshots/f874dd44_2022.jpg,https://fbref.com/en/players/f874dd44/Hector-Bellerin,Real Betis
+Valentín Gómez,players,https://fbref.com/req/202302030/images/headshots/0394c2ee_2022.jpg,https://fbref.com/en/players/0394c2ee/Valentin-Gomez,Real Betis
+Giovani Lo Celso,players,https://fbref.com/req/202302030/images/headshots/d7553721_2022.jpg,https://fbref.com/en/players/d7553721/Giovani-Lo-Celso,Real Betis
+Sergi Altimira,players,https://fbref.com/req/202302030/images/headshots/94acdd4e_2022.jpg,https://fbref.com/en/players/94acdd4e/Sergi-Altimira,Real Betis
+Pau López,players,https://fbref.com/req/202302030/images/headshots/20b9f052_2022.jpg,https://fbref.com/en/players/20b9f052/Pau-Lopez,Real Betis
+Junior Firpo,players,https://fbref.com/req/202302030/images/headshots/24f59bb2_2022.jpg,https://fbref.com/en/players/24f59bb2/Junior-Firpo,Real Betis
+Rodrigo Riquelme,players,https://fbref.com/req/202302030/images/headshots/65154df0_2022.jpg,https://fbref.com/en/players/65154df0/Rodrigo-Riquelme,Real Betis
+Nelson Deossa,players,https://fbref.com/req/202302030/images/headshots/0ec1841b_2022.jpg,https://fbref.com/en/players/0ec1841b/Nelson-Deossa,Real Betis
+Diego Llorente,players,https://fbref.com/req/202302030/images/headshots/bba30585_2022.jpg,https://fbref.com/en/players/bba30585/Diego-Llorente,Real Betis
+Sofyan Amrabat,players,https://fbref.com/req/202302030/images/headshots/5a2cb25d_2022.jpg,https://fbref.com/en/players/5a2cb25d/Sofyan-Amrabat,Real Betis
+Ángel Ortíz,players,https://fbref.com/req/202302030/images/headshots/a2f3bbb9_2022.jpg,https://fbref.com/en/players/a2f3bbb9/Angel-Ortiz,Real Betis
+Álvaro Fidalgo,players,https://fbref.com/req/202302030/images/headshots/c705cdc4_2022.jpg,https://fbref.com/en/players/c705cdc4/Alvaro-Fidalgo,Real Betis
+Cédric Bakambu,players,https://fbref.com/req/202302030/images/headshots/0af4dcf0_2022.jpg,https://fbref.com/en/players/0af4dcf0/Cedric-Bakambu,Real Betis
+Ezequiel Ávila,players,https://fbref.com/req/202302030/images/headshots/253a06b9_2022.jpg,https://fbref.com/en/players/253a06b9/Ezequiel-Avila,Real Betis
+Pablo Garcia,players,https://fbref.com/req/202302030/images/headshots/9925419c_2022.jpg,https://fbref.com/en/players/9925419c/Pablo-Garcia,Real Betis
+Isco,players,https://fbref.com/req/202302030/images/headshots/a0b4bb3e_2022.jpg,https://fbref.com/en/players/a0b4bb3e/Isco,Real Betis
+Iván Corralejo,players,https://fbref.com/req/202302030/images/headshots/7dd27351_2022.jpg,https://fbref.com/en/players/7dd27351/Ivan-Corralejo,Real Betis
+Daniel Guerrero,players,https://fbref.com/req/202302030/images/headshots/1707d9c6_2022.jpg,https://fbref.com/en/players/1707d9c6/Daniel-Guerrero,Real Betis
+Adrián,players,https://fbref.com/req/202302030/images/headshots/f76e6b4e_2022.jpg,https://fbref.com/en/players/f76e6b4e/Adrian,Real Betis
+Darling Bladi,players,https://fbref.com/req/202302030/images/headshots/4a153f17_2022.jpg,https://fbref.com/en/players/4a153f17/Darling-Bladi,Real Betis
+Germán García,players,https://fbref.com/req/202302030/images/headshots/8c1de7b4_2022.jpg,https://fbref.com/en/players/8c1de7b4/German-Garcia,Real Betis
+Manu González,players,https://fbref.com/req/202302030/images/headshots/3a6e83d7_2022.jpg,https://fbref.com/en/players/3a6e83d7/Manu-Gonzalez,Real Betis
+Iker Losada,players,https://fbref.com/req/202302030/images/headshots/41521385_2022.jpg,https://fbref.com/en/players/41521385/Iker-Losada,Real Betis
+Mawuli Mensah,players,https://fbref.com/req/202302030/images/headshots/3c72fd1e_2022.jpg,https://fbref.com/en/players/3c72fd1e/Mawuli-Mensah,Real Betis
+Ionuț Radu,players,https://fbref.com/req/202302030/images/headshots/67f649be_2022.jpg,https://fbref.com/en/players/67f649be/Ionut-Radu,Celta Vigo
+Marcos Alonso,players,https://fbref.com/req/202302030/images/headshots/f4290206_2022.jpg,https://fbref.com/en/players/f4290206/Marcos-Alonso,Celta Vigo
+Sergio Carreira,players,https://fbref.com/req/202302030/images/headshots/8d6a9c93_2022.jpg,https://fbref.com/en/players/8d6a9c93/Sergio-Carreira,Celta Vigo
+Ilaix Moriba,players,https://fbref.com/req/202302030/images/headshots/f4c69aa6_2022.jpg,https://fbref.com/en/players/f4c69aa6/Ilaix-Moriba,Celta Vigo
+Javi Rodríguez,players,https://fbref.com/req/202302030/images/headshots/08ec5e71_2022.jpg,https://fbref.com/en/players/08ec5e71/Javi-Rodriguez,Celta Vigo
+Óscar Mingueza,players,https://fbref.com/req/202302030/images/headshots/056269d7_2022.jpg,https://fbref.com/en/players/056269d7/Oscar-Mingueza,Celta Vigo
+Carl Starfelt,players,https://fbref.com/req/202302030/images/headshots/5cfec13d_2022.jpg,https://fbref.com/en/players/5cfec13d/Carl-Starfelt,Celta Vigo
+Borja Iglesias,players,https://fbref.com/req/202302030/images/headshots/75645f0e_2022.jpg,https://fbref.com/en/players/75645f0e/Borja-Iglesias,Celta Vigo
+Ferran Jutglà,players,https://fbref.com/req/202302030/images/headshots/2a9f6b4d_2022.jpg,https://fbref.com/en/players/2a9f6b4d/Ferran-Jutgla,Celta Vigo
+Miguel Román,players,https://fbref.com/req/202302030/images/headshots/ca316820_2022.jpg,https://fbref.com/en/players/ca316820/Miguel-Roman,Celta Vigo
+Bryan Zaragoza,players,https://fbref.com/req/202302030/images/headshots/a96103b2_2022.jpg,https://fbref.com/en/players/a96103b2/Bryan-Zaragoza,Celta Vigo
+Pablo Durán,players,https://fbref.com/req/202302030/images/headshots/6db116ec_2022.jpg,https://fbref.com/en/players/6db116ec/Pablo-Duran,Celta Vigo
+Hugo Sotelo,players,https://fbref.com/req/202302030/images/headshots/3aa74860_2022.jpg,https://fbref.com/en/players/3aa74860/Hugo-Sotelo,Celta Vigo
+Javier Rueda Garcia,players,https://fbref.com/req/202302030/images/headshots/9ace87ba_2022.jpg,https://fbref.com/en/players/9ace87ba/Javier-Rueda-Garcia,Celta Vigo
+Williot Swedberg,players,https://fbref.com/req/202302030/images/headshots/184fe4b2_2022.jpg,https://fbref.com/en/players/184fe4b2/Williot-Swedberg,Celta Vigo
+Hugo Álvarez,players,https://fbref.com/req/202302030/images/headshots/6f392eb8_2022.jpg,https://fbref.com/en/players/6f392eb8/Hugo-Alvarez,Celta Vigo
+Manu Fernández,players,https://fbref.com/req/202302030/images/headshots/9b72de8f_2022.jpg,https://fbref.com/en/players/9b72de8f/Manu-Fernandez,Celta Vigo
+Iago Aspas,players,https://fbref.com/req/202302030/images/headshots/7dcf86f6_2022.jpg,https://fbref.com/en/players/7dcf86f6/Iago-Aspas,Celta Vigo
+Fran Beltrán,players,https://fbref.com/req/202302030/images/headshots/ed5c5fa3_2022.jpg,https://fbref.com/en/players/ed5c5fa3/Fran-Beltran,Celta Vigo
+Fer López,players,https://fbref.com/req/202302030/images/headshots/675cacff_2022.jpg,https://fbref.com/en/players/675cacff/Fer-Lopez,Celta Vigo
+Carlos Dominguez,players,https://fbref.com/req/202302030/images/headshots/3521abfe_2022.jpg,https://fbref.com/en/players/3521abfe/Carlos-Dominguez,Celta Vigo
+Joseph Aidoo,players,https://fbref.com/req/202302030/images/headshots/18abe173_2022.jpg,https://fbref.com/en/players/18abe173/Joseph-Aidoo,Celta Vigo
+Yoel Lago,players,https://fbref.com/req/202302030/images/headshots/edd4e7a5_2022.jpg,https://fbref.com/en/players/edd4e7a5/Yoel-Lago,Celta Vigo
+Mihailo Ristić,players,https://fbref.com/req/202302030/images/headshots/ea0aa7e0_2022.jpg,https://fbref.com/en/players/ea0aa7e0/Mihailo-Ristic,Celta Vigo
+Jones El-Abdellaoui,players,https://fbref.com/req/202302030/images/headshots/29dd3b2e_2022.jpg,https://fbref.com/en/players/29dd3b2e/Jones-El-Abdellaoui,Celta Vigo
+Damián Rodríguez,players,https://fbref.com/req/202302030/images/headshots/22371dee_2022.jpg,https://fbref.com/en/players/22371dee/Damian-Rodriguez,Celta Vigo
+Matías Vecino,players,https://fbref.com/req/202302030/images/headshots/44ac04e9_2022.jpg,https://fbref.com/en/players/44ac04e9/Matias-Vecino,Celta Vigo
+Álvaro Núñez,players,https://fbref.com/req/202302030/images/headshots/b7b6ff9b_2022.jpg,https://fbref.com/en/players/b7b6ff9b/Alvaro-Nunez,Celta Vigo
+Franco Cervi,players,https://fbref.com/req/202302030/images/headshots/5e1028e5_2022.jpg,https://fbref.com/en/players/5e1028e5/Franco-Cervi,Celta Vigo
+Hugo González,players,https://fbref.com/req/202302030/images/headshots/2cfb6e88_2022.jpg,https://fbref.com/en/players/2cfb6e88/Hugo-Gonzalez,Celta Vigo
+Iván Villar,players,https://fbref.com/req/202302030/images/headshots/cde52ef5_2022.jpg,https://fbref.com/en/players/cde52ef5/Ivan-Villar,Celta Vigo
+Álex Remiro,players,https://fbref.com/req/202302030/images/headshots/374ee424_2022.jpg,https://fbref.com/en/players/374ee424/Alex-Remiro,Real Sociedad
+Jon Aramburu,players,https://fbref.com/req/202302030/images/headshots/dc7a172e_2022.jpg,https://fbref.com/en/players/dc7a172e/Jon-Aramburu,Real Sociedad
+Mikel Oyarzabal,players,https://fbref.com/req/202302030/images/headshots/8c3c640c_2022.jpg,https://fbref.com/en/players/8c3c640c/Mikel-Oyarzabal,Real Sociedad
+Sergio Gómez,players,https://fbref.com/req/202302030/images/headshots/01e5f06e_2022.jpg,https://fbref.com/en/players/01e5f06e/Sergio-Gomez,Real Sociedad
+Jon Gorrotxategi,players,https://fbref.com/req/202302030/images/headshots/4f3bbb10_2022.jpg,https://fbref.com/en/players/4f3bbb10/Jon-Gorrotxategi,Real Sociedad
+Igor Zubeldia,players,https://fbref.com/req/202302030/images/headshots/5c7845f6_2022.jpg,https://fbref.com/en/players/5c7845f6/Igor-Zubeldia,Real Sociedad
+Gonçalo Guedes,players,https://fbref.com/req/202302030/images/headshots/e6bc67d7_2022.jpg,https://fbref.com/en/players/e6bc67d7/Goncalo-Guedes,Real Sociedad
+Jon Martin,players,https://fbref.com/req/202302030/images/headshots/df33ecb5_2022.jpg,https://fbref.com/en/players/df33ecb5/Jon-Martin,Real Sociedad
+Carlos Soler,players,https://fbref.com/req/202302030/images/headshots/fed17f5a_2022.jpg,https://fbref.com/en/players/fed17f5a/Carlos-Soler,Real Sociedad
+Duje Ćaleta-Car,players,https://fbref.com/req/202302030/images/headshots/94f8d10c_2022.jpg,https://fbref.com/en/players/94f8d10c/Duje-Caleta-Car,Real Sociedad
+Brais Méndez,players,https://fbref.com/req/202302030/images/headshots/c9e39d91_2022.jpg,https://fbref.com/en/players/c9e39d91/Brais-Mendez,Real Sociedad
+Ander Barrenetxea,players,https://fbref.com/req/202302030/images/headshots/200e89e1_2022.jpg,https://fbref.com/en/players/200e89e1/Ander-Barrenetxea,Real Sociedad
+Takefusa Kubo,players,https://fbref.com/req/202302030/images/headshots/16aa3654_2022.jpg,https://fbref.com/en/players/16aa3654/Takefusa-Kubo,Real Sociedad
+Pablo Marín,players,https://fbref.com/req/202302030/images/headshots/a83c19cf_2022.jpg,https://fbref.com/en/players/a83c19cf/Pablo-Marin,Real Sociedad
+Beñat Turrientes,players,https://fbref.com/req/202302030/images/headshots/068f4dec_2022.jpg,https://fbref.com/en/players/068f4dec/Benat-Turrientes,Real Sociedad
+Aihen Muñoz,players,https://fbref.com/req/202302030/images/headshots/228b0d9d_2022.jpg,https://fbref.com/en/players/228b0d9d/Aihen-Munoz,Real Sociedad
+Luka Sučić,players,https://fbref.com/req/202302030/images/headshots/1e1378e1_2022.jpg,https://fbref.com/en/players/1e1378e1/Luka-Sucic,Real Sociedad
+Aritz Elustondo,players,https://fbref.com/req/202302030/images/headshots/f7dc2ae5_2022.jpg,https://fbref.com/en/players/f7dc2ae5/Aritz-Elustondo,Real Sociedad
+Yangel Herrera,players,https://fbref.com/req/202302030/images/headshots/5083a734_2022.jpg,https://fbref.com/en/players/5083a734/Yangel-Herrera,Real Sociedad
+Arsen Zakharyan,players,https://fbref.com/req/202302030/images/headshots/7f14ec2a_2022.jpg,https://fbref.com/en/players/7f14ec2a/Arsen-Zakharyan,Real Sociedad
+Orri Steinn Óskarsson,players,https://fbref.com/req/202302030/images/headshots/d0b8e745_2022.jpg,https://fbref.com/en/players/d0b8e745/Orri-Steinn-Oskarsson,Real Sociedad
+Álvaro Odriozola,players,https://fbref.com/req/202302030/images/headshots/1d1691ad_2022.jpg,https://fbref.com/en/players/1d1691ad/Alvaro-Odriozola,Real Sociedad
+Umar Sadiq,players,https://fbref.com/req/202302030/images/headshots/686cbe7d_2022.jpg,https://fbref.com/en/players/686cbe7d/Umar-Sadiq,Real Sociedad
+Mikel Goti,players,https://fbref.com/req/202302030/images/headshots/5192bf16_2022.jpg,https://fbref.com/en/players/5192bf16/Mikel-Goti,Real Sociedad
+Wesley,players,https://fbref.com/req/202302030/images/headshots/acf5672b_2022.jpg,https://fbref.com/en/players/acf5672b/Wesley,Real Sociedad
+Jon Karrikaburu,players,https://fbref.com/req/202302030/images/headshots/211589b8_2022.jpg,https://fbref.com/en/players/211589b8/Jon-Karrikaburu,Real Sociedad
+Urko González,players,https://fbref.com/req/202302030/images/headshots/c4f5eb61_2022.jpg,https://fbref.com/en/players/c4f5eb61/Urko-Gonzalez,Real Sociedad
+Arkaitz Mariezkurrena,players,https://fbref.com/req/202302030/images/headshots/7c2c671c_2022.jpg,https://fbref.com/en/players/7c2c671c/Arkaitz-Mariezkurrena,Real Sociedad
+Luken Beitia,players,https://fbref.com/req/202302030/images/headshots/1406fae0_2022.jpg,https://fbref.com/en/players/1406fae0/Luken-Beitia,Real Sociedad
+Kevin Folgado,players,https://fbref.com/req/202302030/images/headshots/8839735b_2022.jpg,https://fbref.com/en/players/8839735b/Kevin-Folgado,Real Sociedad
+Aitor Fraga,players,https://fbref.com/req/202302030/images/headshots/7645a52a_2022.jpg,https://fbref.com/en/players/7645a52a/Aitor-Fraga,Real Sociedad
+Kazunari Kita,players,https://fbref.com/req/202302030/images/headshots/cb298e31_2022.jpg,https://fbref.com/en/players/cb298e31/Kazunari-Kita,Real Sociedad
+Alex Lebarbier,players,https://fbref.com/req/202302030/images/headshots/2be2de74_2022.jpg,https://fbref.com/en/players/2be2de74/Alex-Lebarbier,Real Sociedad
+Unai Marrero,players,https://fbref.com/req/202302030/images/headshots/f0fe87dc_2022.jpg,https://fbref.com/en/players/f0fe87dc/Unai-Marrero,Real Sociedad
+Jon Pacheco,players,https://fbref.com/req/202302030/images/headshots/44150beb_2022.jpg,https://fbref.com/en/players/44150beb/Jon-Pacheco,Real Sociedad
+Hamari Traoré,players,https://fbref.com/req/202302030/images/headshots/a4b1028a_2022.jpg,https://fbref.com/en/players/a4b1028a/Hamari-Traore,Real Sociedad
+Marko Dmitrović,players,https://fbref.com/req/202302030/images/headshots/ac295d9e_2022.jpg,https://fbref.com/en/players/ac295d9e/Marko-Dmitrovic,Espanyol
+Leandro Cabrera,players,https://fbref.com/req/202302030/images/headshots/69cbc8b6_2022.jpg,https://fbref.com/en/players/69cbc8b6/Leandro-Cabrera,Espanyol
+Carlos Romero,players,https://fbref.com/req/202302030/images/headshots/23cbf863_2022.jpg,https://fbref.com/en/players/23cbf863/Carlos-Romero,Espanyol
+Omar El Hilali,players,https://fbref.com/req/202302030/images/headshots/139560df_2022.jpg,https://fbref.com/en/players/139560df/Omar-El-Hilali,Espanyol
+Pol Lozano,players,https://fbref.com/req/202302030/images/headshots/ea610f00_2022.jpg,https://fbref.com/en/players/ea610f00/Pol-Lozano,Espanyol
+Edu Expósito,players,https://fbref.com/req/202302030/images/headshots/283c7121_2022.jpg,https://fbref.com/en/players/283c7121/Edu-Exposito,Espanyol
+Tyrhys Dolan,players,https://fbref.com/req/202302030/images/headshots/ce967905_2022.jpg,https://fbref.com/en/players/ce967905/Tyrhys-Dolan,Espanyol
+Pere Milla,players,https://fbref.com/req/202302030/images/headshots/335039a2_2022.jpg,https://fbref.com/en/players/335039a2/Pere-Milla,Espanyol
+Roberto Férnandez,players,https://fbref.com/req/202302030/images/headshots/c981fc98_2022.jpg,https://fbref.com/en/players/c981fc98/Roberto-Fernandez,Espanyol
+Fernando Calero,players,https://fbref.com/req/202302030/images/headshots/41b3069f_2022.jpg,https://fbref.com/en/players/41b3069f/Fernando-Calero,Espanyol
+Kiké,players,https://fbref.com/req/202302030/images/headshots/e897d8ba_2022.jpg,https://fbref.com/en/players/e897d8ba/Kike,Espanyol
+Clemens Riedel,players,https://fbref.com/req/202302030/images/headshots/77cfae67_2022.jpg,https://fbref.com/en/players/77cfae67/Clemens-Riedel,Espanyol
+Jofre,players,https://fbref.com/req/202302030/images/headshots/030ef8d6_2022.jpg,https://fbref.com/en/players/030ef8d6/Jofre,Espanyol
+Javi Puado,players,https://fbref.com/req/202302030/images/headshots/2683eda7_2022.jpg,https://fbref.com/en/players/2683eda7/Javi-Puado,Espanyol
+Ramón Terrats,players,https://fbref.com/req/202302030/images/headshots/f36016a5_2022.jpg,https://fbref.com/en/players/f36016a5/Ramon-Terrats,Espanyol
+Charles Pickel,players,https://fbref.com/req/202302030/images/headshots/f71ad8cb_2022.jpg,https://fbref.com/en/players/f71ad8cb/Charles-Pickel,Espanyol
+Rubén,players,https://fbref.com/req/202302030/images/headshots/35d4f151_2022.jpg,https://fbref.com/en/players/35d4f151/Ruben,Espanyol
+José Salinas,players,https://fbref.com/req/202302030/images/headshots/2c82c766_2022.jpg,https://fbref.com/en/players/2c82c766/Jose-Salinas,Espanyol
+Cyril Ngonge,players,https://fbref.com/req/202302030/images/headshots/2b8360f1_2022.jpg,https://fbref.com/en/players/2b8360f1/Cyril-Ngonge,Espanyol
+Miguel Ángel Rubio,players,https://fbref.com/req/202302030/images/headshots/56cafd0a_2022.jpg,https://fbref.com/en/players/56cafd0a/Miguel-Angel-Rubio,Espanyol
+Antoniu,players,https://fbref.com/req/202302030/images/headshots/af784a9e_2022.jpg,https://fbref.com/en/players/af784a9e/Antoniu,Espanyol
+Luca Koleosho,players,https://fbref.com/req/202302030/images/headshots/fc076f78_2022.jpg,https://fbref.com/en/players/fc076f78/Luca-Koleosho,Espanyol
+Fortuño,players,https://fbref.com/req/202302030/images/headshots/c81b26e2_2022.jpg,https://fbref.com/en/players/c81b26e2/Fortuno,Espanyol
+Javier Hernández,players,https://fbref.com/req/202302030/images/headshots/b68138a8_2022.jpg,https://fbref.com/en/players/b68138a8/Javier-Hernandez,Espanyol
+Pol Tristán,players,https://fbref.com/req/202302030/images/headshots/77b64c06_2022.jpg,https://fbref.com/en/players/77b64c06/Pol-Tristan,Espanyol
+David Soria,players,https://fbref.com/req/202302030/images/headshots/8f8c6934_2022.jpg,https://fbref.com/en/players/8f8c6934/David-Soria,Getafe
+Mauro Arambarri,players,https://fbref.com/req/202302030/images/headshots/58afe001_2022.jpg,https://fbref.com/en/players/58afe001/Mauro-Arambarri,Getafe
+Luis Milla,players,https://fbref.com/req/202302030/images/headshots/19c36442_2022.jpg,https://fbref.com/en/players/19c36442/Luis-Milla,Getafe
+Iglesias,players,https://fbref.com/req/202302030/images/headshots/974322dc_2022.jpg,https://fbref.com/en/players/974322dc/Iglesias,Getafe
+Domingos Duarte,players,https://fbref.com/req/202302030/images/headshots/93090f69_2022.jpg,https://fbref.com/en/players/93090f69/Domingos-Duarte,Getafe
+Djené,players,https://fbref.com/req/202302030/images/headshots/a4971d84_2022.jpg,https://fbref.com/en/players/a4971d84/Djene,Getafe
+Kiko Femenía,players,https://fbref.com/req/202302030/images/headshots/e5d01ecf_2022.jpg,https://fbref.com/en/players/e5d01ecf/Kiko-Femenia,Getafe
+Mario Martín,players,https://fbref.com/req/202302030/images/headshots/a9aff11a_2022.jpg,https://fbref.com/en/players/a9aff11a/Mario-Martin,Getafe
+Diego Rico,players,https://fbref.com/req/202302030/images/headshots/d9ba39fc_2022.jpg,https://fbref.com/en/players/d9ba39fc/Diego-Rico,Getafe
+Adrián Liso,players,https://fbref.com/req/202302030/images/headshots/26615dea_2022.jpg,https://fbref.com/en/players/26615dea/Adrian-Liso,Getafe
+Borja Mayoral,players,https://fbref.com/req/202302030/images/headshots/64e8ed6d_2022.jpg,https://fbref.com/en/players/64e8ed6d/Borja-Mayoral,Getafe
+Abdel Abqar,players,https://fbref.com/req/202302030/images/headshots/2bc7f211_2022.jpg,https://fbref.com/en/players/2bc7f211/Abdel-Abqar,Getafe
+Martin Satriano,players,https://fbref.com/req/202302030/images/headshots/86383d0e_2022.jpg,https://fbref.com/en/players/86383d0e/Martin-Satriano,Getafe
+Zaid Romero,players,https://fbref.com/req/202302030/images/headshots/71c980b7_2022.jpg,https://fbref.com/en/players/71c980b7/Zaid-Romero,Getafe
+Álex Sancris,players,https://fbref.com/req/202302030/images/headshots/640b4170_2022.jpg,https://fbref.com/en/players/640b4170/Alex-Sancris,Getafe
+Javier Muñoz,players,https://fbref.com/req/202302030/images/headshots/ec7c84c2_2022.jpg,https://fbref.com/en/players/ec7c84c2/Javier-Munoz,Getafe
+Davinchi,players,https://fbref.com/req/202302030/images/headshots/3caec016_2022.jpg,https://fbref.com/en/players/3caec016/Davinchi,Getafe
+Allan Nyom,players,https://fbref.com/req/202302030/images/headshots/97572117_2022.jpg,https://fbref.com/en/players/97572117/Allan-Nyom,Getafe
+Christantus Uche,players,https://fbref.com/req/202302030/images/headshots/87941696_2022.jpg,https://fbref.com/en/players/87941696/Christantus-Uche,Getafe
+Coba da Costa,players,https://fbref.com/req/202302030/images/headshots/0b3358f0_2022.jpg,https://fbref.com/en/players/0b3358f0/Coba-da-Costa,Getafe
+Abu Kamara,players,https://fbref.com/req/202302030/images/headshots/a6fbfa77_2022.jpg,https://fbref.com/en/players/a6fbfa77/Abu-Kamara,Getafe
+Sebastián Boselli,players,https://fbref.com/req/202302030/images/headshots/08576297_2022.jpg,https://fbref.com/en/players/08576297/Sebastian-Boselli,Getafe
+Ismael Bekhoucha,players,https://fbref.com/req/202302030/images/headshots/e42c0f53_2022.jpg,https://fbref.com/en/players/e42c0f53/Ismael-Bekhoucha,Getafe
+Juanmi,players,https://fbref.com/req/202302030/images/headshots/84399660_2022.jpg,https://fbref.com/en/players/84399660/Juanmi,Getafe
+Yvan Neyou,players,https://fbref.com/req/202302030/images/headshots/0ad37003_2022.jpg,https://fbref.com/en/players/0ad37003/Yvan-Neyou,Getafe
+Veljko Birmančević,players,https://fbref.com/req/202302030/images/headshots/636247ca_2022.jpg,https://fbref.com/en/players/636247ca/Veljko-Birmancevic,Getafe
+Joselu Pérez,players,https://fbref.com/req/202302030/images/headshots/c4d65529_2022.jpg,https://fbref.com/en/players/c4d65529/Joselu-Perez,Getafe
+Alex Sola,players,https://fbref.com/req/202302030/images/headshots/5fa714d5_2022.jpg,https://fbref.com/en/players/5fa714d5/Alex-Sola,Getafe
+Mykyta Alexandrov,players,https://fbref.com/req/202302030/images/headshots/53452d55_2022.jpg,https://fbref.com/en/players/53452d55/Mykyta-Alexandrov,Getafe
+Jorge Benito,players,https://fbref.com/req/202302030/images/headshots/0d7be8b0_2022.jpg,https://fbref.com/en/players/0d7be8b0/Jorge-Benito,Getafe
+Diego Ferrer,players,https://fbref.com/req/202302030/images/headshots/01560718_2022.jpg,https://fbref.com/en/players/01560718/Diego-Ferrer,Getafe
+Jiří Letáček,players,https://fbref.com/req/202302030/images/headshots/4a27412a_2022.jpg,https://fbref.com/en/players/4a27412a/Jiri-Letacek,Getafe
+Alberto Risco,players,https://fbref.com/req/202302030/images/headshots/36286814_2022.jpg,https://fbref.com/en/players/36286814/Alberto-Risco,Getafe
+Marc Vilaplana,players,https://fbref.com/req/202302030/images/headshots/c1586fec_2022.jpg,https://fbref.com/en/players/c1586fec/Marc-Vilaplana,Getafe
+Unai Simón,players,https://fbref.com/req/202302030/images/headshots/5dcf3e90_2022.jpg,https://fbref.com/en/players/5dcf3e90/Unai-Simon,Athletic Club
+Mikel Jauregizar,players,https://fbref.com/req/202302030/images/headshots/2f5c78ca_2022.jpg,https://fbref.com/en/players/2f5c78ca/Mikel-Jauregizar,Athletic Club
+Yuri Berchiche,players,https://fbref.com/req/202302030/images/headshots/b6e50615_2022.jpg,https://fbref.com/en/players/b6e50615/Yuri-Berchiche,Athletic Club
+Iñigo Ruiz de Galarreta,players,https://fbref.com/req/202302030/images/headshots/91f7631f_2022.jpg,https://fbref.com/en/players/91f7631f/Inigo-Ruiz-de-Galarreta,Athletic Club
+Daniel Vivian,players,https://fbref.com/req/202302030/images/headshots/ab7bf91d_2022.jpg,https://fbref.com/en/players/ab7bf91d/Daniel-Vivian,Athletic Club
+Álex Berenguer,players,https://fbref.com/req/202302030/images/headshots/dc1c2fce_2022.jpg,https://fbref.com/en/players/dc1c2fce/Alex-Berenguer,Athletic Club
+Gorka Guruzeta,players,https://fbref.com/req/202302030/images/headshots/6b5ea2f4_2022.jpg,https://fbref.com/en/players/6b5ea2f4/Gorka-Guruzeta,Athletic Club
+Oihan Sancet,players,https://fbref.com/req/202302030/images/headshots/bdb624a3_2022.jpg,https://fbref.com/en/players/bdb624a3/Oihan-Sancet,Athletic Club
+Aitor Paredes,players,https://fbref.com/req/202302030/images/headshots/b906757a_2022.jpg,https://fbref.com/en/players/b906757a/Aitor-Paredes,Athletic Club
+Iñaki Williams,players,https://fbref.com/req/202302030/images/headshots/6a99e0b1_2022.jpg,https://fbref.com/en/players/6a99e0b1/Inaki-Williams,Athletic Club
+Aymeric Laporte,players,https://fbref.com/req/202302030/images/headshots/119b9a8e_2022.jpg,https://fbref.com/en/players/119b9a8e/Aymeric-Laporte,Athletic Club
+Nico Williams,players,https://fbref.com/req/202302030/images/headshots/afdc14d7_2022.jpg,https://fbref.com/en/players/afdc14d7/Nico-Williams,Athletic Club
+Jesús Areso,players,https://fbref.com/req/202302030/images/headshots/94e01ec6_2022.jpg,https://fbref.com/en/players/94e01ec6/Jesus-Areso,Athletic Club
+Andoni Gorosabel,players,https://fbref.com/req/202302030/images/headshots/6f5f82c0_2022.jpg,https://fbref.com/en/players/6f5f82c0/Andoni-Gorosabel,Athletic Club
+Roberto Navarro,players,https://fbref.com/req/202302030/images/headshots/c997b942_2022.jpg,https://fbref.com/en/players/c997b942/Roberto-Navarro,Athletic Club
+Unai Gómez,players,https://fbref.com/req/202302030/images/headshots/37db6cae_2022.jpg,https://fbref.com/en/players/37db6cae/Unai-Gomez,Athletic Club
+Adama Boiro,players,https://fbref.com/req/202302030/images/headshots/e7992f7b_2022.jpg,https://fbref.com/en/players/e7992f7b/Adama-Boiro,Athletic Club
+Iñigo Lekue,players,https://fbref.com/req/202302030/images/headshots/59b7d823_2022.jpg,https://fbref.com/en/players/59b7d823/Inigo-Lekue,Athletic Club
+Alejandro Rego,players,https://fbref.com/req/202302030/images/headshots/72e0d609_2022.jpg,https://fbref.com/en/players/72e0d609/Alejandro-Rego,Athletic Club
+Nicolás Serrano,players,https://fbref.com/req/202302030/images/headshots/2ad0e5e5_2022.jpg,https://fbref.com/en/players/2ad0e5e5/Nicolas-Serrano,Athletic Club
+Maroan Sannadi,players,https://fbref.com/req/202302030/images/headshots/bea2537a_2022.jpg,https://fbref.com/en/players/bea2537a/Maroan-Sannadi,Athletic Club
+Mikel Vesga,players,https://fbref.com/req/202302030/images/headshots/b0fce72c_2022.jpg,https://fbref.com/en/players/b0fce72c/Mikel-Vesga,Athletic Club
+Urko Izeta,players,https://fbref.com/req/202302030/images/headshots/f9756b6a_2022.jpg,https://fbref.com/en/players/f9756b6a/Urko-Izeta,Athletic Club
+Beñat Prados,players,https://fbref.com/req/202302030/images/headshots/1f60244a_2022.jpg,https://fbref.com/en/players/1f60244a/Benat-Prados,Athletic Club
+Alex Padilla,players,https://fbref.com/req/202302030/images/headshots/a275838a_2022.jpg,https://fbref.com/en/players/a275838a/Alex-Padilla,Athletic Club
+Jon de Luis,players,https://fbref.com/req/202302030/images/headshots/c1585956_2022.jpg,https://fbref.com/en/players/c1585956/Jon-de-Luis,Athletic Club
+Iker Monreal,players,https://fbref.com/req/202302030/images/headshots/be05b406_2022.jpg,https://fbref.com/en/players/be05b406/Iker-Monreal,Athletic Club
+Ibon Sánchez,players,https://fbref.com/req/202302030/images/headshots/ec11cf2d_2022.jpg,https://fbref.com/en/players/ec11cf2d/Ibon-Sanchez,Athletic Club
+Mikel Santos,players,https://fbref.com/req/202302030/images/headshots/bb9ac74b_2022.jpg,https://fbref.com/en/players/bb9ac74b/Mikel-Santos,Athletic Club
+Unai Vencedor Paris,players,https://fbref.com/req/202302030/images/headshots/4112ace5_2022.jpg,https://fbref.com/en/players/4112ace5/Unai-Vencedor-Paris,Athletic Club
+Sergio Herrera,players,https://fbref.com/req/202302030/images/headshots/a4995f48_2022.jpg,https://fbref.com/en/players/a4995f48/Sergio-Herrera,Osasuna
+Catena,players,https://fbref.com/req/202302030/images/headshots/274ab13c_2022.jpg,https://fbref.com/en/players/274ab13c/Catena,Osasuna
+Víctor Muñoz,players,https://fbref.com/req/202302030/images/headshots/f8b5680f_2022.jpg,https://fbref.com/en/players/f8b5680f/Victor-Munoz,Osasuna
+Jon Moncayola,players,https://fbref.com/req/202302030/images/headshots/9939e168_2022.jpg,https://fbref.com/en/players/9939e168/Jon-Moncayola,Osasuna
+Ante Budimir,players,https://fbref.com/req/202302030/images/headshots/8f3565b3_2022.jpg,https://fbref.com/en/players/8f3565b3/Ante-Budimir,Osasuna
+Lucas Torró,players,https://fbref.com/req/202302030/images/headshots/0e4fef6e_2022.jpg,https://fbref.com/en/players/0e4fef6e/Lucas-Torro,Osasuna
+Enzo Boyomo,players,https://fbref.com/req/202302030/images/headshots/3a99bc13_2022.jpg,https://fbref.com/en/players/3a99bc13/Enzo-Boyomo,Osasuna
+Valentin Rosier,players,https://fbref.com/req/202302030/images/headshots/9b6d9b53_2022.jpg,https://fbref.com/en/players/9b6d9b53/Valentin-Rosier,Osasuna
+Rubén García,players,https://fbref.com/req/202302030/images/headshots/5c96b017_2022.jpg,https://fbref.com/en/players/5c96b017/Ruben-Garcia,Osasuna
+Aimar Oroz,players,https://fbref.com/req/202302030/images/headshots/7c363088_2022.jpg,https://fbref.com/en/players/7c363088/Aimar-Oroz,Osasuna
+Abel Bretones,players,https://fbref.com/req/202302030/images/headshots/40b6bd38_2022.jpg,https://fbref.com/en/players/40b6bd38/Abel-Bretones,Osasuna
+Jorge Herrando,players,https://fbref.com/req/202302030/images/headshots/e19c989c_2022.jpg,https://fbref.com/en/players/e19c989c/Jorge-Herrando,Osasuna
+Moi Gómez,players,https://fbref.com/req/202302030/images/headshots/5a626448_2022.jpg,https://fbref.com/en/players/5a626448/Moi-Gomez,Osasuna
+Juan Cruz Armada,players,https://fbref.com/req/202302030/images/headshots/a56da3ba_2022.jpg,https://fbref.com/en/players/a56da3ba/Juan-Cruz-Armada,Osasuna
+Raúl,players,https://fbref.com/req/202302030/images/headshots/18f0a9f0_2022.jpg,https://fbref.com/en/players/18f0a9f0/Raul,Osasuna
+Iker Muñoz,players,https://fbref.com/req/202302030/images/headshots/175ece4c_2022.jpg,https://fbref.com/en/players/175ece4c/Iker-Munoz,Osasuna
+Asier Osambela,players,https://fbref.com/req/202302030/images/headshots/e87c44a9_2022.jpg,https://fbref.com/en/players/e87c44a9/Asier-Osambela,Osasuna
+Kike Barja,players,https://fbref.com/req/202302030/images/headshots/aad53e64_2022.jpg,https://fbref.com/en/players/aad53e64/Kike-Barja,Osasuna
+Iker Benito,players,https://fbref.com/req/202302030/images/headshots/50cbc806_2022.jpg,https://fbref.com/en/players/50cbc806/Iker-Benito,Osasuna
+Sheraldo Becker,players,https://fbref.com/req/202302030/images/headshots/8eb55dbb_2022.jpg,https://fbref.com/en/players/8eb55dbb/Sheraldo-Becker,Osasuna
+Aitor Fernández,players,https://fbref.com/req/202302030/images/headshots/a01c3d54_2022.jpg,https://fbref.com/en/players/a01c3d54/Aitor-Fernandez,Osasuna
+Raúl Chasco,players,https://fbref.com/req/202302030/images/headshots/61d964b8_2022.jpg,https://fbref.com/en/players/61d964b8/Raul-Chasco,Osasuna
+Mauro Echegoyen,players,https://fbref.com/req/202302030/images/headshots/a2bcc318_2022.jpg,https://fbref.com/en/players/a2bcc318/Mauro-Echegoyen,Osasuna
+Martín Espinal,players,https://fbref.com/req/202302030/images/headshots/687a2e92_2022.jpg,https://fbref.com/en/players/687a2e92/Martin-Espinal,Osasuna
+Dimitrios Stamatakis,players,https://fbref.com/req/202302030/images/headshots/21eb5ec9_2022.jpg,https://fbref.com/en/players/21eb5ec9/Dimitrios-Stamatakis,Osasuna
+Vitor Reis,players,https://fbref.com/req/202302030/images/headshots/c4ce0ab5_2022.jpg,https://fbref.com/en/players/c4ce0ab5/Vitor-Reis,Girona
+Daley Blind,players,https://fbref.com/req/202302030/images/headshots/691bef82_2022.jpg,https://fbref.com/en/players/691bef82/Daley-Blind,Girona
+Paulo Gazzaniga,players,https://fbref.com/req/202302030/images/headshots/63d17038_2022.jpg,https://fbref.com/en/players/63d17038/Paulo-Gazzaniga,Girona
+Vladyslav Vanat,players,https://fbref.com/req/202302030/images/headshots/7287ea6b_2022.jpg,https://fbref.com/en/players/7287ea6b/Vladyslav-Vanat,Girona
+Arnau Martinez,players,https://fbref.com/req/202302030/images/headshots/c3e66ffe_2022.jpg,https://fbref.com/en/players/c3e66ffe/Arnau-Martinez,Girona
+Iván Martín,players,https://fbref.com/req/202302030/images/headshots/ae48c5cb_2022.jpg,https://fbref.com/en/players/ae48c5cb/Ivan-Martin,Girona
+Viktor Tsyhankov,players,https://fbref.com/req/202302030/images/headshots/f7e87032_2022.jpg,https://fbref.com/en/players/f7e87032/Viktor-Tsyhankov,Girona
+Álex Moreno,players,https://fbref.com/req/202302030/images/headshots/16e9d0ea_2022.jpg,https://fbref.com/en/players/16e9d0ea/Alex-Moreno,Girona
+Axel Witsel,players,https://fbref.com/req/202302030/images/headshots/5dfc6ad5_2022.jpg,https://fbref.com/en/players/5dfc6ad5/Axel-Witsel,Girona
+Bryan Gil,players,https://fbref.com/req/202302030/images/headshots/7b5ab7f2_2022.jpg,https://fbref.com/en/players/7b5ab7f2/Bryan-Gil,Girona
+Hugo Rincón,players,https://fbref.com/req/202302030/images/headshots/99d98362_2022.jpg,https://fbref.com/en/players/99d98362/Hugo-Rincon,Girona
+Thomas Lemar,players,https://fbref.com/req/202302030/images/headshots/4dbd0916_2022.jpg,https://fbref.com/en/players/4dbd0916/Thomas-Lemar,Girona
+Joel Roca,players,https://fbref.com/req/202302030/images/headshots/5f21b94c_2022.jpg,https://fbref.com/en/players/5f21b94c/Joel-Roca,Girona
+Azzedine Ounahi,players,https://fbref.com/req/202302030/images/headshots/83299cc0_2022.jpg,https://fbref.com/en/players/83299cc0/Azzedine-Ounahi,Girona
+Alejandro Francés,players,https://fbref.com/req/202302030/images/headshots/3e78a188_2022.jpg,https://fbref.com/en/players/3e78a188/Alejandro-Frances,Girona
+Yaser Asprilla,players,https://fbref.com/req/202302030/images/headshots/d139daf9_2022.jpg,https://fbref.com/en/players/d139daf9/Yaser-Asprilla,Girona
+Portu,players,https://fbref.com/req/202302030/images/headshots/1bda5842_2022.jpg,https://fbref.com/en/players/1bda5842/Portu,Girona
+Jhon Solis,players,https://fbref.com/req/202302030/images/headshots/1282939a_2022.jpg,https://fbref.com/en/players/1282939a/Jhon-Solis,Girona
+David López,players,https://fbref.com/req/202302030/images/headshots/f03f284b_2022.jpg,https://fbref.com/en/players/f03f284b/David-Lopez,Girona
+Ladislav Krejčí,players,https://fbref.com/req/202302030/images/headshots/5b5c2228_2022.jpg,https://fbref.com/en/players/5b5c2228/Ladislav-Krejci,Girona
+Claudio Echeverri,players,https://fbref.com/req/202302030/images/headshots/49a605df_2022.jpg,https://fbref.com/en/players/49a605df/Claudio-Echeverri,Girona
+Cristhian Stuani,players,https://fbref.com/req/202302030/images/headshots/220c11f1_2022.jpg,https://fbref.com/en/players/220c11f1/Cristhian-Stuani,Girona
+Vladyslav Krapyvtsov,players,https://fbref.com/req/202302030/images/headshots/66daeaf7_2022.jpg,https://fbref.com/en/players/66daeaf7/Vladyslav-Krapyvtsov,Girona
+Dawda Camara,players,https://fbref.com/req/202302030/images/headshots/89b1ce31_2022.jpg,https://fbref.com/en/players/89b1ce31/Dawda-Camara,Girona
+Bojan Miovski,players,https://fbref.com/req/202302030/images/headshots/72e442c5_2022.jpg,https://fbref.com/en/players/72e442c5/Bojan-Miovski,Girona
+Donny van de Beek,players,https://fbref.com/req/202302030/images/headshots/50dc94ce_2022.jpg,https://fbref.com/en/players/50dc94ce/Donny-van-de-Beek,Girona
+Abel Ruiz,players,https://fbref.com/req/202302030/images/headshots/6cbf8d0d_2022.jpg,https://fbref.com/en/players/6cbf8d0d/Abel-Ruiz,Girona
+Lancinet Kourouma,players,https://fbref.com/req/202302030/images/headshots/a8b266ff_2022.jpg,https://fbref.com/en/players/a8b266ff/Lancinet-Kourouma,Girona
+Juan Arango,players,https://fbref.com/req/202302030/images/headshots/1a2df32c_2022.jpg,https://fbref.com/en/players/1a2df32c/Juan-Arango,Girona
+Aleksandar Andreev,players,https://fbref.com/req/202302030/images/headshots/63199c01_2022.jpg,https://fbref.com/en/players/63199c01/Aleksandar-Andreev,Girona
+Papa Ba,players,https://fbref.com/req/202302030/images/headshots/e0b0f636_2022.jpg,https://fbref.com/en/players/e0b0f636/Papa-Ba,Girona
+Rubén Blanco,players,https://fbref.com/req/202302030/images/headshots/967f34d3_2022.jpg,https://fbref.com/en/players/967f34d3/Ruben-Blanco,Girona
+Gibert Cámara,players,https://fbref.com/req/202302030/images/headshots/465ce082_2022.jpg,https://fbref.com/en/players/465ce082/Gibert-Camara,Girona
+Juan Carlos,players,https://fbref.com/req/202302030/images/headshots/688b96e3_2022.jpg,https://fbref.com/en/players/688b96e3/Juan-Carlos,Girona
+Dominik Livaković,players,https://fbref.com/req/202302030/images/headshots/58f077c0_2022.jpg,https://fbref.com/en/players/58f077c0/Dominik-Livakovic,Girona
+Javier Sarasa,players,https://fbref.com/req/202302030/images/headshots/43512a4a_2022.jpg,https://fbref.com/en/players/43512a4a/Javier-Sarasa,Girona
+Augusto Batalla,players,https://fbref.com/req/202302030/images/headshots/fc627681_2022.jpg,https://fbref.com/en/players/fc627681/Augusto-Batalla,Rayo Vallecano
+Florian Lejeune,players,https://fbref.com/req/202302030/images/headshots/6eaed4eb_2022.jpg,https://fbref.com/en/players/6eaed4eb/Florian-Lejeune,Rayo Vallecano
+Jorge de Frutos,players,https://fbref.com/req/202302030/images/headshots/38ce1150_2022.jpg,https://fbref.com/en/players/38ce1150/Jorge-de-Frutos,Rayo Vallecano
+Andrei Ratiu,players,https://fbref.com/req/202302030/images/headshots/b1b99435_2022.jpg,https://fbref.com/en/players/b1b99435/Andrei-Ratiu,Rayo Vallecano
+Isaac Palazón Camacho,players,https://fbref.com/req/202302030/images/headshots/49dbab27_2022.jpg,https://fbref.com/en/players/49dbab27/Isaac-Palazon-Camacho,Rayo Vallecano
+Pep Chavarría,players,https://fbref.com/req/202302030/images/headshots/63c5e56b_2022.jpg,https://fbref.com/en/players/63c5e56b/Pep-Chavarria,Rayo Vallecano
+Álvaro García,players,https://fbref.com/req/202302030/images/headshots/90bbd822_2022.jpg,https://fbref.com/en/players/90bbd822/Alvaro-Garcia,Rayo Vallecano
+Óscar Valentín,players,https://fbref.com/req/202302030/images/headshots/592f3158_2022.jpg,https://fbref.com/en/players/592f3158/Oscar-Valentin,Rayo Vallecano
+Nobel Mendy,players,https://fbref.com/req/202302030/images/headshots/7e64e657_2022.jpg,https://fbref.com/en/players/7e64e657/Nobel-Mendy,Rayo Vallecano
+Pedro Díaz,players,https://fbref.com/req/202302030/images/headshots/eea5130e_2022.jpg,https://fbref.com/en/players/eea5130e/Pedro-Diaz,Rayo Vallecano
+Unai López,players,https://fbref.com/req/202302030/images/headshots/88050721_2022.jpg,https://fbref.com/en/players/88050721/Unai-Lopez,Rayo Vallecano
+Pathé Ciss,players,https://fbref.com/req/202302030/images/headshots/9a0408b6_2022.jpg,https://fbref.com/en/players/9a0408b6/Pathe-Ciss,Rayo Vallecano
+Alfonso Espino,players,https://fbref.com/req/202302030/images/headshots/db001fa9_2022.jpg,https://fbref.com/en/players/db001fa9/Alfonso-Espino,Rayo Vallecano
+Francisco Perez,players,https://fbref.com/req/202302030/images/headshots/3d79a68c_2022.jpg,https://fbref.com/en/players/3d79a68c/Francisco-Perez,Rayo Vallecano
+Gerard Gumbau,players,https://fbref.com/req/202302030/images/headshots/ac454a4f_2022.jpg,https://fbref.com/en/players/ac454a4f/Gerard-Gumbau,Rayo Vallecano
+Alexandre Alemão,players,https://fbref.com/req/202302030/images/headshots/3ed2a79b_2022.jpg,https://fbref.com/en/players/3ed2a79b/Alexandre-Alemao,Rayo Vallecano
+Luiz Felipe,players,https://fbref.com/req/202302030/images/headshots/15d0c248_2022.jpg,https://fbref.com/en/players/15d0c248/Luiz-Felipe,Rayo Vallecano
+Sergio Camello,players,https://fbref.com/req/202302030/images/headshots/873619c6_2022.jpg,https://fbref.com/en/players/873619c6/Sergio-Camello,Rayo Vallecano
+Iván Balliu,players,https://fbref.com/req/202302030/images/headshots/cee88597_2022.jpg,https://fbref.com/en/players/cee88597/Ivan-Balliu,Rayo Vallecano
+Jozhua Vertrouwd,players,https://fbref.com/req/202302030/images/headshots/885b845e_2022.jpg,https://fbref.com/en/players/885b845e/Jozhua-Vertrouwd,Rayo Vallecano
+Randy Nteka,players,https://fbref.com/req/202302030/images/headshots/a6103274_2022.jpg,https://fbref.com/en/players/a6103274/Randy-Nteka,Rayo Vallecano
+Óscar Trejo,players,https://fbref.com/req/202302030/images/headshots/fc647b34_2022.jpg,https://fbref.com/en/players/fc647b34/Oscar-Trejo,Rayo Vallecano
+Samu Becerra,players,https://fbref.com/req/202302030/images/headshots/3467af5a_2022.jpg,https://fbref.com/en/players/3467af5a/Samu-Becerra,Rayo Vallecano
+Dani Cárdenas,players,https://fbref.com/req/202302030/images/headshots/e1846dde_2022.jpg,https://fbref.com/en/players/e1846dde/Dani-Cardenas,Rayo Vallecano
+Juanpe,players,https://fbref.com/req/202302030/images/headshots/dc7f6e3f_2022.jpg,https://fbref.com/en/players/dc7f6e3f/Juanpe,Rayo Vallecano
+Marco de las Sías,players,https://fbref.com/req/202302030/images/headshots/26ff6313_2022.jpg,https://fbref.com/en/players/26ff6313/Marco-de-las-Sias,Rayo Vallecano
+Adrián Molina,players,https://fbref.com/req/202302030/images/headshots/892e99a7_2022.jpg,https://fbref.com/en/players/892e99a7/Adrian-Molina,Rayo Vallecano
+Abdul Mumin,players,https://fbref.com/req/202302030/images/headshots/5487adcd_2022.jpg,https://fbref.com/en/players/5487adcd/Abdul-Mumin,Rayo Vallecano
+José Luis Gayà,players,https://fbref.com/req/202302030/images/headshots/b05e2dbd_2022.jpg,https://fbref.com/en/players/b05e2dbd/Jose-Luis-Gaya,Valencia
+Luis Rioja,players,https://fbref.com/req/202302030/images/headshots/eb3dd471_2022.jpg,https://fbref.com/en/players/eb3dd471/Luis-Rioja,Valencia
+José Luis García Vayá,players,https://fbref.com/req/202302030/images/headshots/27dc1378_2022.jpg,https://fbref.com/en/players/27dc1378/Jose-Luis-Garcia-Vaya,Valencia
+Copete,players,https://fbref.com/req/202302030/images/headshots/0f26ffd7_2022.jpg,https://fbref.com/en/players/0f26ffd7/Copete,Valencia
+César Tárrega,players,https://fbref.com/req/202302030/images/headshots/59c29820_2022.jpg,https://fbref.com/en/players/59c29820/Cesar-Tarrega,Valencia
+Julen Agirrezabala,players,https://fbref.com/req/202302030/images/headshots/a2c1a8d3_2022.jpg,https://fbref.com/en/players/a2c1a8d3/Julen-Agirrezabala,Valencia
+Arnaut Danjuma,players,https://fbref.com/req/202302030/images/headshots/f08490a6_2022.jpg,https://fbref.com/en/players/f08490a6/Arnaut-Danjuma,Valencia
+Javier Guerra,players,https://fbref.com/req/202302030/images/headshots/3828f130_2022.jpg,https://fbref.com/en/players/3828f130/Javier-Guerra,Valencia
+Hugo Duro,players,https://fbref.com/req/202302030/images/headshots/37e103f8_2022.jpg,https://fbref.com/en/players/37e103f8/Hugo-Duro,Valencia
+Diego López,players,https://fbref.com/req/202302030/images/headshots/c487901c_2022.jpg,https://fbref.com/en/players/c487901c/Diego-Lopez,Valencia
+Thierry Correia,players,https://fbref.com/req/202302030/images/headshots/c78b352d_2022.jpg,https://fbref.com/en/players/c78b352d/Thierry-Correia,Valencia
+Lucas Beltrán,players,https://fbref.com/req/202302030/images/headshots/482d2bc3_2022.jpg,https://fbref.com/en/players/482d2bc3/Lucas-Beltran,Valencia
+Dimitri Foulquier,players,https://fbref.com/req/202302030/images/headshots/45e17712_2022.jpg,https://fbref.com/en/players/45e17712/Dimitri-Foulquier,Valencia
+Filip Ugrinic,players,https://fbref.com/req/202302030/images/headshots/8d4baac4_2022.jpg,https://fbref.com/en/players/8d4baac4/Filip-Ugrinic,Valencia
+Stole Dimitrievski,players,https://fbref.com/req/202302030/images/headshots/fc70e345_2022.jpg,https://fbref.com/en/players/fc70e345/Stole-Dimitrievski,Valencia
+Domingos André Ribeiro Almeida,players,https://fbref.com/req/202302030/images/headshots/e6697917_2022.jpg,https://fbref.com/en/players/e6697917/Domingos-Andre-Ribeiro-Almeida,Valencia
+Eray Cömert,players,https://fbref.com/req/202302030/images/headshots/15937e17_2022.jpg,https://fbref.com/en/players/15937e17/Eray-Comert,Valencia
+Baptiste Santamaria,players,https://fbref.com/req/202302030/images/headshots/5e22e2a4_2022.jpg,https://fbref.com/en/players/5e22e2a4/Baptiste-Santamaria,Valencia
+Mouctar Diakhaby,players,https://fbref.com/req/202302030/images/headshots/d2110326_2022.jpg,https://fbref.com/en/players/d2110326/Mouctar-Diakhaby,Valencia
+Unai Núñez,players,https://fbref.com/req/202302030/images/headshots/be170419_2022.jpg,https://fbref.com/en/players/be170419/Unai-Nunez,Valencia
+Jesus Vazquez,players,https://fbref.com/req/202302030/images/headshots/106c142c_2022.jpg,https://fbref.com/en/players/106c142c/Jesus-Vazquez,Valencia
+Largie Ramazani,players,https://fbref.com/req/202302030/images/headshots/cc9256ef_2022.jpg,https://fbref.com/en/players/cc9256ef/Largie-Ramazani,Valencia
+Guido Rodríguez,players,https://fbref.com/req/202302030/images/headshots/34e393f2_2022.jpg,https://fbref.com/en/players/34e393f2/Guido-Rodriguez,Valencia
+Dani Raba,players,https://fbref.com/req/202302030/images/headshots/ea6a7ab4_2022.jpg,https://fbref.com/en/players/ea6a7ab4/Dani-Raba,Valencia
+Ruben Lendinez,players,https://fbref.com/req/202302030/images/headshots/755da865_2022.jpg,https://fbref.com/en/players/755da865/Ruben-Lendinez,Valencia
+Cristian,players,https://fbref.com/req/202302030/images/headshots/9ad74b4d_2022.jpg,https://fbref.com/en/players/9ad74b4d/Cristian,Valencia
+Vicent Abril,players,https://fbref.com/req/202302030/images/headshots/7221db10_2022.jpg,https://fbref.com/en/players/7221db10/Vicent-Abril,Valencia
+Aimar Blazquez,players,https://fbref.com/req/202302030/images/headshots/7a11b0c2_2022.jpg,https://fbref.com/en/players/7a11b0c2/Aimar-Blazquez,Valencia
+Pablo López,players,https://fbref.com/req/202302030/images/headshots/7282414b_2022.jpg,https://fbref.com/en/players/7282414b/Pablo-Lopez,Valencia
+Marcos Navarro,players,https://fbref.com/req/202302030/images/headshots/cacfc380_2022.jpg,https://fbref.com/en/players/cacfc380/Marcos-Navarro,Valencia
+Lucas Núñez,players,https://fbref.com/req/202302030/images/headshots/39fef081_2022.jpg,https://fbref.com/en/players/39fef081/Lucas-Nunez,Valencia
+David Otorbi,players,https://fbref.com/req/202302030/images/headshots/c83e3553_2022.jpg,https://fbref.com/en/players/c83e3553/David-Otorbi,Valencia
+Renzo Saravia,players,https://fbref.com/req/202302030/images/headshots/cf316639_2022.jpg,https://fbref.com/en/players/cf316639/Renzo-Saravia,Valencia
+Odysseas Vlachodimos,players,https://fbref.com/req/202302030/images/headshots/03df04ff_2022.jpg,https://fbref.com/en/players/03df04ff/Odysseas-Vlachodimos,Sevilla
+Lucien Agoume,players,https://fbref.com/req/202302030/images/headshots/8bc8829a_2022.jpg,https://fbref.com/en/players/8bc8829a/Lucien-Agoume,Sevilla
+Carmona,players,https://fbref.com/req/202302030/images/headshots/2dce876a_2022.jpg,https://fbref.com/en/players/2dce876a/Carmona,Sevilla
+Djibril Sow,players,https://fbref.com/req/202302030/images/headshots/4c6facae_2022.jpg,https://fbref.com/en/players/4c6facae/Djibril-Sow,Sevilla
+Nemanja Gudelj,players,https://fbref.com/req/202302030/images/headshots/0076ab7f_2022.jpg,https://fbref.com/en/players/0076ab7f/Nemanja-Gudelj,Sevilla
+Juanlu Sánchez,players,https://fbref.com/req/202302030/images/headshots/cc6de655_2022.jpg,https://fbref.com/en/players/cc6de655/Juanlu-Sanchez,Sevilla
+Gabriel Suazo,players,https://fbref.com/req/202302030/images/headshots/39b326ed_2022.jpg,https://fbref.com/en/players/39b326ed/Gabriel-Suazo,Sevilla
+Batista Mendy,players,https://fbref.com/req/202302030/images/headshots/e472a6f6_2022.jpg,https://fbref.com/en/players/e472a6f6/Batista-Mendy,Sevilla
+Akor Adams,players,https://fbref.com/req/202302030/images/headshots/2ccd39ed_2022.jpg,https://fbref.com/en/players/2ccd39ed/Akor-Adams,Sevilla
+Kike Salas,players,https://fbref.com/req/202302030/images/headshots/0a69de7b_2022.jpg,https://fbref.com/en/players/0a69de7b/Kike-Salas,Sevilla
+César Azpilicueta,players,https://fbref.com/req/202302030/images/headshots/53cad200_2022.jpg,https://fbref.com/en/players/53cad200/Cesar-Azpilicueta,Sevilla
+Isaac Romero,players,https://fbref.com/req/202302030/images/headshots/be719093_2022.jpg,https://fbref.com/en/players/be719093/Isaac-Romero,Sevilla
+Marcão,players,https://fbref.com/req/202302030/images/headshots/133faa84_2022.jpg,https://fbref.com/en/players/133faa84/Marcao,Sevilla
+Ruben Vargas,players,https://fbref.com/req/202302030/images/headshots/6ecbddf6_2022.jpg,https://fbref.com/en/players/6ecbddf6/Ruben-Vargas,Sevilla
+Peque,players,https://fbref.com/req/202302030/images/headshots/cb971b4f_2022.jpg,https://fbref.com/en/players/cb971b4f/Peque,Sevilla
+Alexis Sánchez,players,https://fbref.com/req/202302030/images/headshots/2c0f8e9e_2022.jpg,https://fbref.com/en/players/2c0f8e9e/Alexis-Sanchez,Sevilla
+Joaquín Martínez Gauna,players,https://fbref.com/req/202302030/images/headshots/cd8b99a7_2022.jpg,https://fbref.com/en/players/cd8b99a7/Joaquin-Martinez-Gauna,Sevilla
+Castrin,players,https://fbref.com/req/202302030/images/headshots/fd06e61d_2022.jpg,https://fbref.com/en/players/fd06e61d/Castrin,Sevilla
+Tanguy Nianzou,players,https://fbref.com/req/202302030/images/headshots/5853ac44_2022.jpg,https://fbref.com/en/players/5853ac44/Tanguy-Nianzou,Sevilla
+Chidera Ejuke,players,https://fbref.com/req/202302030/images/headshots/e7f3e8a7_2022.jpg,https://fbref.com/en/players/e7f3e8a7/Chidera-Ejuke,Sevilla
+Neal Maupay,players,https://fbref.com/req/202302030/images/headshots/4bcf39f6_2022.jpg,https://fbref.com/en/players/4bcf39f6/Neal-Maupay,Sevilla
+Ørjan Nyland,players,https://fbref.com/req/202302030/images/headshots/bdedffac_2022.jpg,https://fbref.com/en/players/bdedffac/Orjan-Nyland,Sevilla
+Fábio Cardoso,players,https://fbref.com/req/202302030/images/headshots/4a5839fa_2022.jpg,https://fbref.com/en/players/4a5839fa/Fabio-Cardoso,Sevilla
+Adnan Januzaj,players,https://fbref.com/req/202302030/images/headshots/4737cebe_2022.jpg,https://fbref.com/en/players/4737cebe/Adnan-Januzaj,Sevilla
+Dodi Lukebakio,players,https://fbref.com/req/202302030/images/headshots/0c61c77c_2022.jpg,https://fbref.com/en/players/0c61c77c/Dodi-Lukebakio,Sevilla
+Stanis Idumbo,players,https://fbref.com/req/202302030/images/headshots/53551b98_2022.jpg,https://fbref.com/en/players/53551b98/Stanis-Idumbo,Sevilla
+Ramón Martínez,players,https://fbref.com/req/202302030/images/headshots/a04f40c8_2022.jpg,https://fbref.com/en/players/a04f40c8/Ramon-Martinez,Sevilla
+Manu Bueno,players,https://fbref.com/req/202302030/images/headshots/c5642098_2022.jpg,https://fbref.com/en/players/c5642098/Manu-Bueno,Sevilla
+Miguel Ángel Sierra,players,https://fbref.com/req/202302030/images/headshots/5a0a95a3_2022.jpg,https://fbref.com/en/players/5a0a95a3/Miguel-Angel-Sierra,Sevilla
+Joan Jordán,players,https://fbref.com/req/202302030/images/headshots/2a0c8ba4_2022.jpg,https://fbref.com/en/players/2a0c8ba4/Joan-Jordan,Sevilla
+Federico Gattoni,players,https://fbref.com/req/202302030/images/headshots/86087757_2022.jpg,https://fbref.com/en/players/86087757/Federico-Gattoni,Sevilla
+Adrià Pedrosa,players,https://fbref.com/req/202302030/images/headshots/112521d1_2022.jpg,https://fbref.com/en/players/112521d1/Adria-Pedrosa,Sevilla
+Edu Altozano,players,https://fbref.com/req/202302030/images/headshots/30c456db_2022.jpg,https://fbref.com/en/players/30c456db/Edu-Altozano,Sevilla
+Álex Costa,players,https://fbref.com/req/202302030/images/headshots/cdd09765_2022.jpg,https://fbref.com/en/players/cdd09765/Alex-Costa,Sevilla
+Álvaro Fernández,players,https://fbref.com/req/202302030/images/headshots/f127d782_2022.jpg,https://fbref.com/en/players/f127d782/Alvaro-Fernandez,Sevilla
+Alberto López,players,https://fbref.com/req/202302030/images/headshots/c25f14a7_2022.jpg,https://fbref.com/en/players/c25f14a7/Alberto-Lopez,Sevilla
+Rafa,players,https://fbref.com/req/202302030/images/headshots/7bf09d25_2022.jpg,https://fbref.com/en/players/7bf09d25/Rafa,Sevilla
+Martin Valjent,players,https://fbref.com/req/202302030/images/headshots/f2c6ac01_2022.jpg,https://fbref.com/en/players/f2c6ac01/Martin-Valjent,Mallorca
+Vedat Muriqi,players,https://fbref.com/req/202302030/images/headshots/0cadc46d_2022.jpg,https://fbref.com/en/players/0cadc46d/Vedat-Muriqi,Mallorca
+Johan Mojica,players,https://fbref.com/req/202302030/images/headshots/608f2092_2022.jpg,https://fbref.com/en/players/608f2092/Johan-Mojica,Mallorca
+Leo Román,players,https://fbref.com/req/202302030/images/headshots/924ff27e_2022.jpg,https://fbref.com/en/players/924ff27e/Leo-Roman,Mallorca
+Pablo Maffeo,players,https://fbref.com/req/202302030/images/headshots/5db04597_2022.jpg,https://fbref.com/en/players/5db04597/Pablo-Maffeo,Mallorca
+Samu Costa,players,https://fbref.com/req/202302030/images/headshots/76c2a023_2022.jpg,https://fbref.com/en/players/76c2a023/Samu-Costa,Mallorca
+Antonio Raillo,players,https://fbref.com/req/202302030/images/headshots/b857bd29_2022.jpg,https://fbref.com/en/players/b857bd29/Antonio-Raillo,Mallorca
+Sergi Darder,players,https://fbref.com/req/202302030/images/headshots/070a3904_2022.jpg,https://fbref.com/en/players/070a3904/Sergi-Darder,Mallorca
+Mateo Joseph,players,https://fbref.com/req/202302030/images/headshots/6ad43f9a_2022.jpg,https://fbref.com/en/players/6ad43f9a/Mateo-Joseph,Mallorca
+Omar Mascarell,players,https://fbref.com/req/202302030/images/headshots/11fd2b75_2022.jpg,https://fbref.com/en/players/11fd2b75/Omar-Mascarell,Mallorca
+Jan Virgili,players,https://fbref.com/req/202302030/images/headshots/fbde78a4_2022.jpg,https://fbref.com/en/players/fbde78a4/Jan-Virgili,Mallorca
+Manu Morlanes,players,https://fbref.com/req/202302030/images/headshots/a0255c67_2022.jpg,https://fbref.com/en/players/a0255c67/Manu-Morlanes,Mallorca
+Pablo Torre,players,https://fbref.com/req/202302030/images/headshots/04e531b6_2022.jpg,https://fbref.com/en/players/04e531b6/Pablo-Torre,Mallorca
+Antonio Sánchez,players,https://fbref.com/req/202302030/images/headshots/a254bbe0_2022.jpg,https://fbref.com/en/players/a254bbe0/Antonio-Sanchez,Mallorca
+Mateu Morey,players,https://fbref.com/req/202302030/images/headshots/5fd5e542_2022.jpg,https://fbref.com/en/players/5fd5e542/Mateu-Morey,Mallorca
+Takuma Asano,players,https://fbref.com/req/202302030/images/headshots/13ddc856_2022.jpg,https://fbref.com/en/players/13ddc856/Takuma-Asano,Mallorca
+David López,players,https://fbref.com/req/202302030/images/headshots/0924357d_2022.jpg,https://fbref.com/en/players/0924357d/David-Lopez,Mallorca
+Lucas Bergström,players,https://fbref.com/req/202302030/images/headshots/b59c2a92_2022.jpg,https://fbref.com/en/players/b59c2a92/Lucas-Bergstrom,Mallorca
+Marash Kumbulla,players,https://fbref.com/req/202302030/images/headshots/a40819d9_2022.jpg,https://fbref.com/en/players/a40819d9/Marash-Kumbulla,Mallorca
+Toni Lato,players,https://fbref.com/req/202302030/images/headshots/8e088e04_2022.jpg,https://fbref.com/en/players/8e088e04/Toni-Lato,Mallorca
+Marc Domenech,players,https://fbref.com/req/202302030/images/headshots/54880c9b_2022.jpg,https://fbref.com/en/players/54880c9b/Marc-Domenech,Mallorca
+Javier Llabrés,players,https://fbref.com/req/202302030/images/headshots/38b0cf42_2022.jpg,https://fbref.com/en/players/38b0cf42/Javier-Llabres,Mallorca
+Abdón Prats,players,https://fbref.com/req/202302030/images/headshots/d1b060e2_2022.jpg,https://fbref.com/en/players/d1b060e2/Abdon-Prats,Mallorca
+Zito Luvumbo,players,https://fbref.com/req/202302030/images/headshots/b09e0873_2022.jpg,https://fbref.com/en/players/b09e0873/Zito-Luvumbo,Mallorca
+Dani Rodríguez,players,https://fbref.com/req/202302030/images/headshots/70f8e0bd_2022.jpg,https://fbref.com/en/players/70f8e0bd/Dani-Rodriguez,Mallorca
+Justin-Noël Kalumba,players,https://fbref.com/req/202302030/images/headshots/32e2163d_2022.jpg,https://fbref.com/en/players/32e2163d/Justin-Noel-Kalumba,Mallorca
+Iván Cuéllar,players,https://fbref.com/req/202302030/images/headshots/75751c99_2022.jpg,https://fbref.com/en/players/75751c99/Ivan-Cuellar,Mallorca
+Daniel Luna,players,https://fbref.com/req/202302030/images/headshots/410b16e3_2022.jpg,https://fbref.com/en/players/410b16e3/Daniel-Luna,Mallorca
+Javier Olaizola,players,https://fbref.com/req/202302030/images/headshots/2aa4a84b_2022.jpg,https://fbref.com/en/players/2aa4a84b/Javier-Olaizola,Mallorca
+Iliesse Salhi,players,https://fbref.com/req/202302030/images/headshots/5f869a62_2022.jpg,https://fbref.com/en/players/5f869a62/Iliesse-Salhi,Mallorca
+Antonio Sivera,players,https://fbref.com/req/202302030/images/headshots/9970da54_2022.jpg,https://fbref.com/en/players/9970da54/Antonio-Sivera,Alavés
+Jonny Castro,players,https://fbref.com/req/202302030/images/headshots/e28868f3_2022.jpg,https://fbref.com/en/players/e28868f3/Jonny-Castro,Alavés
+Nahuel Tenaglia,players,https://fbref.com/req/202302030/images/headshots/66654daa_2022.jpg,https://fbref.com/en/players/66654daa/Nahuel-Tenaglia,Alavés
+Antonio Blanco,players,https://fbref.com/req/202302030/images/headshots/506daeac_2022.jpg,https://fbref.com/en/players/506daeac/Antonio-Blanco,Alavés
+Toni Martínez,players,https://fbref.com/req/202302030/images/headshots/f3945e07_2022.jpg,https://fbref.com/en/players/f3945e07/Toni-Martinez,Alavés
+Carles Aleñá,players,https://fbref.com/req/202302030/images/headshots/6c811eb7_2022.jpg,https://fbref.com/en/players/6c811eb7/Carles-Alena,Alavés
+Pablo Ibáñez,players,https://fbref.com/req/202302030/images/headshots/3701906c_2022.jpg,https://fbref.com/en/players/3701906c/Pablo-Ibanez,Alavés
+Lucas Boyé,players,https://fbref.com/req/202302030/images/headshots/d49f3e6b_2022.jpg,https://fbref.com/en/players/d49f3e6b/Lucas-Boye,Alavés
+Victor Parada,players,https://fbref.com/req/202302030/images/headshots/8ca358c5_2022.jpg,https://fbref.com/en/players/8ca358c5/Victor-Parada,Alavés
+Calebe,players,https://fbref.com/req/202302030/images/headshots/c84af55e_2022.jpg,https://fbref.com/en/players/c84af55e/Calebe,Alavés
+Carlos Vicente,players,https://fbref.com/req/202302030/images/headshots/90df343e_2022.jpg,https://fbref.com/en/players/90df343e/Carlos-Vicente,Alavés
+Youssef Lekhedim,players,https://fbref.com/req/202302030/images/headshots/8f6272c2_2022.jpg,https://fbref.com/en/players/8f6272c2/Youssef-Lekhedim,Alavés
+Abde Rebbach,players,https://fbref.com/req/202302030/images/headshots/9a796115_2022.jpg,https://fbref.com/en/players/9a796115/Abde-Rebbach,Alavés
+Facundo Garcés,players,https://fbref.com/req/202302030/images/headshots/20c88f8f_2022.jpg,https://fbref.com/en/players/20c88f8f/Facundo-Garces,Alavés
+Jon Guridi,players,https://fbref.com/req/202302030/images/headshots/4c0a6a48_2022.jpg,https://fbref.com/en/players/4c0a6a48/Jon-Guridi,Alavés
+Mariano,players,https://fbref.com/req/202302030/images/headshots/5c4dc0ff_2022.jpg,https://fbref.com/en/players/5c4dc0ff/Mariano,Alavés
+Carlos Benavídez,players,https://fbref.com/req/202302030/images/headshots/9fb45456_2022.jpg,https://fbref.com/en/players/9fb45456/Carlos-Benavidez,Alavés
+Moussa Diarra,players,https://fbref.com/req/202302030/images/headshots/698f11e3_2022.jpg,https://fbref.com/en/players/698f11e3/Moussa-Diarra,Alavés
+Ander Guevara,players,https://fbref.com/req/202302030/images/headshots/8e48dc61_2022.jpg,https://fbref.com/en/players/8e48dc61/Ander-Guevara,Alavés
+Diego Morcillo,players,https://fbref.com/req/202302030/images/headshots/e44be5b9_2022.jpg,https://fbref.com/en/players/e44be5b9/Diego-Morcillo,Alavés
+Lander Pinillos,players,https://fbref.com/req/202302030/images/headshots/76b73a4b_2022.jpg,https://fbref.com/en/players/76b73a4b/Lander-Pinillos,Alavés
+Carlos Ballestero,players,https://fbref.com/req/202302030/images/headshots/980b7b35_2022.jpg,https://fbref.com/en/players/980b7b35/Carlos-Ballestero,Alavés
+Raúl Fernández,players,https://fbref.com/req/202302030/images/headshots/6fb59070_2022.jpg,https://fbref.com/en/players/6fb59070/Raul-Fernandez,Alavés
+Nikola Maraš,players,https://fbref.com/req/202302030/images/headshots/b9d0446f_2022.jpg,https://fbref.com/en/players/b9d0446f/Nikola-Maras,Alavés
+Rubén Montero,players,https://fbref.com/req/202302030/images/headshots/e4bf75c5_2022.jpg,https://fbref.com/en/players/e4bf75c5/Ruben-Montero,Alavés
+Grégoire Swiderski,players,https://fbref.com/req/202302030/images/headshots/4920e27b_2022.jpg,https://fbref.com/en/players/4920e27b/Gregoire-Swiderski,Alavés
+Aleix Febas,players,https://fbref.com/req/202302030/images/headshots/38126309_2022.jpg,https://fbref.com/en/players/38126309/Aleix-Febas,Elche
+Germán Valera,players,https://fbref.com/req/202302030/images/headshots/84f55b4a_2022.jpg,https://fbref.com/en/players/84f55b4a/German-Valera,Elche
+David Affengruber,players,https://fbref.com/req/202302030/images/headshots/4b00cd47_2022.jpg,https://fbref.com/en/players/4b00cd47/David-Affengruber,Elche
+Marc Aguado,players,https://fbref.com/req/202302030/images/headshots/5a705641_2022.jpg,https://fbref.com/en/players/5a705641/Marc-Aguado,Elche
+Víctor Chust,players,https://fbref.com/req/202302030/images/headshots/ec1a731e_2022.jpg,https://fbref.com/en/players/ec1a731e/Victor-Chust,Elche
+Pedro Bigas,players,https://fbref.com/req/202302030/images/headshots/697295b1_2022.jpg,https://fbref.com/en/players/697295b1/Pedro-Bigas,Elche
+Álvaro Rodríguez,players,https://fbref.com/req/202302030/images/headshots/49a6ecbb_2022.jpg,https://fbref.com/en/players/49a6ecbb/Alvaro-Rodriguez,Elche
+Rafa Mir,players,https://fbref.com/req/202302030/images/headshots/bbf5c11b_2022.jpg,https://fbref.com/en/players/bbf5c11b/Rafa-Mir,Elche
+André Silva,players,https://fbref.com/req/202302030/images/headshots/3effaa34_2022.jpg,https://fbref.com/en/players/3effaa34/Andre-Silva,Elche
+Léo Pétrot,players,https://fbref.com/req/202302030/images/headshots/00638016_2022.jpg,https://fbref.com/en/players/00638016/Leo-Petrot,Elche
+Martim Neto,players,https://fbref.com/req/202302030/images/headshots/f98c4f0a_2022.jpg,https://fbref.com/en/players/f98c4f0a/Martim-Neto,Elche
+Matías Dituro,players,https://fbref.com/req/202302030/images/headshots/b6160ad0_2022.jpg,https://fbref.com/en/players/b6160ad0/Matias-Dituro,Elche
+Grady Diangana,players,https://fbref.com/req/202302030/images/headshots/f522d7ec_2022.jpg,https://fbref.com/en/players/f522d7ec/Grady-Diangana,Elche
+John Donald,players,https://fbref.com/req/202302030/images/headshots/5e95c000_2022.jpg,https://fbref.com/en/players/5e95c000/John-Donald,Elche
+Héctor Fort,players,https://fbref.com/req/202302030/images/headshots/2e31f3a6_2022.jpg,https://fbref.com/en/players/2e31f3a6/Hector-Fort,Elche
+Josan,players,https://fbref.com/req/202302030/images/headshots/5b28b2f6_2022.jpg,https://fbref.com/en/players/5b28b2f6/Josan,Elche
+Yago Santiago,players,https://fbref.com/req/202302030/images/headshots/88b3215c_2022.jpg,https://fbref.com/en/players/88b3215c/Yago-Santiago,Elche
+Tete Morente,players,https://fbref.com/req/202302030/images/headshots/004d185e_2022.jpg,https://fbref.com/en/players/004d185e/Tete-Morente,Elche
+Ali Houary,players,https://fbref.com/req/202302030/images/headshots/69ca346f_2022.jpg,https://fbref.com/en/players/69ca346f/Ali-Houary,Elche
+Buba Sangaré,players,https://fbref.com/req/202302030/images/headshots/42a91c6d_2022.jpg,https://fbref.com/en/players/42a91c6d/Buba-Sangare,Elche
+Federico Redondo,players,https://fbref.com/req/202302030/images/headshots/b7b9c8ce_2022.jpg,https://fbref.com/en/players/b7b9c8ce/Federico-Redondo,Elche
+Bambo Diaby,players,https://fbref.com/req/202302030/images/headshots/7fd1abc5_2022.jpg,https://fbref.com/en/players/7fd1abc5/Bambo-Diaby,Elche
+Adam Boayar,players,https://fbref.com/req/202302030/images/headshots/fcc7ecb4_2022.jpg,https://fbref.com/en/players/fcc7ecb4/Adam-Boayar,Elche
+Gonzalo Villar,players,https://fbref.com/req/202302030/images/headshots/bdc74a8f_2022.jpg,https://fbref.com/en/players/bdc74a8f/Gonzalo-Villar,Elche
+Jairo Izquierdo,players,https://fbref.com/req/202302030/images/headshots/2ceb58ab_2022.jpg,https://fbref.com/en/players/2ceb58ab/Jairo-Izquierdo,Elche
+David Delgado,players,https://fbref.com/req/202302030/images/headshots/57558e0c_2022.jpg,https://fbref.com/en/players/57558e0c/David-Delgado,Elche
+Alejandro Iturbe,players,https://fbref.com/req/202302030/images/headshots/d58f4c7a_2022.jpg,https://fbref.com/en/players/d58f4c7a/Alejandro-Iturbe,Elche
+Antonio Martínez,players,https://fbref.com/req/202302030/images/headshots/e91fb8c2_2022.jpg,https://fbref.com/en/players/e91fb8c2/Antonio-Martinez,Elche
+Albert Niculaesei,players,https://fbref.com/req/202302030/images/headshots/220d9a50_2022.jpg,https://fbref.com/en/players/220d9a50/Albert-Niculaesei,Elche
+Jeremy Toljan,players,https://fbref.com/req/202302030/images/headshots/a96e5dc0_2022.jpg,https://fbref.com/en/players/a96e5dc0/Jeremy-Toljan,Levante
+Mathew Ryan,players,https://fbref.com/req/202302030/images/headshots/4535e4bb_2022.jpg,https://fbref.com/en/players/4535e4bb/Mathew-Ryan,Levante
+Manu Sánchez,players,https://fbref.com/req/202302030/images/headshots/ffacd3d5_2022.jpg,https://fbref.com/en/players/ffacd3d5/Manu-Sanchez,Levante
+Iván Romero,players,https://fbref.com/req/202302030/images/headshots/2fbe6af0_2022.jpg,https://fbref.com/en/players/2fbe6af0/Ivan-Romero,Levante
+Carlos Álvarez,players,https://fbref.com/req/202302030/images/headshots/56bcaaa0_2022.jpg,https://fbref.com/en/players/56bcaaa0/Carlos-Alvarez,Levante
+Adrián de la Fuente,players,https://fbref.com/req/202302030/images/headshots/5932c94a_2022.jpg,https://fbref.com/en/players/5932c94a/Adrian-de-la-Fuente,Levante
+Matias Moreno,players,https://fbref.com/req/202302030/images/headshots/4637e608_2022.jpg,https://fbref.com/en/players/4637e608/Matias-Moreno,Levante
+Pablo Martínez,players,https://fbref.com/req/202302030/images/headshots/ecc77652_2022.jpg,https://fbref.com/en/players/ecc77652/Pablo-Martinez,Levante
+Kervin Arriaga,players,https://fbref.com/req/202302030/images/headshots/4f8a9f70_2022.jpg,https://fbref.com/en/players/4f8a9f70/Kervin-Arriaga,Levante
+Oriol Rey,players,https://fbref.com/req/202302030/images/headshots/e8a0d2f7_2022.jpg,https://fbref.com/en/players/e8a0d2f7/Oriol-Rey,Levante
+Unai Elgezabal,players,https://fbref.com/req/202302030/images/headshots/01cc0c90_2022.jpg,https://fbref.com/en/players/01cc0c90/Unai-Elgezabal,Levante
+Brugui,players,https://fbref.com/req/202302030/images/headshots/66d0860c_2022.jpg,https://fbref.com/en/players/66d0860c/Brugui,Levante
+Olasagasti,players,https://fbref.com/req/202302030/images/headshots/3d99999d_2022.jpg,https://fbref.com/en/players/3d99999d/Olasagasti,Levante
+Alan Matturro,players,https://fbref.com/req/202302030/images/headshots/547c0119_2022.jpg,https://fbref.com/en/players/547c0119/Alan-Matturro,Levante
+Víctor García,players,https://fbref.com/req/202302030/images/headshots/6636496a_2022.jpg,https://fbref.com/en/players/6636496a/Victor-Garcia,Levante
+Ugo Raghouber,players,https://fbref.com/req/202302030/images/headshots/7ab92dd1_2022.jpg,https://fbref.com/en/players/7ab92dd1/Ugo-Raghouber,Levante
+Diego Pampín,players,https://fbref.com/req/202302030/images/headshots/c748a0b2_2022.jpg,https://fbref.com/en/players/c748a0b2/Diego-Pampin,Levante
+Jorge Cabello,players,https://fbref.com/req/202302030/images/headshots/de204fbb_2022.jpg,https://fbref.com/en/players/de204fbb/Jorge-Cabello,Levante
+Carlos Espí,players,https://fbref.com/req/202302030/images/headshots/d7d3c5f3_2022.jpg,https://fbref.com/en/players/d7d3c5f3/Carlos-Espi,Levante
+Goduine Koyalipou,players,https://fbref.com/req/202302030/images/headshots/2659a508_2022.jpg,https://fbref.com/en/players/2659a508/Goduine-Koyalipou,Levante
+Pablo Cuñat,players,https://fbref.com/req/202302030/images/headshots/a9ab3b32_2022.jpg,https://fbref.com/en/players/a9ab3b32/Pablo-Cunat,Levante
+José Luis Morales,players,https://fbref.com/req/202302030/images/headshots/4a478107_2022.jpg,https://fbref.com/en/players/4a478107/Jose-Luis-Morales,Levante
+Nacho Pérez,players,https://fbref.com/req/202302030/images/headshots/894c9248_2022.jpg,https://fbref.com/en/players/894c9248/Nacho-Perez,Levante
+Tay Abed,players,https://fbref.com/req/202302030/images/headshots/88824111_2022.jpg,https://fbref.com/en/players/88824111/Tay-Abed,Levante
+Ruiz Agustina,players,https://fbref.com/req/202302030/images/headshots/dc8bc051_2022.jpg,https://fbref.com/en/players/dc8bc051/Ruiz-Agustina,Levante
+Martín Krug,players,https://fbref.com/req/202302030/images/headshots/c8aa3996_2022.jpg,https://fbref.com/en/players/c8aa3996/Martin-Krug,Levante
+Alejandro Primo,players,https://fbref.com/req/202302030/images/headshots/f38284bb_2022.jpg,https://fbref.com/en/players/f38284bb/Alejandro-Primo,Levante
+Cayetano Romero,players,https://fbref.com/req/202302030/images/headshots/374a5cd7_2022.jpg,https://fbref.com/en/players/374a5cd7/Cayetano-Romero,Levante
+Aarón Escandell,players,https://fbref.com/req/202302030/images/headshots/67669ce7_2022.jpg,https://fbref.com/en/players/67669ce7/Aaron-Escandell,Oviedo
+Ilyas Chaira,players,https://fbref.com/req/202302030/images/headshots/c998f00f_2022.jpg,https://fbref.com/en/players/c998f00f/Ilyas-Chaira,Oviedo
+Alberto Reina,players,https://fbref.com/req/202302030/images/headshots/dede3190_2022.jpg,https://fbref.com/en/players/dede3190/Alberto-Reina,Oviedo
+David Carmo,players,https://fbref.com/req/202302030/images/headshots/3ce20eda_2022.jpg,https://fbref.com/en/players/3ce20eda/David-Carmo,Oviedo
+Federico Viñas,players,https://fbref.com/req/202302030/images/headshots/d30c7094_2022.jpg,https://fbref.com/en/players/d30c7094/Federico-Vinas,Oviedo
+Santiago Colombatto,players,https://fbref.com/req/202302030/images/headshots/ad9fdbf3_2022.jpg,https://fbref.com/en/players/ad9fdbf3/Santiago-Colombatto,Oviedo
+Nacho Vidal,players,https://fbref.com/req/202302030/images/headshots/3a9c4b7b_2022.jpg,https://fbref.com/en/players/3a9c4b7b/Nacho-Vidal,Oviedo
+Haissem Hassan,players,https://fbref.com/req/202302030/images/headshots/e0979e74_2022.jpg,https://fbref.com/en/players/e0979e74/Haissem-Hassan,Oviedo
+David Costas,players,https://fbref.com/req/202302030/images/headshots/545e2f01_2022.jpg,https://fbref.com/en/players/545e2f01/David-Costas,Oviedo
+Leander Dendoncker,players,https://fbref.com/req/202302030/images/headshots/5a7301ae_2022.jpg,https://fbref.com/en/players/5a7301ae/Leander-Dendoncker,Oviedo
+Kwasi Sibo,players,https://fbref.com/req/202302030/images/headshots/be834ad7_2022.jpg,https://fbref.com/en/players/be834ad7/Kwasi-Sibo,Oviedo
+Javi López,players,https://fbref.com/req/202302030/images/headshots/e9ada8cf_2022.jpg,https://fbref.com/en/players/e9ada8cf/Javi-Lopez,Oviedo
+Salomón Rondón,players,https://fbref.com/req/202302030/images/headshots/b318a643_2022.jpg,https://fbref.com/en/players/b318a643/Salomon-Rondon,Oviedo
+Dani Calvo,players,https://fbref.com/req/202302030/images/headshots/dd672e1f_2022.jpg,https://fbref.com/en/players/dd672e1f/Dani-Calvo,Oviedo
+Lucas Ahijado,players,https://fbref.com/req/202302030/images/headshots/7244b474_2022.jpg,https://fbref.com/en/players/7244b474/Lucas-Ahijado,Oviedo
+Luka Ilić,players,https://fbref.com/req/202302030/images/headshots/7bbcff4d_2022.jpg,https://fbref.com/en/players/7bbcff4d/Luka-Ilic,Oviedo
+Eric Bailly,players,https://fbref.com/req/202302030/images/headshots/a1232f4e_2022.jpg,https://fbref.com/en/players/a1232f4e/Eric-Bailly,Oviedo
+Josip Brekalo,players,https://fbref.com/req/202302030/images/headshots/d4a2533d_2022.jpg,https://fbref.com/en/players/d4a2533d/Josip-Brekalo,Oviedo
+Santi Cazorla,players,https://fbref.com/req/202302030/images/headshots/e2e9c250_2022.jpg,https://fbref.com/en/players/e2e9c250/Santi-Cazorla,Oviedo
+Oier Luengo,players,https://fbref.com/req/202302030/images/headshots/8648c59f_2022.jpg,https://fbref.com/en/players/8648c59f/Oier-Luengo,Oviedo
+Álex Forés,players,https://fbref.com/req/202302030/images/headshots/d6ed4376_2022.jpg,https://fbref.com/en/players/d6ed4376/Alex-Fores,Oviedo
+Ovie Ejaria,players,https://fbref.com/req/202302030/images/headshots/a801669e_2022.jpg,https://fbref.com/en/players/a801669e/Ovie-Ejaria,Oviedo
+Marco Esteban,players,https://fbref.com/req/202302030/images/headshots/5b4a3e76_2022.jpg,https://fbref.com/en/players/5b4a3e76/Marco-Esteban,Oviedo
+Omar Falah,players,https://fbref.com/req/202302030/images/headshots/8c593db1_2022.jpg,https://fbref.com/en/players/8c593db1/Omar-Falah,Oviedo
+Borja Sánchez Laborde,players,https://fbref.com/req/202302030/images/headshots/01cab116_2022.jpg,https://fbref.com/en/players/01cab116/Borja-Sanchez-Laborde,Oviedo
+Cheli,players,https://fbref.com/req/202302030/images/headshots/d10a3cf8_2022.jpg,https://fbref.com/en/players/d10a3cf8/Cheli,Oviedo
+Brandon Domingues,players,https://fbref.com/req/202302030/images/headshots/2a00c6c0_2022.jpg,https://fbref.com/en/players/2a00c6c0/Brandon-Domingues,Oviedo
+Lamine Gueye,players,https://fbref.com/req/202302030/images/headshots/21536a0c_2022.jpg,https://fbref.com/en/players/21536a0c/Lamine-Gueye,Oviedo
+Horaţiu Moldovan,players,https://fbref.com/req/202302030/images/headshots/771ded26_2022.jpg,https://fbref.com/en/players/771ded26/Horatiu-Moldovan,Oviedo
+Miguel Narváez,players,https://fbref.com/req/202302030/images/headshots/e4f5680f_2022.jpg,https://fbref.com/en/players/e4f5680f/Miguel-Narvaez,Oviedo

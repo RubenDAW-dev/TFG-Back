@@ -15,4 +15,5 @@ public class TeamEntity {
     private String estadio;
     private String ciudad;
     private Integer capacidad;
+    private String escudo;
 }
