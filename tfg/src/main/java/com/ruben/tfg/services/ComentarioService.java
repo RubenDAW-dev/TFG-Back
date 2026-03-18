@@ -1,16 +1,24 @@
 package com.ruben.tfg.services;
 
-import com.ruben.tfg.DTOs.ComentarioResponseDTO;
-import com.ruben.tfg.DTOs.CrearComentarioDTO;
-import com.ruben.tfg.entities.*;
-import com.ruben.tfg.repositories.*;
-import jakarta.persistence.EntityNotFoundException;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
+import com.ruben.tfg.DTOs.ComentarioResponseDTO;
+import com.ruben.tfg.DTOs.CrearComentarioDTO;
+import com.ruben.tfg.DTOs.actualizarComentarioDTO;
+import com.ruben.tfg.entities.ComentarioEntity;
+import com.ruben.tfg.entities.MatchEntity;
+import com.ruben.tfg.entities.PlayerEntity;
+import com.ruben.tfg.entities.TeamEntity;
+import com.ruben.tfg.entities.UsuarioEntity;
+import com.ruben.tfg.repositories.ComentarioRepository;
+import com.ruben.tfg.repositories.UsuarioRepository;
+
+import jakarta.persistence.EntityNotFoundException;
+import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
@@ -229,7 +237,26 @@ public class ComentarioService {
         }
         return dto;
     }
-    
+    public ComentarioResponseDTO actualizarComentario(actualizarComentarioDTO req) {
+        // Cargar la entidad completa desde BD
+        ComentarioEntity comentario = comentarioRepository.findById(req.getId())
+                .orElseThrow(() -> new EntityNotFoundException(
+                        "Comentario no encontrado: " + req.getId()));
+
+        // Actualizar solo los campos que vienen en el DTO
+        if (req.getTitulo() != null && !req.getTitulo().isBlank()) {
+            comentario.setTitulo(req.getTitulo().trim());
+        }
+        if (req.getComentario() != null && !req.getComentario().isBlank()) {
+            comentario.setComentario(req.getComentario().trim());
+        }
+
+        // Guardar la entidad completa actualizada
+        ComentarioEntity actualizado = comentarioRepository.save(comentario);
+        
+        // Retornar como DTO con todos los datos
+        return toDTO(actualizado);
+    }
     
     
 }

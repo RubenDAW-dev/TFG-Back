@@ -1,14 +1,23 @@
 package com.ruben.tfg.controllers;
 
 import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.ruben.tfg.DTOs.ComentarioResponseDTO;
 import com.ruben.tfg.DTOs.CrearComentarioDTO;
-import com.ruben.tfg.entities.ComentarioEntity;
+import com.ruben.tfg.DTOs.actualizarComentarioDTO;
 import com.ruben.tfg.services.ComentarioService;
+
 import lombok.AllArgsConstructor;
 
 @RestController
@@ -20,8 +29,6 @@ public class ComentarioController {
 
     // ── CREAR ─────────────────────────────────────────────────────────────────
 
- // En ComentarioController, reemplaza el método crear():
-
     @PostMapping("/create")
     public ResponseEntity<ComentarioResponseDTO> crear(@RequestBody CrearComentarioDTO req) {
         return ResponseEntity.status(HttpStatus.CREATED)
@@ -31,9 +38,9 @@ public class ComentarioController {
     // ── ACTUALIZAR ────────────────────────────────────────────────────────────
 
     @PutMapping("/update")
-    public ResponseEntity<?> actualizar(@RequestBody ComentarioEntity comentario) {
+    public ResponseEntity<?> actualizar(@RequestBody actualizarComentarioDTO req) {
         try {
-            ComentarioEntity actualizado = comentarioService.actualizarComentario(comentario);
+            ComentarioResponseDTO actualizado = comentarioService.actualizarComentario(req);
             return ResponseEntity.ok(actualizado);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
