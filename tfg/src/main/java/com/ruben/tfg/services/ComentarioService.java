@@ -215,11 +215,21 @@ public class ComentarioService {
             dto.setJugadorId(c.getJugador().getId());
             dto.setTargetNombre(c.getJugador().getNombre()); // ajusta al getter real
         }
+     // PARTIDO - Obtener nombres de los equipos
         if (c.getPartido() != null) {
             dto.setPartidoId(c.getPartido().getId());
-            // Ajusta según tu MatchEntity (homeTeam vs awayTeam, etc.)
-            dto.setTargetNombre(c.getPartido().getId().toString());
+            MatchEntity match = c.getPartido();
+            
+            // Asegurate que homeTeam y awayTeam estén cargados
+            if (match.getHomeTeam() != null && match.getAwayTeam() != null) {
+                dto.setTargetNombre(match.getHomeTeam().getNombre() + " vs " + match.getAwayTeam().getNombre());
+            } else {
+                dto.setTargetNombre("Partido " + match.getId());
+            }
         }
         return dto;
     }
+    
+    
+    
 }
