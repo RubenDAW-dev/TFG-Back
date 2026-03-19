@@ -36,12 +36,11 @@ public class UsuarioService {
 
 		Page<UsuarioEntity> res;
 		if (qEmail != null && !qEmail.isBlank()) {
-			res = repo.findAll(pageable) // simple: filtra en memoria si dataset es pequeño
-					.map(e -> e); // no-op
+			res = repo.findAll(pageable)
+					.map(e -> e);
 			res = new PageImpl<>(res.getContent().stream()
 					.filter(u -> u.getEmail() != null && u.getEmail().toLowerCase().contains(qEmail.toLowerCase()))
-					.toList(), pageable, res.getTotalElements() // para rigor, podrías implementar un query method en
-																// repo
+					.toList(), pageable, res.getTotalElements()
 			);
 		} else {
 			res = repo.findAll(pageable);

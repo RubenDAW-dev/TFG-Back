@@ -12,6 +12,5 @@ public class UsuarioUpdateDTO {
 	@NotBlank
 	@Email
 	private String email;
-	@NotBlank
 	private Integer rol;
 }
