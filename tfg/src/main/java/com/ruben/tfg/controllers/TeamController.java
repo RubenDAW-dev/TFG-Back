@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ruben.tfg.DTOs.SearchItemDTO;
+import com.ruben.tfg.DTOs.UpdateTeamDTO;
 import com.ruben.tfg.entities.TeamEntity;
 import com.ruben.tfg.services.TeamService;
 
@@ -48,10 +49,10 @@ public class TeamController {
         }
     }
 
-    @PutMapping("/update")
-    public ResponseEntity<?> update(@RequestBody TeamEntity team) {
+    @PutMapping("/update/{id}")
+    public ResponseEntity<?> update(@PathVariable String id,@RequestBody UpdateTeamDTO team) {
         try {
-            TeamEntity actualizado = service.update(team);
+            TeamEntity actualizado = service.update(id,team);
             return ResponseEntity.ok(actualizado);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Equipo no encontrado: " + e.getMessage());

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ruben.tfg.DTOs.PlayerDTO;
 import com.ruben.tfg.DTOs.SearchItemDTO;
+import com.ruben.tfg.DTOs.UpdatePlayerDTO;
 import com.ruben.tfg.entities.PlayerEntity;
 import com.ruben.tfg.services.PlayerService;
 
@@ -62,9 +63,9 @@ public class PlayerController {
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> update(@RequestBody PlayerEntity player) {
+    public ResponseEntity<?> update(@PathVariable String id,@RequestBody UpdatePlayerDTO player) {
         try {
-            PlayerEntity actualizado = service.update(player);
+            PlayerEntity actualizado = service.update(id,player);
             return ResponseEntity.ok(actualizado);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Jugador no encontrado: " + e.getMessage());

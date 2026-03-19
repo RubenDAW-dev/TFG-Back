@@ -139,4 +139,15 @@ public class ComentarioController {
                     .body("Comentario no encontrado: " + e.getMessage());
         }
     }
+    @GetMapping("/admin/all")
+    public ResponseEntity<?> obtenerTodos() {
+        try {
+            List<ComentarioResponseDTO> lista = comentarioService.obtenerTodos();
+            if (lista.isEmpty()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+            return ResponseEntity.ok(lista);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Error: " + e.getMessage());
+        }
+    }
 }
