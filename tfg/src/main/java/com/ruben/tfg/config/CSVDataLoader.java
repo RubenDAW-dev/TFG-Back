@@ -50,7 +50,7 @@ public class CSVDataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         loadTeams();
-        loadTeamShields();  // NUEVO: cargar escudos
+        loadTeamShields();
         loadPlayers();
         loadMatches();
         loadTeamMatchStats();
