@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
 
 @Configuration
 @RequiredArgsConstructor
@@ -21,11 +22,19 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
 
             .cors(cors -> cors.configurationSource(request -> {
-                var config = new org.springframework.web.cors.CorsConfiguration();
+                CorsConfiguration config = new CorsConfiguration();
+
+                // Permitir frontend local
                 config.addAllowedOrigin("http://localhost:4200");
+
+                // Permitir frontend/backend en Azure
+                config.addAllowedOriginPattern("https://*.azurewebsites.net");
+
+                // Permitir todo lo necesario
                 config.addAllowedHeader("*");
                 config.addAllowedMethod("*");
                 config.setAllowCredentials(false);
+
                 return config;
             }))
 
@@ -58,7 +67,7 @@ public class SecurityConfig {
                     "/api/matches/next"
                 ).permitAll()
 
-                // === Todo lo demás → autenticado ===
+                // === Todo lo demás requiere autenticación ===
                 .anyRequest().authenticated()
             )
 
