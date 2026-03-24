@@ -17,13 +17,14 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+
 @Component
 @RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
-    
+
     private final JwtService jwtService;
-    
-    // Lista de rutas públicas que NO necesitan token
+
+    // SOLO rutas exactas que deben ser públicas
     private static final List<String> PUBLIC_PATHS = List.of(
         "/v3/api-docs",
         "/swagger-ui",
@@ -38,51 +39,56 @@ public class JwtFilter extends OncePerRequestFilter {
         "/api/matches/last",
         "/api/matches/next"
     );
-    
+
     @Override
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain)
             throws ServletException, IOException {
-        
+
         String path = req.getRequestURI();
-        
-        // Si es una ruta pública, saltarse la validación del token
+
+        // Si es EXACTAMENTE una ruta pública → dejar pasar sin validar token
         if (isPublicPath(path)) {
             chain.doFilter(req, res);
             return;
         }
-        
+
+        // Validar token si no es pública
         String header = req.getHeader("Authorization");
         if (header == null || !header.startsWith("Bearer ")) {
             chain.doFilter(req, res);
             return;
         }
-        
+
         String token = header.substring(7);
+
         try {
             Claims claims = jwtService.parseToken(token);
+
             req.setAttribute("userId", claims.get("id"));
             req.setAttribute("rol", claims.get("rol"));
-            
+
             Integer rol = claims.get("rol", Integer.class);
             String authority = (rol != null && rol == 1) ? "ROLE_ADMIN" : "ROLE_USER";
-            
+
             UsernamePasswordAuthenticationToken authentication =
                 new UsernamePasswordAuthenticationToken(
                     claims.getSubject(),
                     null,
                     List.of(new SimpleGrantedAuthority(authority))
                 );
+
             SecurityContextHolder.getContext().setAuthentication(authentication);
-            
+
         } catch (Exception e) {
             res.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Token inválido");
             return;
         }
-        
+
         chain.doFilter(req, res);
     }
+
     
     private boolean isPublicPath(String path) {
-        return PUBLIC_PATHS.stream().anyMatch(path::startsWith);
+        return PUBLIC_PATHS.contains(path);
     }
 }
