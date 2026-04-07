@@ -38,4 +38,6 @@ public class TeamStatsRowDTO {
 	private Double conversionPenaltiMedia;
 	private Double golesPorPartido;
 	private Double golesContraPorPartido;
+	private String ciudad;
+	private String imagenUrl;
 }

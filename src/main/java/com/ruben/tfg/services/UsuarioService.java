@@ -100,4 +100,12 @@ public class UsuarioService {
 			return true;
 		}).orElse(false);
 	}
+
+	public boolean resetPassword(Integer id, String newPassword) {
+		return repo.findById(id).map(u -> {
+			u.setPasswordHash(passwordEncoder.encode(newPassword));
+			repo.save(u);
+			return true;
+		}).orElse(false);
+	}
 }

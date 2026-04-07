@@ -15,6 +15,7 @@ import com.ruben.tfg.DTOs.TeamSummaryDTO;
 import com.ruben.tfg.DTOs.TeamTableRowDTO;
 import com.ruben.tfg.entities.TeamSeasonStatsEntity;
 import com.ruben.tfg.repositories.PlayerSeasonStatsRepository;
+import com.ruben.tfg.repositories.TeamRepository;
 import com.ruben.tfg.repositories.TeamSeasonStatsRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -25,6 +26,8 @@ public class TeamSeasonStatsService {
 
     private final TeamSeasonStatsRepository repo;
     private final PlayerSeasonStatsRepository playerStatsRepo;
+    private final TeamRepository teamRepo;
+
 
     // ============================================================
     // CRUD BÁSICO
@@ -113,9 +116,17 @@ public class TeamSeasonStatsService {
         Map<String, TeamPlayerAggDTO> aggMap = buildAggMap();
 
         return stats.stream()
-                .map(ts -> buildRow(ts, aggMap.get(ts.getTeamId())))
+                .map(ts -> {
+                    TeamStatsRowDTO row = buildRow(ts, aggMap.get(ts.getTeamId()));
+                    String ciudad = ts.getTeam() != null ? ts.getTeam().getCiudad() : null;
+                    String imagen = ts.getTeam() != null ? ts.getTeam().getEscudo() : null;
+                    row.setCiudad(ciudad);
+                    row.setImagenUrl(imagen);
+                    return row;
+                })
                 .toList();
     }
+
 
     private Map<String, TeamPlayerAggDTO> buildAggMap() {
         return playerStatsRepo.aggregateByTeam()

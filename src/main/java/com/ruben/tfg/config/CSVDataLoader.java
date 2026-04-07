@@ -45,7 +45,7 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * Lógica: Si existe → actualiza, si no existe → crea, si no cambió → no hace nada
  */
-@Component
+
 @RequiredArgsConstructor
 @Slf4j
 public class CSVDataLoader implements CommandLineRunner {

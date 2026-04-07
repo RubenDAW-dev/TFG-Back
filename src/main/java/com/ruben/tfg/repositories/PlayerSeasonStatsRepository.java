@@ -74,14 +74,15 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
                 pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
                 pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
                 pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
+                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti, p.imageUrl
             )
             from PlayerSeasonStatsEntity pss
             join pss.player p
         """)
 List<PlayerStatsTableDTO> findAllAsTableDto(Sort sort);
 
-@Query(value = """
+
+    @Query(value = """
             select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
                 pss.playerId, p.nombre, p.team.nombre,
                 pss.partidos, pss.minutos, pss.goles, pss.asistencias,
@@ -91,7 +92,7 @@ List<PlayerStatsTableDTO> findAllAsTableDto(Sort sort);
                 pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
                 pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
                 pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
+                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti, p.imageUrl
             )
             from PlayerSeasonStatsEntity pss
             join pss.player p
@@ -109,7 +110,7 @@ List<PlayerStatsTableDTO> findAllAsTableDtoOrderByPlayerNameAsc();
                 pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
                 pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
                 pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
+                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti, p.imageUrl
             )
             from PlayerSeasonStatsEntity pss
             join pss.player p
@@ -127,7 +128,7 @@ List<PlayerStatsTableDTO> findAllAsTableDtoOrderByPlayerNameDesc();
                 pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
                 pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
                 pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
+                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti, p.imageUrl
             )
             from PlayerSeasonStatsEntity pss
             join pss.player p
@@ -145,13 +146,16 @@ List<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameAsc();
                 pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
                 pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
                 pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
+                pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti, p.imageUrl
             )
             from PlayerSeasonStatsEntity pss
             join pss.player p
             order by p.team.nombre desc
         """)
 List<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameDesc();
+
+
+
 @Query("""
         select new com.ruben.tfg.DTOs.PlayerStatsTableDTO(
             pss.playerId, p.nombre, p.team.nombre,
@@ -162,13 +166,14 @@ List<PlayerStatsTableDTO> findAllAsTableDtoOrderByTeamNameDesc();
             pss.golesPor90, pss.asistenciasPor90, pss.disparosPor90, pss.disparosPuertaPor90,
             pss.amarillasPor90, pss.rojasPor90, pss.faltasCometidasPor90, pss.faltasRecibidasPor90,
             pss.fueraDeJuegoPor90, pss.centrosPor90, pss.entradasGanadasPor90,
-            pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti
+            pss.intercepcionesPor90, pss.precisionTiro, pss.conversionPenalti, p.imageUrl
         )
         from PlayerSeasonStatsEntity pss
         join pss.player p
         where p.team.id = :teamId
     """)
 List<PlayerStatsTableDTO> findAllByTeamIdAsDto(@Param("teamId") String teamId);
+
 
 @Query("""
 	    select new com.ruben.tfg.DTOs.TeamPlayerAggDTO(

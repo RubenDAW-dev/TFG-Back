@@ -77,5 +77,9 @@ public class UsuarioController {
         boolean ok = service.changePassword(id, dto);
         return ok ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
-    
+    @PostMapping("/{id}/reset-password/{newPassword}")
+    public ResponseEntity<?> resetPassword(@PathVariable Integer id,@PathVariable String newPassword) {
+		boolean ok = service.resetPassword(id,newPassword);
+		return ok ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+	}	
 }
