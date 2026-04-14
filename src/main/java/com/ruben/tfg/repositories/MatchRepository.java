@@ -33,5 +33,8 @@ public interface MatchRepository extends JpaRepository<MatchEntity, Long> {
 
     List<MatchEntity> findByHomeTeamNombreContainingIgnoreCaseOrAwayTeamNombreContainingIgnoreCase(
     	    String homeNombre, String awayNombre);
+
+
+	List<MatchEntity> findByHomeTeam_IdAndAwayTeam_IdAndWk(String homeTeamId, String awayTeamId, Integer wk);
     
 }

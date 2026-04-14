@@ -45,7 +45,7 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * Lógica: Si existe → actualiza, si no existe → crea, si no cambió → no hace nada
  */
-
+@Component
 @RequiredArgsConstructor
 @Slf4j
 public class CSVDataLoader implements CommandLineRunner {
@@ -261,22 +261,50 @@ public class CSVDataLoader implements CommandLineRunner {
         br.readLine();
 
         DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        int created = 0, updated = 0;
+        int created = 0, updated = 0, deleted = 0;
         String line;
 
         while ((line = br.readLine()) != null) {
             String[] d = splitCSV(line);
             Long matchId = Long.parseLong(d[0]);
+            String homeTeamId = d[1];
+            String awayTeamId = d[2];
+            Integer wk = parseIntFlex(d[3]);
 
             MatchEntity existingMatch = matchRepo.findById(matchId).orElse(null);
+            
+            if (existingMatch == null && wk != null) {
+                List<MatchEntity> possibleDuplicates = matchRepo.findByHomeTeam_IdAndAwayTeam_IdAndWk(
+                    homeTeamId, awayTeamId, wk
+                );
+                
+                if (!possibleDuplicates.isEmpty()) {
+                    existingMatch = possibleDuplicates.get(0);
+                    
+                    if (!existingMatch.getId().equals(matchId)) {
+                        log.info("🔄 Partido actualizado con nuevo ID: {} -> {} ({}vs{})", 
+                            existingMatch.getId(), matchId, homeTeamId, awayTeamId);
+                        
+                        Long oldId = existingMatch.getId();
+                        
+                        existingMatch = null; // Forzar creación con nuevo ID
+                        
+                        matchRepo.deleteById(oldId);
+                        deleted++;
+                    }
+                }
+            }
+
+            TeamEntity homeTeam = teamRepo.findById(homeTeamId).orElse(null);
+            TeamEntity awayTeam = teamRepo.findById(awayTeamId).orElse(null);
 
             if (existingMatch == null) {
                 // ✅ CREAR NUEVO
                 MatchEntity m = new MatchEntity();
                 m.setId(matchId);
-                m.setHomeTeam(teamRepo.findById(d[1]).orElse(null));
-                m.setAwayTeam(teamRepo.findById(d[2]).orElse(null));
-                m.setWk(parseIntFlex(d[3]));
+                m.setHomeTeam(homeTeam);
+                m.setAwayTeam(awayTeam);
+                m.setWk(wk);
                 m.setDay(d[4]);
                 m.setDate(parseDateOrNull(d[5], df));
                 m.setTime(emptyToNull(d[6]));
@@ -287,13 +315,13 @@ public class CSVDataLoader implements CommandLineRunner {
                 matchRepo.save(m);
                 created++;
             } else {
-                // ✅ ACTUALIZAR EXISTENTE
-                existingMatch.setHomeTeam(teamRepo.findById(d[1]).orElse(null));
-                existingMatch.setAwayTeam(teamRepo.findById(d[2]).orElse(null));
-                existingMatch.setWk(parseIntFlex(d[3]));
+                // ✅ ACTUALIZAR EXISTENTE (especialmente la hora)
+                existingMatch.setHomeTeam(homeTeam);
+                existingMatch.setAwayTeam(awayTeam);
+                existingMatch.setWk(wk);
                 existingMatch.setDay(d[4]);
                 existingMatch.setDate(parseDateOrNull(d[5], df));
-                existingMatch.setTime(emptyToNull(d[6]));
+                existingMatch.setTime(emptyToNull(d[6])); // 🕐 Actualizar hora
                 existingMatch.setScore(emptyToNull(d[7]));
                 existingMatch.setAttendance(parseIntFlex(safe(d[8]).replace(".0", "")));
                 existingMatch.setVenue(emptyToNull(d[9]));
@@ -303,7 +331,7 @@ public class CSVDataLoader implements CommandLineRunner {
             }
         }
 
-        log.info("✅ Partidos: {} creados, {} actualizados", created, updated);
+        log.info("✅ Partidos: {} creados, {} actualizados, {} duplicados eliminados", created, updated, deleted);
     }
 
     // ========================
