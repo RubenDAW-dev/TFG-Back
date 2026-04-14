@@ -20,7 +20,7 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
     // === RANKINGS (mantienen Pageable) ===
     @Query("""
                 select new com.ruben.tfg.DTOs.RankingDTO(
-                    pss.playerId, p.nombre, p.team.id,
+                    pss.playerId, p.nombre,p.imageUrl, p.team.id,
                     pss.goles, pss.minutos, pss.golesPor90
                 )
                 from PlayerSeasonStatsEntity pss
@@ -32,7 +32,7 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
 
     @Query("""
                 select new com.ruben.tfg.DTOs.RankingDTO(
-                    pss.playerId, p.nombre, p.team.id,
+                    pss.playerId, p.nombre,p.imageUrl, p.team.id,
                     pss.asistencias, pss.minutos, pss.asistenciasPor90
                 )
                 from PlayerSeasonStatsEntity pss
@@ -44,7 +44,7 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
 
     @Query("""
                 select new com.ruben.tfg.DTOs.RankingDTO(
-                    pss.playerId, p.nombre, p.team.id,
+                    pss.playerId, p.nombre,p.imageUrl, p.team.id,
                     pss.goles, pss.minutos, pss.golesPor90
                 )
                 from PlayerSeasonStatsEntity pss
@@ -55,7 +55,7 @@ public interface PlayerSeasonStatsRepository extends JpaRepository<PlayerSeasonS
 
     @Query("""
                 select new com.ruben.tfg.DTOs.RankingDTO(
-                    pss.playerId, p.nombre, p.team.id,
+                    pss.playerId, p.nombre,p.imageUrl, p.team.id,
                     pss.asistencias, pss.minutos, pss.asistenciasPor90
                 )
                 from PlayerSeasonStatsEntity pss

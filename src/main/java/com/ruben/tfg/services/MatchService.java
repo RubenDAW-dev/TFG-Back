@@ -66,7 +66,9 @@ public class MatchService {
 			PastMatchDTO dto = new PastMatchDTO();
 			dto.setId(m.getId());
 			dto.setHomeTeam(m.getHomeTeam().getNombre());
+			dto.setHomeTeamEscudo(m.getHomeTeam().getEscudo());
 			dto.setAwayTeam(m.getAwayTeam().getNombre());
+			dto.setAwayTeamEscudo(m.getAwayTeam().getEscudo());
 			dto.setScore(m.getScore());
 			return dto;
 		}).toList();
@@ -80,7 +82,9 @@ public class MatchService {
 			FutureMatchDTO dto = new FutureMatchDTO();
 			dto.setId(m.getId());
 			dto.setHomeTeam(m.getHomeTeam().getNombre());
+			dto.setHomeTeamEscudo(m.getHomeTeam().getEscudo());
 			dto.setAwayTeam(m.getAwayTeam().getNombre());
+			dto.setAwayTeamEscudo(m.getAwayTeam().getEscudo());
 			dto.setDay(m.getDay());
 			dto.setTime(m.getTime());
 			return dto;
