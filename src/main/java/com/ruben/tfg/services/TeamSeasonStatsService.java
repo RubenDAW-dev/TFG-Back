@@ -93,6 +93,7 @@ public class TeamSeasonStatsService {
                 .map(ts -> new TeamTableRowDTO(
                         ts.getTeamId(),
                         ts.getTeam().getNombre(),
+                        ts.getTeam().getEscudo(),
                         ts.getPartidos(),
                         ts.getGoles_favor(),
                         ts.getGoles_contra(),

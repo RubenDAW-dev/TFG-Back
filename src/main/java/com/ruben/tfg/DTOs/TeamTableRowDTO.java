@@ -3,6 +3,7 @@ package com.ruben.tfg.DTOs;
 public record TeamTableRowDTO(
     String teamId,
     String teamName,
+    String escudoUrl,
     Integer partidos,
     Integer golesFavor,
     Integer golesContra,
