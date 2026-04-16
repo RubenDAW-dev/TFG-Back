@@ -250,22 +250,30 @@ public class ComentarioService {
 
 
 	public List<ComentarioResponseDTO> obtenerTodos() {
-		List<ComentarioEntity> comentarios = comentarioRepository.findAll();
+	    List<ComentarioEntity> comentarios = comentarioRepository.findAll();
 
-		return comentarios.stream().map(entity -> {
-			ComentarioResponseDTO dto = new ComentarioResponseDTO();
-			dto.setId(entity.getId());
-			dto.setTitulo(entity.getTitulo());
-			dto.setComentario(entity.getComentario());
-			dto.setFecha(entity.getFecha());
-			dto.setUsuarioId(entity.getUsuario().getId());
-			dto.setUsuarioNombre(entity.getUsuario().getNombre());
-			dto.setPartidoId(entity.getPartido() != null ? entity.getPartido().getId() : null);
-			dto.setEquipoId(entity.getEquipo() != null ? entity.getEquipo().getId() : null);
-			dto.setJugadorId(entity.getJugador() != null ? entity.getJugador().getId() : null);
-			dto.setComentarioPadreId(entity.getComentarioPadre() != null ? entity.getComentarioPadre().getId() : null);
-			return dto;
-		}).collect(Collectors.toList());
+	    return comentarios.stream().map(entity -> {
+	        ComentarioResponseDTO dto = new ComentarioResponseDTO();
+	        dto.setId(entity.getId());
+	        dto.setTitulo(entity.getTitulo());
+	        dto.setComentario(entity.getComentario());
+	        dto.setFecha(entity.getFecha());
+	        dto.setUsuarioId(entity.getUsuario().getId());
+	        dto.setUsuarioNombre(entity.getUsuario().getNombre());
+	        dto.setPartidoId(entity.getPartido() != null ? entity.getPartido().getId() : null);
+	        dto.setEquipoId(entity.getEquipo() != null ? entity.getEquipo().getId() : null);
+	        dto.setJugadorId(entity.getJugador() != null ? entity.getJugador().getId() : null);
+	        dto.setComentarioPadreId(entity.getComentarioPadre() != null ? entity.getComentarioPadre().getId() : null);
+	        
+	        if (entity.getEquipo() != null) {
+	            dto.setTargetNombre(entity.getEquipo().getNombre());
+	        } else if (entity.getJugador() != null) {
+	            dto.setTargetNombre(entity.getJugador().getNombre());
+	        } else if (entity.getPartido() != null) {
+	            dto.setTargetNombre(entity.getPartido().getHomeTeam().getNombre() + " vs " + entity.getPartido().getAwayTeam().getNombre()); 
+	        }
+	        
+	        return dto;
+	    }).collect(Collectors.toList());
 	}
-
 }
